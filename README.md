@@ -51,11 +51,6 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
    - Click **Install** to complete the installation.
 3. After installation, click **Finish** to launch VirtualBox.
 
-### Step 3: Download VirtualBox Extension Pack (Optional)
-- Visit the [VirtualBox Downloads page](https://www.virtualbox.org/wiki/Downloads).
-- Download the **Extension Pack** for added features like USB 3.0 support.
-- Open VirtualBox, go to **File > Preferences > Extensions**, click the **+ icon** and select the downloaded Extension Pack.
-
 ---
 
 ## Installing and Configuring Windows Server 2022
