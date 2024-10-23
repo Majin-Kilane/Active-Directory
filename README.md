@@ -99,7 +99,17 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 
 ### Step 3: Mount Windows Server 2022 ISO
 1. Select the **Windows Server 2022 VM** in VirtualBox and click **Settings**.
+
+![1  Mount Server VM](https://github.com/user-attachments/assets/cbfc1387-752f-4f2e-9062-7127e36a7e6b)
+
+*Ref 3: Mounting Windows Server 2022*
+
 2. Go to **Storage**, click the **Empty** disk under **Controller: IDE**, and select **Choose a disk file**.
+
+![2  Select Storage](https://github.com/user-attachments/assets/0070bb60-58d6-48ba-ac9c-545704338beb)
+
+*Ref 3: Select Storage*
+
 3. Browse for the **Windows Server 2022 ISO** you downloaded.
 4. Click **OK**.
 
