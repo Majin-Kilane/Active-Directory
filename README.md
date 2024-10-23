@@ -42,6 +42,10 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 - Download the installer for your operating system (Windows, macOS, or Linux).
 
 ### Step 2: Install VirtualBox
+*Ref 1: Network Diagram* 
+
+
+
 1. Run the downloaded installer.
 2. In the setup wizard:
    - Click **Next** on the welcome screen.
@@ -51,6 +55,10 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
    - Click **Install** to complete the installation.
 3. After installation, click **Finish** to launch VirtualBox.
 
+*Ref 2: Virtualbox Installation Complete Diagram* 
+
+
+
 ---
 
 ## Installing and Configuring Windows Server 2022
@@ -59,6 +67,9 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 - Visit the [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022) and download the Windows Server 2022 ISO.
 
 ### Step 2: Create a New Virtual Machine for Windows Server
+*Ref 3: Creating New Windows Server VM*
+[Creating a New VM for Windows Server](https://github.com/user-attachments/assets/5a3d32ff-354d-499b-b1a6-ecd6ce20ec43)
+
 1. Open **VirtualBox** and click **New**.
 2. Name the VM (e.g., **Windows Server 2022**).
 3. Set **Type** to **Microsoft Windows** and **Version** to **Windows 2022 (64-bit)**.
