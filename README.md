@@ -111,6 +111,11 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 *Ref 3: Select Storage*
 
 3. Browse for the **Windows Server 2022 ISO** you downloaded.
+
+![4  Select Server ISO](https://github.com/user-attachments/assets/50e5c340-b1ad-4df5-b39e-5a0f3cada12d)
+
+*Ref 3: Select Server ISO*
+   
 4. Click **OK**.
 
 ### Step 4: Start the VM and Install Windows Server 2022
