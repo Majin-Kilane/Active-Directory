@@ -71,15 +71,30 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 
 
 1. Open **VirtualBox** and click **New**.
-2. Name the VM (e.g., **Windows Server 2022**).
-3. Set **Type** to **Microsoft Windows** and **Version** to **Windows 2022 (64-bit)**.
+
+![0](https://github.com/user-attachments/assets/7ea7778f-6e38-4aa7-8652-16d7f973a503)
 
 *Ref 3: Creating New Windows Server VM*
+  
+2. Name the VM (e.g., **Windows Server 2022**).
+3. Set **Type** to **Microsoft Windows** and **Version** to **Windows 2022 (64-bit)**.
    
-   ![image alt](https://github.com/user-attachments/assets/5a3d32ff-354d-499b-b1a6-ecd6ce20ec43)
+![image alt](https://github.com/user-attachments/assets/5a3d32ff-354d-499b-b1a6-ecd6ce20ec43)
 
-5. Allocate at least **4096 MB** of RAM.
+*Ref 3: Naming Windows Server VM*
+
+4. Allocate at least **4096 MB** of RAM.
+
+![2  Allocate at least 4096 MB](https://github.com/user-attachments/assets/ba296dde-891c-4e3e-84bb-b42f325d0141)
+
+*Ref 3: Allocating RAM*
+   
 6. Create a **Virtual Hard Disk** (dynamically allocated) with at least **50 GB** of storage.
+
+![3  50 GB of storage](https://github.com/user-attachments/assets/ddcf44ca-7562-42e3-b326-8d35d4cecfcd)
+
+*Ref 3: Allocating RAM*
+
 7. Click **Create** to finish VM creation.
 
 ### Step 3: Mount Windows Server 2022 ISO
