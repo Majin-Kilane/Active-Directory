@@ -67,15 +67,20 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 - Visit the [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022) and download the Windows Server 2022 ISO.
 
 ### Step 2: Create a New Virtual Machine for Windows Server
-*Ref 3: Creating New Windows Server VM*
-(https://github.com/user-attachments/assets/5a3d32ff-354d-499b-b1a6-ecd6ce20ec43)
+
+
 
 1. Open **VirtualBox** and click **New**.
 2. Name the VM (e.g., **Windows Server 2022**).
 3. Set **Type** to **Microsoft Windows** and **Version** to **Windows 2022 (64-bit)**.
-4. Allocate at least **4096 MB** of RAM.
-5. Create a **Virtual Hard Disk** (dynamically allocated) with at least **50 GB** of storage.
-6. Click **Create** to finish VM creation.
+
+*Ref 3: Creating New Windows Server VM*
+   
+   ![image alt](https://github.com/user-attachments/assets/5a3d32ff-354d-499b-b1a6-ecd6ce20ec43)
+
+5. Allocate at least **4096 MB** of RAM.
+6. Create a **Virtual Hard Disk** (dynamically allocated) with at least **50 GB** of storage.
+7. Click **Create** to finish VM creation.
 
 ### Step 3: Mount Windows Server 2022 ISO
 1. Select the **Windows Server 2022 VM** in VirtualBox and click **Settings**.
