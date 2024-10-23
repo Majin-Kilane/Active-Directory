@@ -68,7 +68,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 
 ### Step 2: Create a New Virtual Machine for Windows Server
 *Ref 3: Creating New Windows Server VM*
-[Creating a New VM for Windows Server](https://github.com/user-attachments/assets/5a3d32ff-354d-499b-b1a6-ecd6ce20ec43)
+(https://github.com/user-attachments/assets/5a3d32ff-354d-499b-b1a6-ecd6ce20ec43)
 
 1. Open **VirtualBox** and click **New**.
 2. Name the VM (e.g., **Windows Server 2022**).
