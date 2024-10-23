@@ -26,4 +26,133 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 
  ## Steps
 
- 
+# Setting Up VirtualBox, Windows Server 2022, and Windows 10
+
+## Table of Contents
+1. [Installing VirtualBox](#installing-virtualbox)
+2. [Installing and Configuring Windows Server 2022](#installing-and-configuring-windows-server-2022)
+3. [Installing Windows 10 on VirtualBox](#installing-windows-10-on-virtualbox)
+
+---
+
+## Installing VirtualBox
+
+### Step 1: Download VirtualBox
+- Go to the official [VirtualBox website](https://www.virtualbox.org/).
+- Download the installer for your operating system (Windows, macOS, or Linux).
+
+### Step 2: Install VirtualBox
+1. Run the downloaded installer.
+2. In the setup wizard:
+   - Click **Next** on the welcome screen.
+   - Choose installation location or leave it as default, and click **Next**.
+   - Leave default settings for features and click **Next**.
+   - Click **Yes** on the network warning if it appears.
+   - Click **Install** to complete the installation.
+3. After installation, click **Finish** to launch VirtualBox.
+
+### Step 3: Download VirtualBox Extension Pack (Optional)
+- Visit the [VirtualBox Downloads page](https://www.virtualbox.org/wiki/Downloads).
+- Download the **Extension Pack** for added features like USB 3.0 support.
+- Open VirtualBox, go to **File > Preferences > Extensions**, click the **+ icon** and select the downloaded Extension Pack.
+
+---
+
+## Installing and Configuring Windows Server 2022
+
+### Step 1: Download Windows Server 2022 ISO
+- Visit the [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022) and download the Windows Server 2022 ISO.
+
+### Step 2: Create a New Virtual Machine for Windows Server
+1. Open **VirtualBox** and click **New**.
+2. Name the VM (e.g., **Windows Server 2022**).
+3. Set **Type** to **Microsoft Windows** and **Version** to **Windows 2022 (64-bit)**.
+4. Allocate at least **4096 MB** of RAM.
+5. Create a **Virtual Hard Disk** (dynamically allocated) with at least **50 GB** of storage.
+6. Click **Create** to finish VM creation.
+
+### Step 3: Mount Windows Server 2022 ISO
+1. Select the **Windows Server 2022 VM** in VirtualBox and click **Settings**.
+2. Go to **Storage**, click the **Empty** disk under **Controller: IDE**, and select **Choose a disk file**.
+3. Browse for the **Windows Server 2022 ISO** you downloaded.
+4. Click **OK**.
+
+### Step 4: Start the VM and Install Windows Server 2022
+1. Click **Start** to boot the VM and begin installation.
+2. In the Windows Setup screen, choose your **language**, **time**, and **keyboard layout**.
+3. Click **Install Now**.
+4. Select the version of **Windows Server 2022** you want (choose **Desktop Experience** for GUI) and click **Next**.
+5. Accept the license agreement and click **Next**.
+6. Choose **Custom: Install Windows only**.
+7. Select the virtual hard drive, click **Next**, and the installation will begin.
+
+### Step 5: Configure Windows Server 2022
+1. After the installation completes, set a **strong password** for the Administrator account.
+2. Once logged in, open **Server Manager** for initial configurations:
+   - Set a **static IP address**.
+   - **Change the computer name** (optional).
+   - **Enable Remote Desktop** (optional).
+   - **Install Windows Updates**.
+3. Reboot if necessary.
+
+### Step 6: Install Active Directory Domain Services (AD DS)
+1. In **Server Manager**, click **Add Roles and Features**.
+2. Select **Role-based or feature-based installation**, click **Next**.
+3. Select the server and click **Next**.
+4. In the **Roles** section, select **Active Directory Domain Services** and click **Next**.
+5. Click **Install** to install the AD DS role.
+6. After installation, click **Promote this server to a domain controller**.
+7. In the AD DS configuration wizard, choose **Add a new forest** and enter a **domain name** (e.g., `example.com`).
+8. Follow the prompts to complete the domain controller configuration and restart the server.
+
+---
+
+## Installing Windows 10 on VirtualBox
+
+### Step 1: Download Windows 10 ISO
+- Visit the [Microsoft Windows 10 Download Page](https://www.microsoft.com/software-download/windows10) and download the ISO.
+
+### Step 2: Create a New Virtual Machine for Windows 10
+1. Open **VirtualBox** and click **New**.
+2. Name the VM (e.g., **Windows 10**).
+3. Set **Type** to **Microsoft Windows** and **Version** to **Windows 10 (64-bit)**.
+4. Allocate at least **2048 MB** of RAM (preferably 4096 MB).
+5. Create a **Virtual Hard Disk** with at least **50 GB** of storage.
+6. Click **Create**.
+
+### Step 3: Mount Windows 10 ISO
+1. Select the **Windows 10 VM** in VirtualBox and click **Settings**.
+2. Go to **Storage**, click the **Empty** disk under **Controller: IDE**, and select **Choose a disk file**.
+3. Browse and select the **Windows 10 ISO** you downloaded.
+4. Click **OK**.
+
+### Step 4: Start the VM and Install Windows 10
+1. Click **Start** to boot the VM from the ISO.
+2. In the **Windows Setup** screen, choose your **language**, **time**, and **keyboard layout**.
+3. Click **Install Now**.
+4. Enter a **product key** or select **I don’t have a product key** to skip.
+5. Choose the Windows 10 edition to install and click **Next**.
+6. Accept the license agreement.
+7. Select **Custom: Install Windows only**.
+8. Choose the virtual hard drive you created and click **Next** to begin the installation.
+
+### Step 5: Configure Windows 10
+1. Once the installation completes, set up your **user account**, **region**, and **network settings**.
+2. Follow the prompts to complete the Windows 10 setup.
+
+### Step 6: Join Windows 10 to the Active Directory Domain
+1. In Windows 10, open **File Explorer**, right-click **This PC**, and choose **Properties**.
+2. Click **Change settings** next to the computer name.
+3. Click **Change** and under **Member of**, select **Domain**.
+4. Enter the **domain name** (e.g., `example.com`).
+5. When prompted, enter the **Administrator** username and password of your Windows Server domain.
+6. Restart the Windows 10 VM to complete the domain join.
+
+---
+
+## Conclusion
+Following this guide, you have successfully:
+1. Installed **VirtualBox**.
+2. Installed and configured **Windows Server 2022** with Active Directory.
+3. Installed **Windows 10** and connected it to the domain.
+
