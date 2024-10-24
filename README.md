@@ -121,12 +121,19 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 ### Step 4: Configure NAT Network for Internet Access
 By default, VirtualBox uses NAT for internet access. This allows the VM to access the internet but isolates it from other machines on the host network.
 
-1. Select the virtual machine you want to configure for NAT and click Settings.
+1. Select the Windows Server 2022 VM to configure NAT and click Settings.
 2. In the Settings **window**, go to the **Network** tab.
-3. Under **Adapter 1** (or any available adapter):
+
+![2Config NAT and Int](https://github.com/user-attachments/assets/6c910b45-af98-425c-8c87-9f9b6ee64bc1)
+
+   
+4. Under **Adapter 1** (or any available adapter):
    - Ensure **Enable Network Adapter** is checked.
    - In the **Attached to** dropdown, select **NAT**.
-4. Click **OK** to apply the changes.
+
+![3Ensure Network Adapter](https://github.com/user-attachments/assets/2ed1a58f-4c93-4135-9c09-cbb252cfc38c)
+
+5. Click **OK** to apply the changes.
 The VM is now configured to access the internet via NAT. The host machine will handle all the routing.
  
 
