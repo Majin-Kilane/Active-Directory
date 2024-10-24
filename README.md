@@ -131,7 +131,7 @@ By default, VirtualBox uses NAT for internet access. This allows the DC to acces
    - Ensure **Enable Network Adapter** is checked.
    - In the **Attached to** dropdown, select **NAT**.
 
-![3Ensure Network Adapter](https://github.com/user-attachments/assets/2ed1a58f-4c93-4135-9c09-cbb252cfc38c)
+
 
 5. Click **OK** to apply the changes.
 The VM is now configured to access the internet via NAT. The host machine will handle all the routing.
