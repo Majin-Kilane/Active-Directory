@@ -135,6 +135,25 @@ By default, VirtualBox uses NAT for internet access. This allows the VM to acces
 
 5. Click **OK** to apply the changes.
 The VM is now configured to access the internet via NAT. The host machine will handle all the routing.
+
+
+### Step 5: Configure an Internal Network for VM Communication
+An **Internal Network** allows multiple virtual machines to communicate with each other on a private network without accessing the internet.
+
+1. Under **Adapter 2** (or another available adapter):
+   - Check **Enable Network Adapter**.
+   - In the **Attached** to dropdown, select **Internal Network**.
+   - In the **Name** field, provide a name for your internal network (e.g., InternalNet).
+2. Click **OK** to apply the changes.
+
+
+
+
+
+
+
+
+
  
 
 ### Step 5: Start the VM and Install Windows Server 2022
