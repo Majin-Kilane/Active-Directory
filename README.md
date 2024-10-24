@@ -143,7 +143,7 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 1. Under **Adapter 2** (or another available adapter):
    - Check **Enable Network Adapter**.
      
-![3EnsureNetwork Adapter](https://github.com/user-attachments/assets/d0e623c5-767a-4926-9dfb-d9b472ec1082)
+
 
    - In the **Attached** to dropdown, select **Internal Network**.
 
