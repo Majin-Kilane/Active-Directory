@@ -125,13 +125,12 @@ By default, VirtualBox uses NAT for internet access. This allows the DC to acces
 2. In the Settings **window**, go to the **Network** tab.
 
 ![2Config NAT and Int](https://github.com/user-attachments/assets/6c910b45-af98-425c-8c87-9f9b6ee64bc1)
-
-   
+  
 4. Under **Adapter 1** (or any available adapter):
    - Ensure **Enable Network Adapter** is checked.
    - In the **Attached to** dropdown, select **NAT**.
 
-
+![3EnsureNetwork_Adapter](https://github.com/user-attachments/assets/8a60bcf8-2ab9-426a-b93f-672ae88173c5)
 
 5. Click **OK** to apply the changes.
 The VM is now configured to access the internet via NAT. The host machine will handle all the routing.
@@ -143,6 +142,7 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 1. Under **Adapter 2** (or another available adapter):
    - Check **Enable Network Adapter**.
      
+![4EnableAdapter2](https://github.com/user-attachments/assets/1306351f-c34d-477c-b015-7a174413f98e)
 
 
    - In the **Attached** to dropdown, select **Internal Network**.
@@ -165,7 +165,7 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 
  
 
-### Step 5: Start the VM and Install Windows Server 2022
+### Step 6: Start the VM and Install Windows Server 2022
 1. Click **Start** to boot the VM and begin installation.
 
 ![1Click Start](https://github.com/user-attachments/assets/4e454546-308c-4bb7-ade5-398e7e205bce)
@@ -177,7 +177,7 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 6. Choose **Custom: Install Windows only**.
 7. Select the virtual hard drive, click **Next**, and the installation will begin.
 
-### Step 6: Configure Windows Server 2022
+### Step 7: Configure Windows Server 2022
 1. After the installation completes, set a **strong password** for the Administrator account.
 2. Once logged in, open **Server Manager** for initial configurations:
    - Set a **static IP address**.
@@ -186,7 +186,7 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
    - **Install Windows Updates**.
 3. Reboot if necessary.
 
-### Step 7: Install Active Directory Domain Services (AD DS)
+### Step 8: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
 2. Select **Role-based or feature-based installation**, click **Next**.
 3. Select the server and click **Next**.
