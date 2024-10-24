@@ -155,27 +155,26 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
     
 2. Click **OK** to apply the changes.
 
-
-
-
-
-
-
-
-
- 
-
 ### Step 6: Start the VM and Install Windows Server 2022
 1. Click **Start** to boot the VM and begin installation.
 
 ![1Click Start](https://github.com/user-attachments/assets/4e454546-308c-4bb7-ade5-398e7e205bce)
    
 2. In the Windows Setup screen, choose your **language**, **time**, and **keyboard layout**.
-3. Click **Install Now**.
+
+![1SelectLanguage](https://github.com/user-attachments/assets/ae12da39-ff14-4595-9852-d1c4d995c139)
+
+3. Click **Next** then **Install Now**.
+
+![2Install](https://github.com/user-attachments/assets/52c54cc2-b466-4fc4-8692-fbc35c139e03)
+   
 4. Select the version of **Windows Server 2022** you want (choose **Desktop Experience** for GUI) and click **Next**.
+
+![3SelectVersion](https://github.com/user-attachments/assets/3aa2afd7-9ff6-4bf0-af51-b9087ebd3559)
+
 5. Accept the license agreement and click **Next**.
-6. Choose **Custom: Install Windows only**.
-7. Select the virtual hard drive, click **Next**, and the installation will begin.
+7. Choose **Custom: Install Windows only**.
+8. Select the virtual hard drive, click **Next**, and the installation will begin.
 
 ### Step 7: Configure Windows Server 2022
 1. After the installation completes, set a **strong password** for the Administrator account.
