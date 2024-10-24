@@ -93,7 +93,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 
 ![3  50 GB of storage](https://github.com/user-attachments/assets/ddcf44ca-7562-42e3-b326-8d35d4cecfcd)
 
-*Ref 3: Allocating RAM*
+*Ref 3: Allocating Storage*
 
 7. Click **Create** to finish VM creation.
 
