@@ -118,8 +118,23 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
    
 4. Click **OK**.
 
-### Step 4: Start the VM and Install Windows Server 2022
+### Step 4: Configure NAT Network for Internet Access
+By default, VirtualBox uses NAT for internet access. This allows the VM to access the internet but isolates it from other machines on the host network.
+
+1. Select the virtual machine you want to configure for NAT and click Settings.
+2. In the Settings **window**, go to the **Network** tab.
+3. Under **Adapter 1** (or any available adapter):
+   - Ensure **Enable Network Adapter** is checked.
+   - In the **Attached to** dropdown, select **NAT**.
+4. Click **OK** to apply the changes.
+The VM is now configured to access the internet via NAT. The host machine will handle all the routing.
+ 
+
+### Step 5: Start the VM and Install Windows Server 2022
 1. Click **Start** to boot the VM and begin installation.
+
+![1Click Start](https://github.com/user-attachments/assets/4e454546-308c-4bb7-ade5-398e7e205bce)
+   
 2. In the Windows Setup screen, choose your **language**, **time**, and **keyboard layout**.
 3. Click **Install Now**.
 4. Select the version of **Windows Server 2022** you want (choose **Desktop Experience** for GUI) and click **Next**.
@@ -127,7 +142,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 6. Choose **Custom: Install Windows only**.
 7. Select the virtual hard drive, click **Next**, and the installation will begin.
 
-### Step 5: Configure Windows Server 2022
+### Step 6: Configure Windows Server 2022
 1. After the installation completes, set a **strong password** for the Administrator account.
 2. Once logged in, open **Server Manager** for initial configurations:
    - Set a **static IP address**.
@@ -136,7 +151,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
    - **Install Windows Updates**.
 3. Reboot if necessary.
 
-### Step 6: Install Active Directory Domain Services (AD DS)
+### Step 7: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
 2. Select **Role-based or feature-based installation**, click **Next**.
 3. Select the server and click **Next**.
