@@ -142,8 +142,14 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 
 1. Under **Adapter 2** (or another available adapter):
    - Check **Enable Network Adapter**.
+![4EnableAdapter2](https://github.com/user-attachments/assets/d21d2a60-d946-4b3c-85fe-667d5adaa0b5)
+
    - In the **Attached** to dropdown, select **Internal Network**.
+![5SelectIntNet](https://github.com/user-attachments/assets/8614b408-5270-4510-a8a6-155fd8a46a60)
+
    - In the **Name** field, provide a name for your internal network (e.g., InternalNet).
+![6NameIntNet](https://github.com/user-attachments/assets/27da9eca-6f57-45d0-ba6d-046e6e4110a1)
+    
 2. Click **OK** to apply the changes.
 
 
