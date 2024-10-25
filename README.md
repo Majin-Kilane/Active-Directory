@@ -226,26 +226,26 @@ Follow the installation prompts:
 
 ![4Reboot](https://github.com/user-attachments/assets/43acc9f1-cb98-4ae1-bb6c-80be5ec22973)
    
-### Step 8:Set a Static IP Address on Windows Server 2022
+### Step 8: Set a Static IP Address on Windows Server 2022
 1. Once logged in, open **Server Manager** and go to Local Server.
 2. In the **Properties** section, click on **Ethernet** (or your network adapter name).
    
-![1SetNetAdaptor](https://github.com/user-attachments/assets/82582324-5854-4931-a3df-4495af1bef65)
+![1SetNetAdaptor](https://github.com/user-attachments/assets/7913b9f6-f262-4b85-81a1-63cb010ee5e7)
   
 3. In the **Network Connections** window, right-click on your network adapter and select **Properties**.
 
-![3OpenProperties](https://github.com/user-attachments/assets/cb7fc5b7-f041-4ac5-a4d5-785180fbf4d1)
+![3OpenProperties](https://github.com/user-attachments/assets/af9f303b-7b40-4253-8aa5-64951bc39944)
 
 4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
 
-![4SelectIPv4](https://github.com/user-attachments/assets/d3aad460-e17e-47b2-ac76-6c2b7ffe19f0)
+![4SelectIPv4](https://github.com/user-attachments/assets/589764e6-16e6-41c1-bed4-f71fb25e825f)
 
 5. Choose **Use the following IP address** and enter the following details:
    - **IP address**: Choose an IP, e.g., 192.168.1.10.
    - **Subnet mask**: Use 255.255.255.0.
    - Leave **Default gateway** and **DNS server** fields blank (for isolated networks).
 
-![5ChooseIP](https://github.com/user-attachments/assets/3af2cc8c-fd0c-4a4b-9a4a-c232fb4c7b36)
+![5ChooseIP](https://github.com/user-attachments/assets/d38e6428-2836-4257-b0f6-18e9f22d0144)
 
 6. Click **OK** to save settings.
 
