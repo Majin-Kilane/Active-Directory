@@ -215,12 +215,10 @@ Go to **CD Drive (D:)** and double-click on **VBoxWindowsAdditions-amd64.exe** t
 
 ![3RunVBGA](https://github.com/user-attachments/assets/51046e06-6348-442b-ae88-609d507ef0ac)
 
-
-
 Follow the installation prompts:
-Click Next in the installation wizard.
-Accept the license agreement.
-When prompted, click Install to begin the installation. Allow any security prompts to install VirtualBox drivers.  
+   - Click Next in the installation wizard.
+   - Accept the license agreement.
+   - When prompted, click Install to begin the installation. Allow any security prompts to install VirtualBox drivers.  
 
 
 
