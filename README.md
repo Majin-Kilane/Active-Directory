@@ -203,17 +203,17 @@ Select **Devices** > **Insert Guest Additions CD Image**.
    - This will insert the Guest Additions ISO file as a virtual CD drive in the VM.
    - This will provide a better experience, allow for resolution adjustments, and eliminate display lag.
 
-![1InsertGuestAdds](https://github.com/user-attachments/assets/9f191893-e294-4f79-8ed7-0c74bc34fbcc)
+![1InsertGuestAdds](https://github.com/user-attachments/assets/e297c429-282e-492e-a3b2-23c2870121ea)
      
 3. Open **File Explorer**.
 
-![2GoToExplorer](https://github.com/user-attachments/assets/5cabe848-0b86-472a-a55a-9b40a512beaf)
- 
+![2GoToExplorer](https://github.com/user-attachments/assets/7fa37eba-02b9-4591-a52c-dce0ffcd384b)
+
 4. Run the Guest Additions Installer (Windows VM)
 Open File Explorer in the VM.
 Go to **CD Drive (D:)** and double-click on **VBoxWindowsAdditions-amd64.exe** to start the installer.
 
-![3RunVBGA](https://github.com/user-attachments/assets/51046e06-6348-442b-ae88-609d507ef0ac)
+![3RunVBGA](https://github.com/user-attachments/assets/1a450cd9-e15f-4793-b093-4153c0f81b7d)
 
 Follow the installation prompts:
    - Click **Next** in the installation wizard.
