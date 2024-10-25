@@ -238,12 +238,13 @@ Follow the installation prompts:
 
 4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
 
-![4SelectIPv4](https://github.com/user-attachments/assets/589764e6-16e6-41c1-bed4-f71fb25e825f)
+![4SelectIPv4](https://github.com/user-attachments/assets/4a485deb-9583-416a-a746-6cb188396aad)
 
 5. Choose **Use the following IP address** and enter the following details:
    - **IP address**: Choose an IP, e.g., 192.168.1.10.
    - **Subnet mask**: Use 255.255.255.0.
    - Leave **Default gateway** and **DNS server** fields blank (for isolated networks).
+   - Set the loopback IP 127.0.0.1 to use this server as the DNS server.
 
 ![5ChooseIP](https://github.com/user-attachments/assets/d38e6428-2836-4257-b0f6-18e9f22d0144)
 
