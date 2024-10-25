@@ -198,12 +198,15 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 
 
 ### Step 7: Configure Windows Server 2022
-1. Once logged in, open **Server Manager** for initial configurations:
+1. Press **Ctrl+Delete** on the login screen.
+   - Enter the **Administrator password** you set up in the previous step.
+   - Click **Enter** to log in.
+2. Once logged in, open **Server Manager** for initial configurations:
    - Set a **static IP address**.
    - **Change the computer name** (optional).
    - **Enable Remote Desktop** (optional).
    - **Install Windows Updates**.
-2. Reboot if necessary.
+3. Reboot if necessary.
 
 ### Step 8: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
