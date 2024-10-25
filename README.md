@@ -184,6 +184,14 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 
 ![6SelectVHD](https://github.com/user-attachments/assets/767a4fe7-6a14-4d2f-87fb-a7af4c2874f5)
 
+8. Wait for Installation to Complete
+   - Windows Server will begin copying files and installing features.
+   - This process may take several minutes and will automatically restart the server when finished.
+
+![7WaitForInstallation](https://github.com/user-attachments/assets/7fbb034a-38e3-4268-b4b1-70f3c157eebb)
+
+
+
 
 ### Step 7: Configure Windows Server 2022
 1. After the installation completes, set a **strong password** for the Administrator account.
