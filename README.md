@@ -222,9 +222,9 @@ Follow the installation prompts:
 
 5. Restart the VM
    - After installation, reboot the VM to activate the Guest Additions features.
-   - Click **Reboot Now**.
+   - Click **Reboot Now** and **Finish**.
 
-![4Reboot](https://github.com/user-attachments/assets/3359f724-54c7-4771-8ec4-e9751d817cca)
+![4Reboot](https://github.com/user-attachments/assets/43acc9f1-cb98-4ae1-bb6c-80be5ec22973)
    
 ### Step 8:Set a Static IP Address on Windows Server 2022
 1. Once logged in, open **Server Manager** and go to Local Server.
