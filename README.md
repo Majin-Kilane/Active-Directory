@@ -190,6 +190,12 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 
 ![7WaitForInstallation](https://github.com/user-attachments/assets/7fbb034a-38e3-4268-b4b1-70f3c157eebb)
 
+9. Set up the Administrator Password
+   - After the installation, you’ll be prompted to set an **Administrator password**.
+   - Enter a strong password and click **Finish**.
+
+![8CreatePW](https://github.com/user-attachments/assets/421ddd24-bff4-4f9b-a388-540c55b687d0)
+
 
 
 
