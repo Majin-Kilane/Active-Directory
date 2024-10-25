@@ -173,8 +173,14 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 ![3SelectVersion](https://github.com/user-attachments/assets/3aa2afd7-9ff6-4bf0-af51-b9087ebd3559)
 
 5. Accept the license agreement and click **Next**.
-7. Choose **Custom: Install Windows only**.
-8. Select the virtual hard drive, click **Next**, and the installation will begin.
+
+![4ClickIAccept](https://github.com/user-attachments/assets/2ffcf842-dff5-44bc-99f9-5920a581fd09)
+
+6. Choose **Custom: Install Windows only**.
+
+![5ChooseCustom](https://github.com/user-attachments/assets/8807683f-ff25-4fa1-a54d-69944a748c66)
+
+7. Select the virtual hard drive, click **Next**, and the installation will begin.
 
 ### Step 7: Configure Windows Server 2022
 1. After the installation completes, set a **strong password** for the Administrator account.
