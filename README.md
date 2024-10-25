@@ -194,19 +194,43 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 
 ![8CreatePW](https://github.com/user-attachments/assets/421ddd24-bff4-4f9b-a388-540c55b687d0)
 
-
-
-
 ### Step 7: Configure Windows Server 2022
 1. Press **Ctrl+Delete** on the login screen.
    - Enter the **Administrator password** you set up in the previous step.
    - Click **Enter** to log in.
-2. Once logged in, open **Server Manager** for initial configurations:
+2. Once the VM is running, go to the **VirtualBox menu** at the top of the VM window.
+Select **Devices** > **Insert Guest Additions CD Image**.
+   - This will insert the Guest Additions ISO file as a virtual CD drive in the VM.
+   - This will provide a better experience, allow for resolution adjustments, and eliminate display lag.
+
+![1InsertGuestAdds](https://github.com/user-attachments/assets/9f191893-e294-4f79-8ed7-0c74bc34fbcc)
+     
+3. Open **File Explorer**.
+
+![2GoToExplorer](https://github.com/user-attachments/assets/5cabe848-0b86-472a-a55a-9b40a512beaf)
+ 
+4. Run the Guest Additions Installer (Windows VM)
+Open File Explorer in the VM.
+Go to **CD Drive (D:)** and double-click on **VBoxWindowsAdditions-amd64.exe** to start the installer.
+
+![3RunVBGA](https://github.com/user-attachments/assets/51046e06-6348-442b-ae88-609d507ef0ac)
+
+
+
+Follow the installation prompts:
+Click Next in the installation wizard.
+Accept the license agreement.
+When prompted, click Install to begin the installation. Allow any security prompts to install VirtualBox drivers.  
+
+
+
+   
+3. Once logged in, open **Server Manager** for initial configurations:
    - Set a **static IP address**.
    - **Change the computer name** (optional).
    - **Enable Remote Desktop** (optional).
    - **Install Windows Updates**.
-3. Reboot if necessary.
+4. Reboot if necessary.
 
 ### Step 8: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
