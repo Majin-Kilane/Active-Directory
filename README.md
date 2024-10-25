@@ -216,7 +216,7 @@ Go to **CD Drive (D:)** and double-click on **VBoxWindowsAdditions-amd64.exe** t
 ![3RunVBGA](https://github.com/user-attachments/assets/51046e06-6348-442b-ae88-609d507ef0ac)
 
 Follow the installation prompts:
-   - Click Next in the installation wizard.
+   - Click **Next** in the installation wizard.
    - Accept the license agreement.
    - When prompted, click Install to begin the installation. Allow any security prompts to install VirtualBox drivers.  
 
@@ -226,14 +226,43 @@ Follow the installation prompts:
 
 ![4Reboot](https://github.com/user-attachments/assets/3359f724-54c7-4771-8ec4-e9751d817cca)
    
-3. Once logged in, open **Server Manager** for initial configurations:
-   - Set a **static IP address**.
+### Step 8:Set a Static IP Address on Windows Server 2022
+1. Once logged in, open **Server Manager** and go to Local Server.
+
+![1SetNetAdaptor](https://github.com/user-attachments/assets/82582324-5854-4931-a3df-4495af1bef65)
+  
+3. In the **Properties** section, click on **Ethernet** (or your network adapter name).
+
+![2SelectNetAdaptor](https://github.com/user-attachments/assets/72f8a4b0-e895-4748-8e27-02a0576d6fb7)
+   
+3. In the **Network Connections** window, right-click on your network adapter and select **Properties**.
+
+![3OpenProperties](https://github.com/user-attachments/assets/cb7fc5b7-f041-4ac5-a4d5-785180fbf4d1)
+
+4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
+
+![4SelectIPv4](https://github.com/user-attachments/assets/d3aad460-e17e-47b2-ac76-6c2b7ffe19f0)
+
+5. Choose **Use the following IP address** and enter the following details:
+   - **IP address**: Choose an IP, e.g., 192.168.1.10.
+   - **Subnet mask**: Use 255.255.255.0.
+   - Leave **Default gateway** and **DNS server** fields blank (for isolated networks).
+
+![5ChooseIP](https://github.com/user-attachments/assets/3af2cc8c-fd0c-4a4b-9a4a-c232fb4c7b36)
+
+9. Click **OK** to save settings.
+
+
+
+
+
+
    - **Change the computer name** (optional).
    - **Enable Remote Desktop** (optional).
    - **Install Windows Updates**.
 4. Reboot if necessary.
 
-### Step 8: Install Active Directory Domain Services (AD DS)
+### Step 9: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
 2. Select **Role-based or feature-based installation**, click **Next**.
 3. Select the server and click **Next**.
