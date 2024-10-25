@@ -182,6 +182,9 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 
 7. Select the virtual hard drive, click **Next**, and the installation will begin.
 
+![6SelectVHD](https://github.com/user-attachments/assets/767a4fe7-6a14-4d2f-87fb-a7af4c2874f5)
+
+
 ### Step 7: Configure Windows Server 2022
 1. After the installation completes, set a **strong password** for the Administrator account.
 2. Once logged in, open **Server Manager** for initial configurations:
