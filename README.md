@@ -220,8 +220,11 @@ Follow the installation prompts:
    - Accept the license agreement.
    - When prompted, click Install to begin the installation. Allow any security prompts to install VirtualBox drivers.  
 
+5. Restart the VM
+   - After installation, reboot the VM to activate the Guest Additions features.
+   - Click **Reboot Now**.
 
-
+![4Reboot](https://github.com/user-attachments/assets/3359f724-54c7-4771-8ec4-e9751d817cca)
    
 3. Once logged in, open **Server Manager** for initial configurations:
    - Set a **static IP address**.
