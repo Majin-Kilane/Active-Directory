@@ -198,6 +198,10 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 1. Press **Ctrl+Delete** on the login screen.
    - Enter the **Administrator password** you set up in the previous step.
    - Click **Enter** to log in.
+  
+
+-----**ADD LOGIN PAGE**------
+   
 2. Once the VM is running, go to the **VirtualBox menu** at the top of the VM window.
 Select **Devices** > **Insert Guest Additions CD Image**.
    - This will insert the Guest Additions ISO file as a virtual CD drive in the VM.
@@ -309,7 +313,11 @@ Follow the installation prompts:
    
 14. Follow the prompts to complete the domain controller configuration and restart the server.
 
----
+
+15. Once logged in, open **Server Manager** and go to **Local Server** to verify that the domain name was created.
+
+
+
 
 ## Installing Windows 10 on VirtualBox
 
