@@ -372,7 +372,6 @@ Follow the installation prompts:
 
 ![5Install](https://github.com/user-attachments/assets/4b16694e-ed1b-4864-89c0-ec0e07760174)
 
-
 ### Step 2: Configure Routing and Remote Access
 1. Once installed, go to **Tools** in Server Manager, then select **Routing and Remote Access**.
 . In the **Routing and Remote Access** window, right-click on your server name and select **Configure and Enable Routing and Remote Access**.
@@ -382,9 +381,12 @@ Follow the installation prompts:
    - This interface is typically the one with internet access.
 5. Select **Finish** to complete the configuration.
 
-
-
-
+### Step 2: Configure Internal Network Interface
+1. In the **Routing and Remote Access** window, expand your server node, then expand **IPv4**.
+2. Right-click **NAT** and select **New Interface**.
+3. Choose the network adapter connected to the internal network (private network) and click **OK**.
+4. In the **NAT Interface Properties** window, select **Private interface connected to private network** and check **Enable NAT on this interface**.
+5. Click **OK** to save the settings.
 
 
 
