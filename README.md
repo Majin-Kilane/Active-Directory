@@ -315,24 +315,25 @@ Follow the installation prompts:
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
 
-15. Click **Start**.
+15. Click **Start** and select **Administrative Tools**.
 
 ![19Start](https://github.com/user-attachments/assets/384b9000-95e5-450a-9d65-e23851e4edd3)
 
-16. 
+16. Select **Active Directory Users and Computers**.
+
 ![20ADUser Comp](https://github.com/user-attachments/assets/6bcab368-5607-4a5b-86ff-070156b11dbf)
-
-
-16. Once logged in, open **Server Manager** and go to **Local Server** to verify that the domain name was created.
-
-
 
 
 ## Configuring NAT on Windows Server 2022
 
+### Step 1: Open Computer Management
+1. Open Server **Manager**.
+2. In Server Manager, go to **Tools** and select **Computer Management**.
 
 
-
+### Step 2: Go to Local Users and Groups
+1. In the **Computer Management** window, expand **Local Users and Groups** on the left sidebar.
+2. Right-click on **Users** and select **New User**.
 
 
 ## Installing Windows 10 on VirtualBox
