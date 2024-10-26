@@ -324,16 +324,61 @@ Follow the installation prompts:
 ![20ADUser Comp](https://github.com/user-attachments/assets/6bcab368-5607-4a5b-86ff-070156b11dbf)
 
 
-## Configuring NAT on Windows Server 2022
+
 
 ### Step 1: Open Computer Management
 1. Open Server **Manager**.
 2. In Server Manager, go to **Tools** and select **Computer Management**.
 
-
 ### Step 2: Go to Local Users and Groups
 1. In the **Computer Management** window, expand **Local Users and Groups** on the left sidebar.
 2. Right-click on **Users** and select **New User**.
+
+### Step 3: Create a New User Account
+1. In the New User window, enter the following details:
+   - Username: The name you want to assign to the new admin account.
+   - Full Name: The full name of the user (optional).
+   - Description: Add a description (optional).
+   - Password: Set a strong password for the account.
+2. Uncheck User must change password at next logon if you do not want this prompt.
+3. Check Password never expires if you want the password to be static (optional).
+4. Click **Create**, then **Close** to complete the user creation.
+
+
+
+
+## Configuring NAT on Windows Server 2022
+
+### Step 1: Open Server Manager and Install the Routing and Remote Access Role
+1. Open **Server Manager**.
+2. Click **Manage** > **Add Roles and Features**.
+
+![1OpenServerMan](https://github.com/user-attachments/assets/6cf61bd4-2934-49c8-acbd-cc6625ce74c1)
+
+3. In the **Add Roles and Features Wizard**, click **Next** until you reach **Select Server Roles**.
+4. Check **Remote Access** and click **Next**.
+
+![3SelectRemoteAccess](https://github.com/user-attachments/assets/07821ecb-f140-455a-b308-269c873bda86)
+
+5. On the **Features** page, click **Next**.
+
+![2AddRolesFeature](https://github.com/user-attachments/assets/95c6e85a-aeed-48c0-9dc7-cb6f3b02f150)
+ 
+6. On the **Role Services** page, check **Routing**, then click **Next**.
+
+![4SelectRouting](https://github.com/user-attachments/assets/2ef59bd1-4153-444d-a655-0d582078c13b)  
+
+7. Click **Install** and wait for the installation to complete.
+
+![5Install](https://github.com/user-attachments/assets/4b16694e-ed1b-4864-89c0-ec0e07760174)
+
+
+
+
+
+
+
+
 
 
 ## Installing Windows 10 on VirtualBox
