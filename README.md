@@ -373,6 +373,16 @@ Follow the installation prompts:
 ![5Install](https://github.com/user-attachments/assets/4b16694e-ed1b-4864-89c0-ec0e07760174)
 
 
+### Step 2: Configure Routing and Remote Access
+1. Once installed, go to **Tools** in Server Manager, then select **Routing and Remote Access**.
+. In the **Routing and Remote Access** window, right-click on your server name and select **Configure and Enable Routing and Remote Access**.
+2. In the **Routing and Remote Access Server Setup Wizard**, click **Next**.
+3. Choose **Network Address Translation (NAT)** and click **Next**.
+4. Select the network adapter connected to the external network (public/internet) and click **Next**.
+   - This interface is typically the one with internet access.
+5. Select **Finish** to complete the configuration.
+
+
 
 
 
