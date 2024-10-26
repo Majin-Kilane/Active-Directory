@@ -256,13 +256,58 @@ Follow the installation prompts:
 
 ### Step 9: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
-2. Select **Role-based or feature-based installation**, click **Next**.
-3. Select the server and click **Next**.
-4. In the **Roles** section, select **Active Directory Domain Services** and click **Next**.
-5. Click **Install** to install the AD DS role.
-6. After installation, click **Promote this server to a domain controller**.
-7. In the AD DS configuration wizard, choose **Add a new forest** and enter a **domain name** (e.g., `example.com`).
-8. Follow the prompts to complete the domain controller configuration and restart the server.
+
+![1AddRoles](https://github.com/user-attachments/assets/c245ca51-424a-4032-9e1c-17e6a3e3ced3)
+ 
+2. Click **Next**.
+
+![2Next](https://github.com/user-attachments/assets/7ca87ca2-20d9-4ccb-b27b-c81650409f22)
+
+3. Select **Role-based or feature-based installation**, click **Next**.
+
+![2SelectRoleBased](https://github.com/user-attachments/assets/c8f67bc2-6428-4067-a858-b7afc554c3c6)
+
+4. Select the server and click **Next**.
+
+![3SelectServer](https://github.com/user-attachments/assets/f33c1889-faa4-447a-b94e-cb8331a79fec)
+
+5. In the **Server Roles** section, select **Active Directory Domain Services** and click **Next**.
+
+![5SelectADDS](https://github.com/user-attachments/assets/dd14748c-e497-4446-9a5e-23277d584e83)
+
+6. Click **Next**.
+ 
+![6Next](https://github.com/user-attachments/assets/a763de86-767f-4eb1-a303-578c75ff611c)
+
+7. Click **Next**.
+
+![7Next](https://github.com/user-attachments/assets/359c8998-f73d-4059-b251-afe1114a6800)
+ 
+8. Click **Install** to install the AD DS role.
+
+![8Install](https://github.com/user-attachments/assets/cea0f971-d581-4248-9cb8-1765e3c35802)
+
+9. After installation, click **Promote this server to a domain controller**.
+
+![10SelectPromoThisServer](https://github.com/user-attachments/assets/d7afc632-5e5a-40bd-98a1-38bfbe9f3e37)
+
+10. Click **Notification** icon.
+
+![9ClickNotificationsIcon](https://github.com/user-attachments/assets/f5f5d01c-ffb7-4f2b-aeab-555c97074a16)
+  
+11. In the AD DS configuration wizard, choose **Add a new forest** and enter a **domain name** (e.g., `mydomain.com`) and click **Next**.
+
+![11AddNewForest DomainName](https://github.com/user-attachments/assets/beaf343c-c532-4039-9963-a5285e7336d7)
+
+12. Create a password.
+
+![12CreatePW](https://github.com/user-attachments/assets/88ebdf9e-8246-4f3c-8000-a1ad72a56e30)
+
+13. Uncheck **Create DNS delegation** and press **Next**.
+
+![12UncheckCreateDNSDel](https://github.com/user-attachments/assets/9b1a2d6d-34cb-44b4-9071-2e543d242456)
+   
+14. Follow the prompts to complete the domain controller configuration and restart the server.
 
 ---
 
