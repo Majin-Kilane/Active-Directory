@@ -429,7 +429,7 @@ Follow the installation prompts:
 
 ![3Name](https://github.com/user-attachments/assets/8fc25266-d5b3-49c7-a052-997b7888a033)
 
-4. Allocate at least **2048 MB** of RAM (preferably 4096 MB).
+5. Allocate at least **2048 MB** of RAM (preferably 4096 MB).
 
 ![4Mem](https://github.com/user-attachments/assets/4355785e-569d-469f-ae8e-12629c10df6d)
 
