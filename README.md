@@ -400,15 +400,19 @@ Follow the installation prompts:
 
 ### Step 2: Configure Internal Network Interface
 1. In the **Routing and Remote Access** window, expand your server node, then expand **IPv4**.
-2. Right-click **NAT** and select **New Interface**.
+
+![2ExpandIPv4](https://github.com/user-attachments/assets/70c9170d-f928-4b08-90a0-ccde1fe99db3)
+   
+2. Right-click **NAT**.
 3. Choose the network adapter connected to the internal network (private network) and click **OK**.
-4. In the **NAT Interface Properties** window, select **Private interface connected to private network** and check **Enable NAT on this interface**.
-5. Click **OK** to save the settings.
 
+![3SelectInNet](https://github.com/user-attachments/assets/e5e23a14-781f-4a00-8bdf-f7ea00c6b2ae)
 
+4. In the **NAT Interface Properties** window, select **Private interface connected to private network** and check **Enable NAT on this interface** if it is not already selected.
 
+![4EnableNAT](https://github.com/user-attachments/assets/ec22eb52-bb5b-401e-a656-521752f09dfd)
 
-
+5. Click **Apply**, then **OK** to save the settings.
 
 ## Installing Windows 10 on VirtualBox
 
