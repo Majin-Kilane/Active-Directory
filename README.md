@@ -452,22 +452,23 @@ Follow the installation prompts:
 1. Specify the **Lease Duration**, which is how long a device can keep an IP address before it’s reassigned (default is 8 days).
 2. Click **Next**.
 
-### Step 8: Configure DHCP Options
+### Step 7: Configure DHCP Options
 1. You can now configure **DHCP options** (gateway, DNS servers, etc.):
    - **Router (Default Gateway)**: Enter the IP address of your network's default gateway (e.g., 192.168.1.1).
    - **DNS Servers**: Specify the IP address of DNS servers to use (e.g., 8.8.8.8 for Google DNS or your internal DNS server).
    - Click **Next** after each configuration option.
 
-### Step 9: Activate the DHCP Scope
+### Step 8: Activate the DHCP Scope
 1. At the **Activate Scope** step, select **Yes, I want to activate this scope now** and click **Next**.
 2. Click **Finish** to complete the setup.
 
-### Step 10: Verify DHCP Configuration
+### Step 9: Verify DHCP Configuration
 1. **Restart DHCP** services if necessary.
 2. Connect a client device to the network and check if it’s receiving an IP address from the DHCP server by running ipconfig on the client.
 
-## Installing Windows 10 on VirtualBox
 
+
+## Installing Windows 10 on VirtualBox
 ### Step 1: Download Windows 10 ISO
 - Visit the [Microsoft Windows 10 Download Page](https://www.microsoft.com/software-download/windows10) and download the ISO.
 
