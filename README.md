@@ -449,13 +449,36 @@ Follow the installation prompts:
 
 ### Step 4: Start the VM and Install Windows 10
 1. Click **Start** to boot the VM from the ISO.
+
+![1Start](https://github.com/user-attachments/assets/ac185362-a17a-445d-9ef2-e2dbf1b0be92)
+   
 2. In the **Windows Setup** screen, choose your **language**, **time**, and **keyboard layout**.
+
+![2ChooseLang](https://github.com/user-attachments/assets/1742c03e-2b8f-4baa-b9c4-dfce6c36098f)
+
 3. Click **Install Now**.
+
+
+
 4. Enter a **product key** or select **I don’t have a product key** to skip.
-5. Choose the Windows 10 edition to install and click **Next**.
+
+![3Product](https://github.com/user-attachments/assets/ee22cfcf-a00d-47bb-829b-5dc54567e244)
+
+5. Choose the Windows 10 Home to install and click **Next**.
+
+![4windows10](https://github.com/user-attachments/assets/894dbbb3-4d10-4a18-915d-07d958b6666d)
+
 6. Accept the license agreement.
+
+![5Accept](https://github.com/user-attachments/assets/474d60e4-671a-443b-83b2-85559ddf5cdb)
+
 7. Select **Custom: Install Windows only**.
+
+![6Custom](https://github.com/user-attachments/assets/af1c1b76-48d3-4614-9e8f-b693f709da50)
+
 8. Choose the virtual hard drive you created and click **Next** to begin the installation.
+
+![7ChooseVHD](https://github.com/user-attachments/assets/dbec21c7-ffcf-4eb7-b274-fda257eb9b9a)
 
 ### Step 5: Configure Windows 10
 1. Once the installation completes, set up your **user account**, **region**, and **network settings**.
