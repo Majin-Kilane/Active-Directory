@@ -414,6 +414,58 @@ Follow the installation prompts:
 
 5. Click **Apply**, then **OK** to save the settings.
 
+
+## Setting Up a DHCP Server on Windows Server 2022
+### Step 1: Open Server Manager and Add Roles and Features
+1. Log in to **Windows Server 2022** with an account that has administrative privileges.
+2. Open **Server Manager**.
+3. Click **Manage** > **Add Roles and Features**.
+4. In the **Add Roles and Features Wizard**, click **Next** through the introductory screens until you reach the **Server Roles** section.
+
+### Step 2: Install the DHCP Server Role
+1. In **Server Roles**, check **DHCP Server **and click **Next**.
+2. Continue through the wizard, leaving the default settings, and click **Install** on the confirmation screen.
+3. Wait for the installation to complete, then click **Close**.
+
+### Step 3: Complete DHCP Configuration
+1. After installation, go back to **Server Manager**.
+2. At the top, you should see a notification flag; click it and select **Complete DHCP Configuration**.
+3. In the **DHCP Post-Install Configuration Wizard**, click **Next**.
+4. Choose to **Use the following user account** (usually the default network service account) and click **Next**.
+5. Click **Commit** to apply the configuration and then Close.
+
+### Step 4: Open DHCP Management Console and Create a New Scope
+1. In **Server Manager**, go to **Tools** and select **DHCP** to open the DHCP management console.
+2. In the DHCP console, expand your **Server Name** and right-click on **IPv4**.
+3. Select **New Scope** to launch the **New Scope Wizard**.
+
+### Step 5: Configure the DHCP Scope
+1. In the **New Scope Wizard**, click **Next**.
+2. Enter a **Name** and optional **Description** for the scope (e.g., "Office Network").
+3. Specify the **IP Address Range**:
+   - **Start IP Address**: The first IP in the range (e.g., 192.168.1.100).
+   - **End IP Address**: The last IP in the range (e.g., 192.168.1.200).
+   - **Subnet Mask**: Based on your network (e.g., 255.255.255.0).
+4. Click **Next**.
+
+### Step 6: Set Lease Duration
+1. Specify the **Lease Duration**, which is how long a device can keep an IP address before it’s reassigned (default is 8 days).
+2. Click **Next**.
+
+### Step 8: Configure DHCP Options
+1. You can now configure **DHCP options** (gateway, DNS servers, etc.):
+   - **Router (Default Gateway)**: Enter the IP address of your network's default gateway (e.g., 192.168.1.1).
+   - **DNS Servers**: Specify the IP address of DNS servers to use (e.g., 8.8.8.8 for Google DNS or your internal DNS server).
+   - Click **Next** after each configuration option.
+
+### Step 9: Activate the DHCP Scope
+1. At the **Activate Scope** step, select **Yes, I want to activate this scope now** and click **Next**.
+2. Click **Finish** to complete the setup.
+
+### Step 10: Verify DHCP Configuration
+1. **Restart DHCP** services if necessary.
+2. Connect a client device to the network and check if it’s receiving an IP address from the DHCP server by running ipconfig on the client.
+
 ## Installing Windows 10 on VirtualBox
 
 ### Step 1: Download Windows 10 ISO
@@ -458,7 +510,7 @@ Follow the installation prompts:
 
 3. Click **Install Now**.
 
-
+----Insert Image----
 
 4. Enter a **product key** or select **I don’t have a product key** to skip.
 
