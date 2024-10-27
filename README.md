@@ -72,7 +72,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 
 1. Open **VirtualBox** and click **New**.
 
-![0](https://github.com/user-attachments/assets/7ea7778f-6e38-4aa7-8652-16d7f973a503)
+![0New](https://github.com/user-attachments/assets/ce5839d8-8203-434d-8e76-1fcf4d850e93)
 
 *Ref 3: Creating New Windows Server VM*
   
@@ -116,7 +116,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 
 *Ref 3: Select Server ISO*
    
-4. Click **OK**.
+4. Click **Finish**.
 
 ### Step 4: Configure NAT Network for Internet Access
 By default, VirtualBox uses NAT for internet access. This allows the DC to access the internet.
@@ -421,11 +421,23 @@ Follow the installation prompts:
 
 ### Step 2: Create a New Virtual Machine for Windows 10
 1. Open **VirtualBox** and click **New**.
+
+![0New](https://github.com/user-attachments/assets/0de0b4d9-2a91-44fb-be14-b24e6e0c44bc)
+
 2. Name the VM (e.g., **Windows 10**).
 3. Set **Type** to **Microsoft Windows** and **Version** to **Windows 10 (64-bit)**.
+
+![2Name](https://github.com/user-attachments/assets/a1b5582a-4027-488d-a06e-68ce039b713c)
+
 4. Allocate at least **2048 MB** of RAM (preferably 4096 MB).
+
+![3Mem](https://github.com/user-attachments/assets/8d01b64a-5ac6-4145-93f2-43614817941d)
+
 5. Create a **Virtual Hard Disk** with at least **50 GB** of storage.
-6. Click **Create**.
+
+![4VHD](https://github.com/user-attachments/assets/5e06f835-671f-4a15-a455-0410c249056d)
+
+6. Click **Finish**.
 
 ### Step 3: Mount Windows 10 ISO
 1. Select the **Windows 10 VM** in VirtualBox and click **Settings**.
