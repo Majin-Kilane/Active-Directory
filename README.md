@@ -116,7 +116,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 
 *Ref 3: Select Server ISO*
    
-4. Click **Finish**.
+4. Click **OK**.
 
 ### Step 4: Configure NAT Network for Internet Access
 By default, VirtualBox uses NAT for internet access. This allows the DC to access the internet.
