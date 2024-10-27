@@ -427,23 +427,25 @@ Follow the installation prompts:
 2. Name the VM (e.g., **Windows 10**).
 3. Set **Type** to **Microsoft Windows** and **Version** to **Windows 10 (64-bit)**.
 
-![2Name](https://github.com/user-attachments/assets/a1b5582a-4027-488d-a06e-68ce039b713c)
+![3Name](https://github.com/user-attachments/assets/8fc25266-d5b3-49c7-a052-997b7888a033)
 
 4. Allocate at least **2048 MB** of RAM (preferably 4096 MB).
 
-![3Mem](https://github.com/user-attachments/assets/8d01b64a-5ac6-4145-93f2-43614817941d)
+![4Mem](https://github.com/user-attachments/assets/4355785e-569d-469f-ae8e-12629c10df6d)
 
 5. Create a **Virtual Hard Disk** with at least **50 GB** of storage.
 
-![4VHD](https://github.com/user-attachments/assets/5e06f835-671f-4a15-a455-0410c249056d)
+![5VHD](https://github.com/user-attachments/assets/0d6d3faa-e2ee-42ca-99ee-7c6eccb18f0c)
 
 6. Click **Finish**.
 
 ### Step 3: Mount Windows 10 ISO
-1. Select the **Windows 10 VM** in VirtualBox and click **Settings**.
-2. Go to **Storage**, click the **Empty** disk under **Controller: IDE**, and select **Choose a disk file**.
-3. Browse and select the **Windows 10 ISO** you downloaded.
-4. Click **OK**.
+1. Go to **Storage**, click the **Empty** disk under **Controller: IDE**, and select **Choose a disk file**.
+2. Browse and select the **Windows 10 ISO** you downloaded.
+
+![6ChooseDisk](https://github.com/user-attachments/assets/f4dc82cb-8d21-4cbd-a5c1-a24e31e4c901)
+
+3. Click **OK**.
 
 ### Step 4: Start the VM and Install Windows 10
 1. Click **Start** to boot the VM from the ISO.
