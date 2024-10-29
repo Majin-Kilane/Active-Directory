@@ -422,17 +422,24 @@ Follow the installation prompts:
 3. Click **Manage** > **Add Roles and Features**.
 4. In the **Add Roles and Features Wizard**, click **Next** through the introductory screens until you reach the **Server Roles** section.
 
+--
+   
+
 ### Step 2: Install the DHCP Server Role
 1. In **Server Roles**, check **DHCP Server **and click **Next**.
 2. Continue through the wizard, leaving the default settings, and click **Install** on the confirmation screen.
 3. Wait for the installation to complete, then click **Close**.
 
+--
+
 ### Step 3: Complete DHCP Configuration
 1. After installation, go back to **Server Manager**.
 2. At the top, you should see a notification flag; click it and select **Complete DHCP Configuration**.
-3. In the **DHCP Post-Install Configuration Wizard**, click **Next**.
-4. Choose to **Use the following user account** (usually the default network service account) and click **Next**.
-5. Click **Commit** to apply the configuration and then Close.
+
+--
+4. In the **DHCP Post-Install Configuration Wizard**, click **Next**.
+5. Choose to **Use the following user account** (usually the default network service account) and click **Next**.
+6. Click **Commit** to apply the configuration and then Close.
 
 ### Step 4: Open DHCP Management Console and Create a New Scope
 1. In **Server Manager**, go to **Tools** and select **DHCP** to open the DHCP management console.
