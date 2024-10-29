@@ -15,7 +15,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 - Skills in configuring DNS, which is closely tied to AD, to resolve domains names and ensure properAD functionality.
 - Configuring AD and dealing with IP ranges, DHCP, and subnetting.
 - Understanding and managing permissions for files, folders, and other network resources.
-- configuring auditing policies to trackuser activities, login attempts, and changes in AD objects.
+- Configuring auditing policies to trackuser activities, login attempts, and changes in AD objects.
 - Implementing security best practices such as least privilege, user account control, and securing AD.
 
 ## Tools Used
