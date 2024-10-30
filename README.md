@@ -486,13 +486,20 @@ Follow the installation prompts:
 ### Step 7: Configure DHCP Options
 1. You can now configure **DHCP options** (gateway, DNS servers, etc.):
    - **Router (Default Gateway)**: Enter the IP address of your network's default gateway (e.g., 192.168.1.1).
+  
+![12AddDefaultGateway](https://github.com/user-attachments/assets/c55ef7fa-909e-4130-b233-8076cfe6f742)
+
    - **DNS Servers**: Specify the IP address of DNS servers to use (e.g., 8.8.8.8 for Google DNS or your internal DNS server).
+
+![13AddDNS](https://github.com/user-attachments/assets/321716af-7f17-4014-805e-b4cc2aaadf4e)
+
    - Click **Next** after each configuration option.
 
 ### Step 8: Activate the DHCP Scope
 1. At the **Activate Scope** step, select **Yes, I want to activate this scope now** and click **Next**.
 
-----
+![14ActivateScope](https://github.com/user-attachments/assets/8f6a7255-85e0-4fe0-9cf7-09e8048fee0b)
+
 2. Click **Finish** to complete the setup.
 
 ### Step 9: Verify DHCP Configuration
