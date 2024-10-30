@@ -540,7 +540,17 @@ Follow the installation prompts:
 
 3. Click **OK**.
 
-### Step 4: Start the VM and Install Windows 10
+### Step 4: Configure Network for Internet Access
+This allows the Windows 10 client to access the internet using the Domain Controller as the Gateway.
+
+1. Select the Windows 10 VM to configure NAT and click Settings.
+2. Under **Adapter 1** (or any available adapter):
+   - Ensure **Enable Network Adapter** is checked.
+   - In the **Attached to** dropdown, select **Internal Network**.
+
+![SelectIntNetwork](https://github.com/user-attachments/assets/2f17f690-9d8a-4377-b96c-28a5747193bb)
+
+### Step 5: Start the VM and Install Windows 10
 1. Click **Start** to boot the VM from the ISO.
 
 ![1Start](https://github.com/user-attachments/assets/ac185362-a17a-445d-9ef2-e2dbf1b0be92)
@@ -573,7 +583,7 @@ Follow the installation prompts:
 
 ![7ChooseVHD](https://github.com/user-attachments/assets/dbec21c7-ffcf-4eb7-b274-fda257eb9b9a)
 
-### Step 5: Configure Windows 10
+### Step 6: Configure Windows 10
 1. Once the installation completes, set up your **user account**, **region**, and **network settings**.
 2. Follow the prompts to complete the Windows 10 setup.
 
