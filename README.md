@@ -414,7 +414,6 @@ Follow the installation prompts:
 
 5. Click **Apply**, then **OK** to save the settings.
 
-
 ## Setting Up a DHCP Server on Windows Server 2022
 ### Step 1: Open Server Manager and Add Roles and Features
 1. Log in to **Windows Server 2022** with an account that has administrative privileges.
@@ -569,7 +568,7 @@ This allows the Windows 10 client to access the internet using the Domain Contro
 
 5. Choose the Windows 10 Home to install and click **Next**.
 
-![4windows10](https://github.com/user-attachments/assets/894dbbb3-4d10-4a18-915d-07d958b6666d)
+![4windows10](https://github.com/user-attachments/assets/451126da-802d-4284-a3c4-e7516557141f)
 
 6. Accept the license agreement.
 
@@ -587,14 +586,14 @@ This allows the Windows 10 client to access the internet using the Domain Contro
 1. Once the installation completes, set up your **user account**, **region**, and **network settings**.
 2. Follow the prompts to complete the Windows 10 setup.
 
-### Step 6: Join Windows 10 to the Active Directory Domain
-1. In Windows 10, open **File Explorer**, right-click **This PC**, and choose **Properties**.
-2. Click **Change settings** next to the computer name.
-3. Click **Change** and under **Member of**, select **Domain**.
-4. Enter the **domain name** (e.g., `example.com`).
-5. When prompted, enter the **Administrator** username and password of your Windows Server domain.
-6. Restart the Windows 10 VM to complete the domain join.
+### Step 7: Verify if Windows 10 client is domain joined and allocated an IP address from the DHCP Server
+1. The **Windows 10 client** is joined to the domain. Note **mydomain.com** in the Network tab.
+2. Press **Yes**.
 
+![1DJGW](https://github.com/user-attachments/assets/3ee452ee-2356-47ad-b172-7ab9e4fc6ce8)
+
+3. In **Windows Server 2022**, go to **Server Manager** > **Tools** and select **DHCP** to open the DHCP management console.
+4. 
 ---
 
 ## Conclusion
