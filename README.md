@@ -419,18 +419,21 @@ Follow the installation prompts:
 ### Step 1: Open Server Manager and Add Roles and Features
 1. Log in to **Windows Server 2022** with an account that has administrative privileges.
 2. Open **Server Manager**.
-3. Click **Manage** > **Add Roles and Features**.
+3. Click **Add Roles and Features**.
 4. In the **Add Roles and Features Wizard**, click **Next** through the introductory screens until you reach the **Server Roles** section.
 
---
-   
+![1Add](https://github.com/user-attachments/assets/a30e6115-a67a-421d-a61f-ff2ecd715bbd)
 
 ### Step 2: Install the DHCP Server Role
-1. In **Server Roles**, check **DHCP Server **and click **Next**.
-2. Continue through the wizard, leaving the default settings, and click **Install** on the confirmation screen.
-3. Wait for the installation to complete, then click **Close**.
+1. In **Server Roles**, check **DHCP Server** and click **Next**.
 
---
+![2DHCP](https://github.com/user-attachments/assets/1f58a41f-b46e-47c3-821b-6d2ff8d8dae1)
+
+2. Continue through the wizard, leaving the default settings, and click **Install** on the confirmation screen.
+
+![3Install](https://github.com/user-attachments/assets/990f1658-032e-4bb6-8f4e-8af179b7808d)
+
+3. Wait for the installation to complete, then click **Close**.
 
 ### Step 3: Complete DHCP Configuration
 1. After installation, go back to **Server Manager**.
@@ -440,6 +443,8 @@ Follow the installation prompts:
 4. In the **DHCP Post-Install Configuration Wizard**, click **Next**.
 5. Choose to **Use the following user account** (usually the default network service account) and click **Next**.
 6. Click **Commit** to apply the configuration and then Close.
+
+--
 
 ### Step 4: Open DHCP Management Console and Create a New Scope
 1. In **Server Manager**, go to **Tools** and select **DHCP** to open the DHCP management console.
