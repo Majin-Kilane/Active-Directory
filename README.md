@@ -62,7 +62,6 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 ---
 
 ## Installing and Configuring Windows Server 2022
-
 ### Step 1: Download Windows Server 2022 ISO
 - Visit the [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022) and download the Windows Server 2022 ISO.
 
@@ -324,28 +323,37 @@ Follow the installation prompts:
 ![20ADUser Comp](https://github.com/user-attachments/assets/6bcab368-5607-4a5b-86ff-070156b11dbf)
 
 
+## Create Users (Manually and in Bulk)
+### Step 1: Create a New Administrator User Account
+1. Click **Start** > **Windows Administrative Tools** > **Active directory Users and Computers**.
 
+![1Start](https://github.com/user-attachments/assets/6d9648a2-521c-414b-8b69-e0e5d8c530a4)
 
-### Step 1: Open Computer Management
-1. Open Server **Manager**.
-2. In Server Manager, go to **Tools** and select **Computer Management**.
+2. Open **Administrators**, right-click and select **New** > **Users**.
 
-### Step 2: Go to Local Users and Groups
-1. In the **Computer Management** window, expand **Local Users and Groups** on the left sidebar.
-2. Right-click on **Users** and select **New User**.
+![2CreateAdminUser](https://github.com/user-attachments/assets/ee488336-1f72-43ff-90ca-891d6a2a310f)
 
-### Step 3: Create a New User Account
-1. In the New User window, enter the following details:
+3. In the New User window, enter the following details:
    - Username: The name you want to assign to the new admin account.
-   - Full Name: The full name of the user (optional).
+   - Full Name: The full name of the user.
+
+![3EnterDetails](https://github.com/user-attachments/assets/b161030d-aac3-4466-af90-abc3b692f83e)
+
    - Description: Add a description (optional).
    - Password: Set a strong password for the account.
-2. Uncheck User must change password at next logon if you do not want this prompt.
-3. Check Password never expires if you want the password to be static (optional).
-4. Click **Create**, then **Close** to complete the user creation.
+4. Uncheck User must change password at next logon if you do not want this prompt.
+5. Check Password never expires if you want the password to be static (optional).
+6. Click **Finish** to complete the user creation.
+
+![4Finish](https://github.com/user-attachments/assets/64f68f06-2223-49a5-aeb9-54dbbcb4f2cc)
+
+7. Navigate to the **Administrator** OU/ folder to verify if the user was created.
+
+![5UserCreated](https://github.com/user-attachments/assets/d8393915-d4ac-47e5-b7cb-a38a49948504)
 
 
-
+### Step 2: Create Bulk users
+1: Open 
 
 ## Configuring NAT on Windows Server 2022
 
