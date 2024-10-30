@@ -586,14 +586,27 @@ This allows the Windows 10 client to access the internet using the Domain Contro
 1. Once the installation completes, set up your **user account**, **region**, and **network settings**.
 2. Follow the prompts to complete the Windows 10 setup.
 
-### Step 7: Verify if Windows 10 client is domain joined and allocated an IP address from the DHCP Server
+### Step 7: Verify that the Windows 10 client is domain-joined and has been allocated an IP address from the DHCP server
 1. The **Windows 10 client** is joined to the domain. Note **mydomain.com** in the Network tab.
 2. Press **Yes**.
 
 ![1DJGW](https://github.com/user-attachments/assets/3ee452ee-2356-47ad-b172-7ab9e4fc6ce8)
 
-3. In **Windows Server 2022**, go to **Server Manager** > **Tools** and select **DHCP** to open the DHCP management console.
-4. 
+3. Go to the **Search bar** then type **Powershell** and click **Open**.
+
+![RunPowershell](https://github.com/user-attachments/assets/da8a530a-8481-4795-b449-211419462123)
+
+4. Type **ipconfig** to verify network settings.
+5. The **Windows 10 client** has been allocated the IP address 192.168.1.100 and uses the Domain Controller as its default gateway, set to 192.168.1.10.
+6. To check if the client can connect to the internet, type the **ping** command followed by www.google.com and verify the connection.
+
+![IpconfigPing](https://github.com/user-attachments/assets/31652418-56f1-4957-9916-a8dc13388ce6)
+
+7. In **Windows Server 2022**, go to **Server Manager** > **Tools** and select **DHCP** to open the DHCP management console.
+8.  Click **IPv4** > **Address Leases** to verify that the **Windows 10 client** is joined to the domain.
+
+![2IPaddedInLease](https://github.com/user-attachments/assets/ca08fecb-d90b-41e0-8929-993b92502bc0)
+
 ---
 
 ## Conclusion
