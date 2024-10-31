@@ -355,21 +355,20 @@ Follow the installation prompts:
 
 ![6finish](https://github.com/user-attachments/assets/8e77b88b-1881-4ba0-9f76-1bbb5c84fcea)
 
-### Step 11: Configure Internal Network Interface
-1. In the **Routing and Remote Access** window, expand your server node, then expand **IPv4**.
+14. In the **Routing and Remote Access** window, expand your server node, then expand **IPv4**.
 
 ![2ExpandIPv4](https://github.com/user-attachments/assets/70c9170d-f928-4b08-90a0-ccde1fe99db3)
    
-2. Right-click **NAT**.
-3. Choose the network adapter connected to the internal network (private network) and click **OK**.
+15. Right-click **NAT**.
+16. Choose the network adapter connected to the internal network (private network) and click **OK**.
 
 ![3SelectInNet](https://github.com/user-attachments/assets/e5e23a14-781f-4a00-8bdf-f7ea00c6b2ae)
 
-4. In the **NAT Interface Properties** window, select **Private interface connected to private network** and check **Enable NAT on this interface** if it is not already selected.
+17. In the **NAT Interface Properties** window, select **Private interface connected to private network** and check **Enable NAT on this interface** if it is not already selected.
 
 ![4EnableNAT](https://github.com/user-attachments/assets/ec22eb52-bb5b-401e-a656-521752f09dfd)
 
-5. Click **Apply**, then **OK** to save the settings.
+18. Click **Apply**, then **OK** to save the settings.
 
 ## Setting Up a DHCP Server on Windows Server 2022
 ### Step 1: Open Server Manager and Add Roles and Features
