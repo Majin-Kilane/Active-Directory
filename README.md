@@ -325,23 +325,23 @@ Group Policy changes will apply automatically, but you can force an immediate up
 ![gupdatepowershellcommand](https://github.com/user-attachments/assets/9584b35b-d334-4eae-8e7e-d007785327be)
 
 ### Step 10: Enable Auditing and Logging on Windows Server 2022
-1. In Group Policy Management, expand your domain.
-2. Right-click on Default Domain Policy (or create a new GPO if you prefer not to use the default policy) and select Edit.
+1. In **Group Policy Management**, expand your domain.
+2. Right-click on **Default Domain Policy** (or create a new GPO if you prefer not to use the default policy) and select **Edit**.
 3. In the Group Policy Management Editor, go to:
-Computer Configuration > Policies > Windows Settings > Security Settings > Advanced Audit Policy Configuration > Audit Policies.
-4. Go to Account Logon and enable Audit Credential Validation.
+**Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Advanced Audit Policy Configuration** > **Audit Policies**.
+4. Go to **Account Logon** and enable **Audit Credential Validation**.
    - This logs successful and failed login attempts.
-5. In Account Management, enable Audit User Account Management and Audit Security Group Management.
+5. In **Account Management**, enable **Audit User Account Management** and Audit **Security Group Management**.
    - These settings track changes to user accounts and security groups.
-6. In Logon/Logoff, enable Audit Logon and Audit Logoff.
+6. In **Logon/Logoff**, enable **Audit Logon** and **Audit Logoff**.
    - This logs successful and failed logon attempts for tracking user access times.
-7. Enable Audit File System and Audit Registry under Object Access.
-This setting logs access to files and registry entries, helpful for tracking data access and modifications.
-8. Enable Audit Audit Policy Change and Audit Authentication Policy Change.
-This logs any changes to audit policies and authentication settings.
-9. Enable Audit Sensitive Privilege Use to log events where high-level permissions are used (e.g., backup, restore).
-10. Go to Security Settings > Local Policies > Audit Policy.
-Enable Audit account logon events, Audit account management, and Audit policy change for both Success and Failure to capture a comprehensive log.
+7. Enable **Audit File System** and **Audit Registry** under Object Access.
+   - This setting logs access to files and registry entries, helpful for tracking data access and modifications.
+8. **Enable Audit Audit Policy Change** and **Audit Authentication Policy Change**.
+   - This logs any changes to audit policies and authentication settings.
+9. Enable **Audit Sensitive Privilege Use** to log events where high-level permissions are used (e.g., backup, restore).
+10. Go to **Security Settings** > **Local Policies** > **Audit Policy**.
+Enable **Audit account logon events**, **Audit account management**, and **Audit policy change** for both **Success** and **Failure** to capture a comprehensive log.
 11. Close the **Group Policy Management Editor**.
 12. To apply the policy immediately, open **Command Prompt** and run:
 
