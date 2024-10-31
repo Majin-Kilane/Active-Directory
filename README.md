@@ -308,61 +308,13 @@ Follow the installation prompts:
 
 15. Click **Start** and select **Administrative Tools**.
 
-
-
-
-
-## Configuring Security in Windows Server 2022
-### Step 1: Update the Server
-1. Open **Server Manager**.
-2. Go to **Local Server** and click on **Windows Update**.
-3. Check for updates, download, and install any critical and security updates to ensure the server is protected against known vulnerabilities.
-
-### Step 2: Configure Windows Firewall
-1. Open **Server Manager** and select **Tools** > **Windows Defender Firewall with Advanced Security**.
-2. Configure Inbound and Outbound rules to allow only necessary traffic.
-3. Enable logging in the firewall settings to monitor suspicious connections.
-
-
 ![19Start](https://github.com/user-attachments/assets/384b9000-95e5-450a-9d65-e23851e4edd3)
 
 16. Select **Active Directory Users and Computers**.
 
 ![20ADUser Comp](https://github.com/user-attachments/assets/6bcab368-5607-4a5b-86ff-070156b11dbf)
 
-
-## Create Users (Manually and in Bulk)
-### Step 1: Create a New Administrator User Account
-1. Click **Start** > **Windows Administrative Tools** > **Active directory Users and Computers**.
-
-![1Start](https://github.com/user-attachments/assets/6d9648a2-521c-414b-8b69-e0e5d8c530a4)
-
-2. Open **Administrators**, right-click and select **New** > **Users**.
-
-![2CreateAdminUser](https://github.com/user-attachments/assets/ee488336-1f72-43ff-90ca-891d6a2a310f)
-
-3. In the New User window, enter the following details:
-   - Username: The name you want to assign to the new admin account.
-   - Full Name: The full name of the user.
-
-![3EnterDetails](https://github.com/user-attachments/assets/b161030d-aac3-4466-af90-abc3b692f83e)
-
-   - Description: Add a description (optional).
-   - Password: Set a strong password for the account.
-4. Uncheck User must change password at next logon if you do not want this prompt.
-5. Check Password never expires if you want the password to be static (optional).
-6. Click **Finish** to complete the user creation.
-
-![4Finish](https://github.com/user-attachments/assets/64f68f06-2223-49a5-aeb9-54dbbcb4f2cc)
-
-7. Navigate to the **Administrator** OU/ folder to verify if the user was created.
-
-![5UserCreated](https://github.com/user-attachments/assets/d8393915-d4ac-47e5-b7cb-a38a49948504)
-
-
-### Step 2: Create Bulk users
-1: Open 
-
+-----
 ## Configuring NAT on Windows Server 2022
 
 ### Step 1: Open Server Manager and Install the Routing and Remote Access Role
