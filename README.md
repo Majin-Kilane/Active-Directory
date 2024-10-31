@@ -1,9 +1,8 @@
 ## Lab Infrastructure Overview
 
-![Infrastructure Diagram](infrastructure-diagram.png)
+![Active Directory drawio (4)](https://github.com/user-attachments/assets/a84c2fe8-dcda-413e-a8ab-5cfa97fa7ed3)
 
 *Figure 1: Active Directory Lab Infrastructure Diagram*
-
 
 
 # Active-Directory
@@ -50,10 +49,6 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 - Download the installer for your operating system (Windows, macOS, or Linux).
 
 ### Step 2: Install VirtualBox
-*Ref 1: Network Diagram* 
-
-
-
 1. Run the downloaded installer.
 2. In the setup wizard:
    - Click **Next** on the welcome screen.
