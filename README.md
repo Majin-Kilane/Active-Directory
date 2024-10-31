@@ -401,30 +401,28 @@ Follow the installation prompts:
 
 ![6Close](https://github.com/user-attachments/assets/c80c2b7a-57c4-48ce-b4c7-d7546cd5cd86)
    
-### Step 4: Open DHCP Management Console and Create a New Scope
 14. In **Server Manager**, go to **Tools** and select **DHCP** to open the DHCP management console.
 
 ![7Tools](https://github.com/user-attachments/assets/4a1a257f-9825-4f8b-bb51-ebcc96c07fd0)
 
-2. In the DHCP console, expand your **Server Name** and right-click on **IPv4**.
-3. Select **New Scope** to launch the **New Scope Wizard**.
+15. In the DHCP console, expand your **Server Name** and right-click on **IPv4**.
+16. Select **New Scope** to launch the **New Scope Wizard**.
 
 ![8NewScope](https://github.com/user-attachments/assets/2362bd6b-0ed5-44ae-a552-277365454f41)
 
-### Step 5: Configure the DHCP Scope
-1. In the **New Scope Wizard**, click **Next**.
-2. Enter a **Name** and optional **Description** for the scope (e.g., "Office Network").
+17. In the **New Scope Wizard**, click **Next**.
+18. Enter a **Name** and optional **Description** for the scope (e.g., "Office Network").
 
 ![9AddName](https://github.com/user-attachments/assets/69e3d57c-93f7-4665-9076-965869c93164)
 
-3. Specify the **IP Address Range**:
+19. Specify the **IP Address Range**:
    - **Start IP Address**: The first IP in the range (e.g., 192.168.1.100).
    - **End IP Address**: The last IP in the range (e.g., 192.168.1.200).
    - **Subnet Mask**: Based on your network (e.g., 255.255.255.0).
   
 ![10SpecifyIP](https://github.com/user-attachments/assets/2dd61190-5032-4689-bae9-49353fc4139d)
 
-4. Click **Next**.
+20. Click **Next**.
 
 ### Step 6: Set Lease Duration
 1. Specify the **Lease Duration**, which is how long a device can keep an IP address before it’s reassigned (default is 8 days).
