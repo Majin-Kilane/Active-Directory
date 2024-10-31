@@ -424,15 +424,13 @@ Follow the installation prompts:
 
 20. Click **Next**.
 
-### Step 6: Set Lease Duration
-1. Specify the **Lease Duration**, which is how long a device can keep an IP address before it’s reassigned (default is 8 days).
+21. Specify the **Lease Duration**, which is how long a device can keep an IP address before it’s reassigned (default is 8 days).
 
 ![11Lease](https://github.com/user-attachments/assets/e4d4cdaa-c4e6-48f4-bcf5-864e4b791dc3)
 
-2. Click **Next**.
+22. Click **Next**.
 
-### Step 7: Configure DHCP Options
-1. You can now configure **DHCP options** (gateway, DNS servers, etc.):
+23. You can now configure **DHCP options** (gateway, DNS servers, etc.):
    - **Router (Default Gateway)**: Enter the IP address of your network's default gateway.
   
 ![12AddDefaultGateway](https://github.com/user-attachments/assets/c55ef7fa-909e-4130-b233-8076cfe6f742)
