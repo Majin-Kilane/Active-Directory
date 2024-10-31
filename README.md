@@ -306,9 +306,8 @@ Follow the installation prompts:
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
 
-## Configuring NAT on Windows Server 2022
 
-### Step 1: Open Server Manager and Install the Routing and Remote Access Role
+### Step 10: Install the Routing and Remote Access Role
 1. Login.
 2. Open **Server Manager**.
 3. Click **Manage** > **Add Roles and Features**.
