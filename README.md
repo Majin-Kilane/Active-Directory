@@ -280,14 +280,15 @@ Follow the installation prompts:
    - **Minimum Password Length** (e.g., 8-12 characters).
    - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
 
-### Step 3: Configure Account Lockout Policy
-Log into your Windows Server 2022 as an administrator.
-Open Server Manager.
-Go to Tools and select Group Policy Management.
-
-
-
-
+### Step 6: Configure Account Lockout Policy
+1. Open **Server Manager**.
+2. Go to **Tools** and select **Group Policy Management**.
+3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
+4. Select your domain name (e.g., mydomain.local).
+5. Right-click on the **Default Domain Policy** and choose **Edit**.
+   -Note: It’s best to apply this policy at the domain level to ensure it affects all users across the     domain.
+6. In the Group Policy Management Editor window, go to:
+   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**.
 
 
 
