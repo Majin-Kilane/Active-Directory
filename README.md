@@ -249,6 +249,31 @@ Follow the installation prompts:
    - **Enable Remote Desktop** (optional).
 7. Reboot if necessary.
 
+
+
+
+
+### Step 5: Configure Password Policies
+1. In the **Default Domain Policy**, go to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**.
+2. Define password policies, such as:
+   - **Enforce Password History** (e.g., 24 passwords).
+   - **Maximum Password Age** (e.g., 60 days).
+   - **Minimum Password Length** (e.g., 8-12 characters).
+   - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Step 9: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
 
