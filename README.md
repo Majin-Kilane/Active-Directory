@@ -306,10 +306,10 @@ Follow the installation prompts:
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
 
-### Step 10: Install the Routing and Remote Access Role
-1. Login.
-2. Open **Server Manager**.
-3. Click **Manage** > **Add Roles and Features**.
+## Open Server Manager and Install the Routing and Remote Access Role
+### Install the Routing and Remote Access Role
+1. Open **Server Manager**.
+2. Click **Manage** > **Add Roles and Features**.
 
 ![1OpenServerMan](https://github.com/user-attachments/assets/6cf61bd4-2934-49c8-acbd-cc6625ce74c1)
 
@@ -330,6 +330,7 @@ Follow the installation prompts:
 
 ![5Install](https://github.com/user-attachments/assets/4b16694e-ed1b-4864-89c0-ec0e07760174)
 
+### Configure Routing and Remote Access
 8. Once installed, go to **Tools** in Server Manager, then select **Routing and Remote Access**.
 
 ![1Routing RA](https://github.com/user-attachments/assets/0b01140c-039b-4ee3-9e54-6f1ef623fa8e)
@@ -346,6 +347,8 @@ Follow the installation prompts:
 
 ![4ChooseNAT](https://github.com/user-attachments/assets/7001b880-fc62-4d34-b99a-b42d91877dc4)
 
+### Configure the External Network Interface
+
 12. Select the network adapter connected to the external network (public/internet) and click **Next**.
    - This interface is typically the one with internet access.
 
@@ -355,6 +358,7 @@ Follow the installation prompts:
 
 ![6finish](https://github.com/user-attachments/assets/8e77b88b-1881-4ba0-9f76-1bbb5c84fcea)
 
+### Configure the Internal Network Interface
 14. In the **Routing and Remote Access** window, expand your server node, then expand **IPv4**.
 
 ![2ExpandIPv4](https://github.com/user-attachments/assets/70c9170d-f928-4b08-90a0-ccde1fe99db3)
@@ -378,35 +382,32 @@ Follow the installation prompts:
 
 ![1Add](https://github.com/user-attachments/assets/a30e6115-a67a-421d-a61f-ff2ecd715bbd)
 
-### Step 2: Install the DHCP Server Role
-1. In **Server Roles**, check **DHCP Server** and click **Next**.
+5. In **Server Roles**, check **DHCP Server** and click **Next**.
 
 ![2DHCP](https://github.com/user-attachments/assets/1f58a41f-b46e-47c3-821b-6d2ff8d8dae1)
 
-2. Continue through the wizard, leaving the default settings, and click **Install** on the confirmation screen.
+6. Continue through the wizard, leaving the default settings, and click **Install** on the confirmation screen.
 
 ![3Install](https://github.com/user-attachments/assets/990f1658-032e-4bb6-8f4e-8af179b7808d)
 
-3. Wait for the installation to complete, then click **Close**.
-
-### Step 3: Complete DHCP Configuration
-1. After installation, go back to **Server Manager**.
-2. At the top, you should see a notification flag; click it and select **Complete DHCP Configuration**.
+7. Wait for the installation to complete, then click **Close**.
+8. After installation, go back to **Server Manager**.
+9. At the top, you should see a notification flag; click it and select **Complete DHCP Configuration**.
 
 ![4YellowFlag](https://github.com/user-attachments/assets/129fcf8b-06a3-4999-88dd-399fbc6b43d0)
 
-4. In the **DHCP Post-Install Configuration Wizard**, click **Next**.
-5. Choose to **Use the following user account** (usually the default network service account) and click **Next**.
-6. Click **Commit** to apply the configuration.
+10. In the **DHCP Post-Install Configuration Wizard**, click **Next**.
+11. Choose to **Use the following user account** (usually the default network service account) and click **Next**.
+12. Click **Commit** to apply the configuration.
 
 ![5Commit](https://github.com/user-attachments/assets/82c826d8-943b-4809-aadf-56f190491341)
 
-7. Click **Close**.
+13. Click **Close**.
 
 ![6Close](https://github.com/user-attachments/assets/c80c2b7a-57c4-48ce-b4c7-d7546cd5cd86)
    
 ### Step 4: Open DHCP Management Console and Create a New Scope
-1. In **Server Manager**, go to **Tools** and select **DHCP** to open the DHCP management console.
+14. In **Server Manager**, go to **Tools** and select **DHCP** to open the DHCP management console.
 
 ![7Tools](https://github.com/user-attachments/assets/4a1a257f-9825-4f8b-bb51-ebcc96c07fd0)
 
