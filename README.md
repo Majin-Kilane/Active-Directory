@@ -342,9 +342,19 @@ This logs any changes to audit policies and authentication settings.
 9. Enable Audit Sensitive Privilege Use to log events where high-level permissions are used (e.g., backup, restore).
 10. Go to Security Settings > Local Policies > Audit Policy.
 Enable Audit account logon events, Audit account management, and Audit policy change for both Success and Failure to capture a comprehensive log.
-11. Close the Group Policy Management Editor.
-12. To apply the policy immediately, open Command Prompt and run
+11. Close the **Group Policy Management Editor**.
+12. To apply the policy immediately, open **Command Prompt** and run:
 
+![gupdatepowershellcommand](https://github.com/user-attachments/assets/b793bd1a-9a0c-43a3-a233-20d7c91106ff)
+
+14. Open **Event Viewer** to confirm that logs are being recorded.
+15. Navigate to **Windows Logs** > **Security** to view audit logs.
+16. Check the **Event IDs** to monitor specific events:
+   - **4624**: Successful logon.
+   - **4625**: Failed logon attempt.
+   - **4720**: User account creation.
+   - **4722**: User account enabled.
+   - **4725**: User account disabled.
 
 
 
