@@ -289,9 +289,15 @@ Follow the installation prompts:
    -Note: It’s best to apply this policy at the domain level to ensure it affects all users across the     domain.
 6. In the Group Policy Management Editor window, go to:
    - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**.
-
-
-
+7.Double-click **Account lockout threshold**.
+8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
+9. Click **OK**.
+10. Double-click **Account lockout duration**.
+11. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
+   - Note: If you want an administrator to unlock the account manually, set this to 0. 
+12. Click **OK**.
+13. After configuring the settings, close the **Group Policy Management Editor**.
+Group Policy changes will apply automatically, but you can force an immediate update by running the following command:
 
 
 
