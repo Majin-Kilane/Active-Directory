@@ -248,10 +248,29 @@ Follow the installation prompts:
    - **Change the computer name** (optional).
    - **Enable Remote Desktop** (optional).
 7. Reboot if necessary.
+--------------------
+## Configuring Security in Windows Server 2022
+
+### Step 1: Update the Server
+1. Open **Server Manager**.
+2. Go to **Local Server** and click on **Windows Update**.
+3. Check for updates, download, and install any critical and security updates to ensure the server is protected against known vulnerabilities.
 
 
+### Step 2: Configure Windows Firewall
+1. Open **Server Manager** and select **Tools** > **Windows Defender Firewall with Advanced Security**.
+2. Configure **Inbound** and **Outbound** rules to allow only necessary traffic.
+3. Enable **logging** in the firewall settings to monitor suspicious connections.
 
+### Step 3: Enable Windows Defender Antivirus
+1. Go to **Start** > **Settings** > **Privacy & Security** > **Windows Security** > **Virus & Threat Protection**.
+2. Ensure **Real-Time Protection** is enabled.
+3. Schedule regular scans to detect and prevent malware.
 
+### Step 4: Disable Unnecessary Services
+1. Open **Server Manager** and go to **Tools** > **Services**.
+2. Identify services that are not essential for your server’s purpose and set them to **Manual** or **Disabled**.
+3. Examples of services to review: **Remote Registry**, **Print Spooler** (if not needed), and **Windows Remote Management** (if not required).
 
 ### Step 5: Configure Password Policies
 1. In the **Default Domain Policy**, go to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**.
@@ -261,6 +280,10 @@ Follow the installation prompts:
    - **Minimum Password Length** (e.g., 8-12 characters).
    - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
 
+### Step 3: Configure Account Lockout Policy
+Log into your Windows Server 2022 as an administrator.
+Open Server Manager.
+Go to Tools and select Group Policy Management.
 
 
 
