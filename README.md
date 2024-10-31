@@ -446,8 +446,6 @@ Follow the installation prompts:
 ![14ActivateScope](https://github.com/user-attachments/assets/8f6a7255-85e0-4fe0-9cf7-09e8048fee0b)
 
 30. Click **Finish** to complete the setup.
-
-### Verify DHCP Configuration
 31. **Restart DHCP** services if necessary.
 32. Connect a client device to the network and check if it’s receiving an IP address from the DHCP server by running ipconfig on the client.
 
