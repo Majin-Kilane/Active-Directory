@@ -299,6 +299,9 @@ Follow the installation prompts:
 13. After configuring the settings, close the **Group Policy Management Editor**.
 Group Policy changes will apply automatically, but you can force an immediate update by running the following command:
 
+![gupdatepowershellcommand](https://github.com/user-attachments/assets/9584b35b-d334-4eae-8e7e-d007785327be)
+
+
 ### Step 7: Configure Default Domain Policy
 1. Go to **Tools** > **Group Policy Management**.
 2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
