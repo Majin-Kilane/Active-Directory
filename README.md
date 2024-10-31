@@ -74,7 +74,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 2. Name the VM (e.g., **Windows Server 2022**).
 3. Set **Type** to **Microsoft Windows** and **Version** to **Windows 2022 (64-bit)**.
    
-![image alt](https://github.com/user-attachments/assets/5a3d32ff-354d-499b-b1a6-ecd6ce20ec43)
+![1  Creating a New VM for Windows Server](https://github.com/user-attachments/assets/e0085cce-cee4-4648-8bf0-4f125c41408c)
 
 *Ref 3: Naming Windows Server VM*
 
@@ -229,11 +229,11 @@ Follow the installation prompts:
   
 3. In the **Network Connections** window, right-click on your network adapter and select **Properties**.
 
-![3OpenProperties](https://github.com/user-attachments/assets/af9f303b-7b40-4253-8aa5-64951bc39944)
+![3OpenProperties](https://github.com/user-attachments/assets/1918b3f1-3606-4b41-b0cd-1759ee2eafab)
 
 4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
 
-![4SelectIPv4](https://github.com/user-attachments/assets/4a485deb-9583-416a-a746-6cb188396aad)
+![4SelectIPv4](https://github.com/user-attachments/assets/1afc160d-c7fc-411b-b4e0-55c121cfc8f8)
 
 5. Choose **Use the following IP address** and enter the following details:
    - **IP address**: Choose an IP, e.g., 192.168.1.10.
@@ -241,7 +241,7 @@ Follow the installation prompts:
    - Leave **Default gateway** and **DNS server** fields blank (for isolated networks).
    - Set the loopback IP 127.0.0.1 to use this server as the DNS server.
 
-![5ChooseIP](https://github.com/user-attachments/assets/d38e6428-2836-4257-b0f6-18e9f22d0144)
+![5ChooseIP](https://github.com/user-attachments/assets/4e26ab15-2523-402b-b5ef-89a4ca4ebf58)
 
 6. Click **OK** to save settings.
 
