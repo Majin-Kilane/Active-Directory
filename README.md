@@ -306,8 +306,7 @@ Follow the installation prompts:
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
 
-
-### Step 10: Install the Routing and Remote Access Role
+### Step 13: Install the Routing and Remote Access Role
 1. Login.
 2. Open **Server Manager**.
 3. Click **Manage** > **Add Roles and Features**.
@@ -331,33 +330,32 @@ Follow the installation prompts:
 
 ![5Install](https://github.com/user-attachments/assets/4b16694e-ed1b-4864-89c0-ec0e07760174)
 
-### Step 2: Configure Routing and Remote Access
-1. Once installed, go to **Tools** in Server Manager, then select **Routing and Remote Access**.
+8. Once installed, go to **Tools** in Server Manager, then select **Routing and Remote Access**.
 
 ![1Routing RA](https://github.com/user-attachments/assets/0b01140c-039b-4ee3-9e54-6f1ef623fa8e)
 
-2. In the **Routing and Remote Access** window, right-click on your server name and select **Configure and Enable Routing and Remote Access**.
+9. In the **Routing and Remote Access** window, right-click on your server name and select **Configure and Enable Routing and Remote Access**.
 
 ![2Configure](https://github.com/user-attachments/assets/751bcdfd-9234-49f8-bb0f-9be41fe0c496)
 
-3. In the **Routing and Remote Access Server Setup Wizard**, click **Next**.
+10. In the **Routing and Remote Access Server Setup Wizard**, click **Next**.
 
 ![3Next](https://github.com/user-attachments/assets/3a5f82da-3ec3-4411-8339-3536fbc21693)
 
-4. Choose **Network Address Translation (NAT)** and click **Next**.
+11. Choose **Network Address Translation (NAT)** and click **Next**.
 
 ![4ChooseNAT](https://github.com/user-attachments/assets/7001b880-fc62-4d34-b99a-b42d91877dc4)
 
-5. Select the network adapter connected to the external network (public/internet) and click **Next**.
+12. Select the network adapter connected to the external network (public/internet) and click **Next**.
    - This interface is typically the one with internet access.
 
 ![5ChooseInterface](https://github.com/user-attachments/assets/21bd46f2-5ae3-45ea-9cfc-d579ce51339a)
 
-6. Select **Finish** to complete the configuration.
+13. Select **Finish** to complete the configuration.
 
 ![6finish](https://github.com/user-attachments/assets/8e77b88b-1881-4ba0-9f76-1bbb5c84fcea)
 
-### Step 2: Configure Internal Network Interface
+### Step 12: Configure Internal Network Interface
 1. In the **Routing and Remote Access** window, expand your server node, then expand **IPv4**.
 
 ![2ExpandIPv4](https://github.com/user-attachments/assets/70c9170d-f928-4b08-90a0-ccde1fe99db3)
