@@ -297,7 +297,7 @@ Follow the installation prompts:
    - Note: If you want an administrator to unlock the account manually, set this to 0. 
 12. Click **OK**.
 13. After configuring the settings, close the **Group Policy Management Editor**.
-Group Policy changes will apply automatically, but you can force an immediate update by running the following command:
+Group Policy changes will apply automatically, but you can force an immediate update by running the following command in Poweshell:
 
 ![gupdatepowershellcommand](https://github.com/user-attachments/assets/9584b35b-d334-4eae-8e7e-d007785327be)
 
