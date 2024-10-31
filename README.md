@@ -300,7 +300,14 @@ Follow the installation prompts:
 Group Policy changes will apply automatically, but you can force an immediate update by running the following command:
 
 ### Step 7: Configure Default Domain Policy
-1. Go to Tools > Group Policy Management.
+1. Go to **Tools** > **Group Policy Management**.
+2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
+Right-click on Default Domain Policy and choose Edit.
+Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
+
+
+
+
 
 
 
@@ -347,6 +354,9 @@ Group Policy changes will apply automatically, but you can force an immediate up
 ![9ClickNotificationsIcon](https://github.com/user-attachments/assets/f5f5d01c-ffb7-4f2b-aeab-555c97074a16)
   
 11. In the AD DS configuration wizard, choose **Add a new forest** and enter a **domain name** (e.g., `mydomain.com`) and click **Next**.
+   - Note: Using |.com| allows integration with email, VPNs, and remote access, as it can be routed    
+     through public DNS servers.
+   - It’s generally recommended to use a subdomain of a registered .com domain (e.g., ad.yourdomain.com) for Active Directory to avoid conflicts and allow more flexible access. This configuration can simplify DNS management and integrate smoothly with external services.
 
 ![11AddNewForest DomainName](https://github.com/user-attachments/assets/beaf343c-c532-4039-9963-a5285e7336d7)
 
