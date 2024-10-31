@@ -299,7 +299,8 @@ Follow the installation prompts:
 13. After configuring the settings, close the **Group Policy Management Editor**.
 Group Policy changes will apply automatically, but you can force an immediate update by running the following command:
 
-
+### Step 7: Configure Default Domain Policy
+1. Go to Tools > Group Policy Management.
 
 
 
