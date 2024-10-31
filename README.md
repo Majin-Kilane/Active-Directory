@@ -415,7 +415,7 @@ Enable **Audit account logon events**, **Audit account management**, and **Audit
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
 
-### Step 10: Install the Routing and Remote Access Role
+### Step 20: Install the Routing and Remote Access Role
 1. Open **Server Manager**.
 2. Click **Manage** > **Add Roles and Features**.
 
@@ -478,7 +478,7 @@ Enable **Audit account logon events**, **Audit account management**, and **Audit
 
 18. Click **Apply**, then **OK** to save the settings.
 
-### Step 11: Setting Up a DHCP Server
+### Step 21: Setting Up a DHCP Server
 1. Log in to **Windows Server 2022** with an account that has administrative privileges.
 2. Open **Server Manager**.
 3. Click **Add Roles and Features**.
