@@ -306,8 +306,7 @@ Follow the installation prompts:
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
 
-## Open Server Manager and Install the Routing and Remote Access Role
-### Install the Routing and Remote Access Role
+### Step 10: Install the Routing and Remote Access Role
 1. Open **Server Manager**.
 2. Click **Manage** > **Add Roles and Features**.
 
