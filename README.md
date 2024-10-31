@@ -305,7 +305,26 @@ Group Policy changes will apply automatically, but you can force an immediate up
 Right-click on Default Domain Policy and choose Edit.
 Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
 
-
+### Step 3: Configure Kerberos Policies
+1. In the **Group Policy Management Editor**, navigate to:
+   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Kerberos Policy**.
+2. Configure the following Kerberos settings:
+   - **Enforce user logon restrictions**: Set to Enabled to enforce Kerberos logon restrictions, which adds an extra layer of security by checking each user’s rights before logging on.
+   - **Maximum lifetime for service ticket**: Define how long service tickets are valid (e.g., 600 minutes).
+   - **Maximum lifetime for user ticket**: Set a time limit for user tickets, typically 10 hours (600 minutes).
+   - **Maximum lifetime for user ticket renewal**: Specify how long a ticket can be renewed (e.g., 7 days).
+   - **Maximum tolerance for computer clock synchronization**: Set to 5 minutes to prevent issues with Kerberos authentication due to time differences.
+  
+### Step: Configure Default Security Policies
+In the Group Policy Management Editor, go to:
+Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies.
+Configure the following security policies:
+Audit Policy:
+Go to Audit Policy and enable logging for Logon Events, Account Management, Policy Change, and Object Access for tracking and monitoring key actions.
+User Rights Assignment:
+Under User Rights Assignment, configure policies like Deny log on locally and Deny log on through Remote Desktop Services to restrict access for unnecessary accounts.
+Security Options:
+Under Security Options, configure key settings such as Administrator account status (disable if not in use), Guest account status (disable), and User Account Control (UAC) settings. 
 
 
 
@@ -356,7 +375,7 @@ Note: Since this policy is domain-wide, changes here will apply to all users and
 11. In the AD DS configuration wizard, choose **Add a new forest** and enter a **domain name** (e.g., `mydomain.com`) and click **Next**.
    - Note: Using |.com| allows integration with email, VPNs, and remote access, as it can be routed    
      through public DNS servers.
-   - It’s generally recommended to use a subdomain of a registered .com domain (e.g., ad.yourdomain.com) for Active Directory to avoid conflicts and allow more flexible access. This configuration can simplify DNS management and integrate smoothly with external services.
+   - It’s generally recommended to use a subdomain of a registered .com domain (e.g., ad.yourdomain.com) for Active Directory to avoid conflicts and enable more flexible access. This configuration can simplify DNS management, integrate smoothly with external services, and align with internet standards.
 
 ![11AddNewForest DomainName](https://github.com/user-attachments/assets/beaf343c-c532-4039-9963-a5285e7336d7)
 
