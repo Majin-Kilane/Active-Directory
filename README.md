@@ -58,10 +58,6 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
    - Click **Install** to complete the installation.
 3. After installation, click **Finish** to launch VirtualBox.
 
-*Ref 2: Virtualbox Installation Complete Diagram* 
-
-
-
 ---
 
 ## Installing and Configuring Windows Server 2022
@@ -69,9 +65,6 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 - Visit the [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022) and download the Windows Server 2022 ISO.
 
 ### Step 2: Create a New Virtual Machine for Windows Server
-
-
-
 1. Open **VirtualBox** and click **New**.
 
 ![0New](https://github.com/user-attachments/assets/ce5839d8-8203-434d-8e76-1fcf4d850e93)
@@ -200,10 +193,6 @@ An **Internal Network** allows multiple virtual machines to communicate with eac
 1. Press **Ctrl+Delete** on the login screen.
    - Enter the **Administrator password** you set up in the previous step.
    - Click **Enter** to log in.
-  
-
------**ADD LOGIN PAGE**------
-   
 2. Once the VM is running, go to the **VirtualBox menu** at the top of the VM window.
 Select **Devices** > **Insert Guest Additions CD Image**.
    - This will insert the Guest Additions ISO file as a virtual CD drive in the VM.
