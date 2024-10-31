@@ -329,7 +329,6 @@ Follow the installation prompts:
 
 ![5Install](https://github.com/user-attachments/assets/4b16694e-ed1b-4864-89c0-ec0e07760174)
 
-### Configure Routing and Remote Access
 8. Once installed, go to **Tools** in Server Manager, then select **Routing and Remote Access**.
 
 ![1Routing RA](https://github.com/user-attachments/assets/0b01140c-039b-4ee3-9e54-6f1ef623fa8e)
@@ -346,8 +345,6 @@ Follow the installation prompts:
 
 ![4ChooseNAT](https://github.com/user-attachments/assets/7001b880-fc62-4d34-b99a-b42d91877dc4)
 
-### Configure the External Network Interface
-
 12. Select the network adapter connected to the external network (public/internet) and click **Next**.
    - This interface is typically the one with internet access.
 
@@ -357,7 +354,6 @@ Follow the installation prompts:
 
 ![6finish](https://github.com/user-attachments/assets/8e77b88b-1881-4ba0-9f76-1bbb5c84fcea)
 
-### Configure the Internal Network Interface
 14. In the **Routing and Remote Access** window, expand your server node, then expand **IPv4**.
 
 ![2ExpandIPv4](https://github.com/user-attachments/assets/70c9170d-f928-4b08-90a0-ccde1fe99db3)
