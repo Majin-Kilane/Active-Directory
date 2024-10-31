@@ -308,6 +308,22 @@ Follow the installation prompts:
 
 15. Click **Start** and select **Administrative Tools**.
 
+
+
+
+
+## Configuring Security in Windows Server 2022
+### Step 1: Update the Server
+1. Open **Server Manager**.
+2. Go to **Local Server** and click on **Windows Update**.
+3. Check for updates, download, and install any critical and security updates to ensure the server is protected against known vulnerabilities.
+
+### Step 2: Configure Windows Firewall
+1. Open **Server Manager** and select **Tools** > **Windows Defender Firewall with Advanced Security**.
+2. Configure Inbound and Outbound rules to allow only necessary traffic.
+3. Enable logging in the firewall settings to monitor suspicious connections.
+
+
 ![19Start](https://github.com/user-attachments/assets/384b9000-95e5-450a-9d65-e23851e4edd3)
 
 16. Select **Active Directory Users and Computers**.
