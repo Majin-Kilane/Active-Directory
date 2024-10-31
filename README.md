@@ -280,7 +280,30 @@ Follow the installation prompts:
    - **Minimum Password Length** (e.g., 8-12 characters).
    - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
 
-### Step 6: Configure Account Lockout Policy
+### Step 6: Configure Default Domain Policy
+1. Go to **Tools** > **Group Policy Management**.
+2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
+Right-click on Default Domain Policy and choose Edit.
+Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
+
+### Step 7: Configure Kerberos Policies
+1. In the **Group Policy Management Editor**, navigate to:
+   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Kerberos Policy**.
+2. Configure the following Kerberos settings:
+   - **Enforce user logon restrictions**: Set to Enabled to enforce Kerberos logon restrictions, which adds an extra layer of security by checking each user’s rights before logging on.
+   - **Maximum lifetime for service ticket**: Define how long service tickets are valid (e.g., 600 minutes).
+   - **Maximum lifetime for user ticket**: Set a time limit for user tickets, typically 10 hours (600 minutes).
+   - **Maximum lifetime for user ticket renewal**: Specify how long a ticket can be renewed (e.g., 7 days).
+   - **Maximum tolerance for computer clock synchronization**: Set to 5 minutes to prevent issues with Kerberos authentication due to time differences.
+  
+### Step 8: Configure Default Security Policies
+1. In the **Group Policy Management Editor**, go to:
+**Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Local Policies**.
+2. Go to **Audit Policy** and enable logging for **Logon Events**, **Account Management**, **Policy Change**, and **Object Access** for tracking and monitoring key actions.
+3. Under User **Rights Assignment**, configure policies like **Deny log on locally** and **Deny log on through Remote Desktop Services** to restrict access for unnecessary accounts.
+4. Under **Security Options**, configure key settings such as **Administrator account status** (disable if not in use), **Guest account status** (disable), and **User Account Control (UAC)** settings. 
+
+### Step 9: Configure Account Lockout Policy
 1. Open **Server Manager**.
 2. Go to **Tools** and select **Group Policy Management**.
 3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
@@ -301,35 +324,26 @@ Group Policy changes will apply automatically, but you can force an immediate up
 
 ![gupdatepowershellcommand](https://github.com/user-attachments/assets/9584b35b-d334-4eae-8e7e-d007785327be)
 
-
-### Step 7: Configure Default Domain Policy
-1. Go to **Tools** > **Group Policy Management**.
-2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
-Right-click on Default Domain Policy and choose Edit.
-Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
-
-### Step 3: Configure Kerberos Policies
-1. In the **Group Policy Management Editor**, navigate to:
-   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Kerberos Policy**.
-2. Configure the following Kerberos settings:
-   - **Enforce user logon restrictions**: Set to Enabled to enforce Kerberos logon restrictions, which adds an extra layer of security by checking each user’s rights before logging on.
-   - **Maximum lifetime for service ticket**: Define how long service tickets are valid (e.g., 600 minutes).
-   - **Maximum lifetime for user ticket**: Set a time limit for user tickets, typically 10 hours (600 minutes).
-   - **Maximum lifetime for user ticket renewal**: Specify how long a ticket can be renewed (e.g., 7 days).
-   - **Maximum tolerance for computer clock synchronization**: Set to 5 minutes to prevent issues with Kerberos authentication due to time differences.
-  
-### Step: Configure Default Security Policies
-In the Group Policy Management Editor, go to:
-Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies.
-Configure the following security policies:
-Audit Policy:
-Go to Audit Policy and enable logging for Logon Events, Account Management, Policy Change, and Object Access for tracking and monitoring key actions.
-User Rights Assignment:
-Under User Rights Assignment, configure policies like Deny log on locally and Deny log on through Remote Desktop Services to restrict access for unnecessary accounts.
-Security Options:
-Under Security Options, configure key settings such as Administrator account status (disable if not in use), Guest account status (disable), and User Account Control (UAC) settings. 
-
-
+### Step 10: Enable Auditing and Logging on Windows Server 2022
+1. In Group Policy Management, expand your domain.
+2. Right-click on Default Domain Policy (or create a new GPO if you prefer not to use the default policy) and select Edit.
+3. In the Group Policy Management Editor, go to:
+Computer Configuration > Policies > Windows Settings > Security Settings > Advanced Audit Policy Configuration > Audit Policies.
+4. Go to Account Logon and enable Audit Credential Validation.
+   - This logs successful and failed login attempts.
+5. In Account Management, enable Audit User Account Management and Audit Security Group Management.
+   - These settings track changes to user accounts and security groups.
+6. In Logon/Logoff, enable Audit Logon and Audit Logoff.
+   - This logs successful and failed logon attempts for tracking user access times.
+7. Enable Audit File System and Audit Registry under Object Access.
+This setting logs access to files and registry entries, helpful for tracking data access and modifications.
+8. Enable Audit Audit Policy Change and Audit Authentication Policy Change.
+This logs any changes to audit policies and authentication settings.
+9. Enable Audit Sensitive Privilege Use to log events where high-level permissions are used (e.g., backup, restore).
+10. Go to Security Settings > Local Policies > Audit Policy.
+Enable Audit account logon events, Audit account management, and Audit policy change for both Success and Failure to capture a comprehensive log.
+11. Close the Group Policy Management Editor.
+12. To apply the policy immediately, open Command Prompt and run
 
 
 
