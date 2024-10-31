@@ -302,60 +302,9 @@ Note: Since this policy is domain-wide, changes here will apply to all users and
 3. Under User **Rights Assignment**, configure policies like **Deny log on locally** and **Deny log on through Remote Desktop Services** to restrict access for unnecessary accounts.
 4. Under **Security Options**, configure key settings such as **Administrator account status** (disable if not in use), **Guest account status** (disable), and **User Account Control (UAC)** settings. 
 
-### Step 17: Configure Account Lockout Policy
-1. Open **Server Manager**.
-2. Go to **Tools** and select **Group Policy Management**.
-3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
-4. Select your domain name (e.g., mydomain.local).
-5. Right-click on the **Default Domain Policy** and choose **Edit**.
-   -Note: It’s best to apply this policy at the domain level to ensure it affects all users across the     domain.
-6. In the Group Policy Management Editor window, go to:
-   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**.
-7.Double-click **Account lockout threshold**.
-8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
-9. Click **OK**.
-10. Double-click **Account lockout duration**.
-11. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
-   - Note: If you want an administrator to unlock the account manually, set this to 0. 
-12. Click **OK**.
-13. After configuring the settings, close the **Group Policy Management Editor**.
-Group Policy changes will apply automatically, but you can force an immediate update by running the following command in Poweshell:
 
-![gupdatepowershellcommand](https://github.com/user-attachments/assets/9584b35b-d334-4eae-8e7e-d007785327be)
 
-### Step 18: Enable Auditing and Logging on Windows Server 2022
-1. In **Group Policy Management**, expand your domain.
-2. Right-click on **Default Domain Policy** (or create a new GPO if you prefer not to use the default policy) and select **Edit**.
-3. In the Group Policy Management Editor, go to:
-**Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Advanced Audit Policy Configuration** > **Audit Policies**.
-4. Go to **Account Logon** and enable **Audit Credential Validation**.
-   - This logs successful and failed login attempts.
-5. In **Account Management**, enable **Audit User Account Management** and Audit **Security Group Management**.
-   - These settings track changes to user accounts and security groups.
-6. In **Logon/Logoff**, enable **Audit Logon** and **Audit Logoff**.
-   - This logs successful and failed logon attempts for tracking user access times.
-7. Enable **Audit File System** and **Audit Registry** under Object Access.
-   - This setting logs access to files and registry entries, helpful for tracking data access and modifications.
-8. **Enable Audit Audit Policy Change** and **Audit Authentication Policy Change**.
-   - This logs any changes to audit policies and authentication settings.
-9. Enable **Audit Sensitive Privilege Use** to log events where high-level permissions are used (e.g., backup, restore).
-10. Go to **Security Settings** > **Local Policies** > **Audit Policy**.
-Enable **Audit account logon events**, **Audit account management**, and **Audit policy change** for both **Success** and **Failure** to capture a comprehensive log.
-11. Close the **Group Policy Management Editor**.
-12. To apply the policy immediately, open **Command Prompt** and run:
-
-![gupdatepowershellcommand](https://github.com/user-attachments/assets/b793bd1a-9a0c-43a3-a233-20d7c91106ff)
-
-14. Open **Event Viewer** to confirm that logs are being recorded.
-15. Navigate to **Windows Logs** > **Security** to view audit logs.
-16. Check the **Event IDs** to monitor specific events:
-   - **4624**: Successful logon.
-   - **4625**: Failed logon attempt.
-   - **4720**: User account creation.
-   - **4722**: User account enabled.
-   - **4725**: User account disabled.
-
-### Step 19: Install Active Directory Domain Services (AD DS)
+### Step 18: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
 
 ![1AddRoles](https://github.com/user-attachments/assets/c245ca51-424a-4032-9e1c-17e6a3e3ced3)
@@ -415,7 +364,10 @@ Enable **Audit account logon events**, **Audit account management**, and **Audit
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
 
-### Step 20: Install the Routing and Remote Access Role
+
+![gupdatepowershellcommand](https://github.com/user-attachments/assets/9584b35b-d334-4eae-8e7e-d007785327be)
+
+### Step 19: Install the Routing and Remote Access Role
 1. Open **Server Manager**.
 2. Click **Manage** > **Add Roles and Features**.
 
@@ -478,7 +430,7 @@ Enable **Audit account logon events**, **Audit account management**, and **Audit
 
 18. Click **Apply**, then **OK** to save the settings.
 
-### Step 21: Setting Up a DHCP Server
+### Step 20: Setting Up a DHCP Server
 1. Log in to **Windows Server 2022** with an account that has administrative privileges.
 2. Open **Server Manager**.
 3. Click **Add Roles and Features**.
@@ -554,12 +506,63 @@ Enable **Audit account logon events**, **Audit account management**, and **Audit
 
 ![14ActivateScope](https://github.com/user-attachments/assets/8f6a7255-85e0-4fe0-9cf7-09e8048fee0b)
 
-30. Click **Finish** to complete the setup.
-31. **Restart DHCP** services if necessary.
-32. Connect a client device to the network and check if it’s receiving an IP address from the DHCP server by running ipconfig on the client.
+25. Click **Finish** to complete the setup.
+26. **Restart DHCP** services if necessary.
+27. Connect a client device to the network and check if it’s receiving an IP address from the DHCP server by running ipconfig on the client.
 
+### Step 21: Configure Account Lockout Policy
+1. Open **Server Manager**.
+2. Go to **Tools** and select **Group Policy Management**.
+3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
+4. Select your domain name (e.g., mydomain.local).
+5. Right-click on the **Default Domain Policy** and choose **Edit**.
+   -Note: It’s best to apply this policy at the domain level to ensure it affects all users across the     domain.
+6. In the Group Policy Management Editor window, go to:
+   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**.
+7.Double-click **Account lockout threshold**.
+8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
+9. Click **OK**.
+10. Double-click **Account lockout duration**.
+11. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
+   - Note: If you want an administrator to unlock the account manually, set this to 0. 
+12. Click **OK**.
+13. After configuring the settings, close the **Group Policy Management Editor**.
+Group Policy changes will apply automatically, but you can force an immediate update by running the following command in Poweshell:
+
+### Step 22: Enable Auditing and Logging on Windows Server 2022
+1. In **Group Policy Management**, expand your domain.
+2. Right-click on **Default Domain Policy** (or create a new GPO if you prefer not to use the default policy) and select **Edit**.
+3. In the Group Policy Management Editor, go to:
+**Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Advanced Audit Policy Configuration** > **Audit Policies**.
+4. Go to **Account Logon** and enable **Audit Credential Validation**.
+   - This logs successful and failed login attempts.
+5. In **Account Management**, enable **Audit User Account Management** and Audit **Security Group Management**.
+   - These settings track changes to user accounts and security groups.
+6. In **Logon/Logoff**, enable **Audit Logon** and **Audit Logoff**.
+   - This logs successful and failed logon attempts for tracking user access times.
+7. Enable **Audit File System** and **Audit Registry** under Object Access.
+   - This setting logs access to files and registry entries, helpful for tracking data access and modifications.
+8. **Enable Audit Audit Policy Change** and **Audit Authentication Policy Change**.
+   - This logs any changes to audit policies and authentication settings.
+9. Enable **Audit Sensitive Privilege Use** to log events where high-level permissions are used (e.g., backup, restore).
+10. Go to **Security Settings** > **Local Policies** > **Audit Policy**.
+Enable **Audit account logon events**, **Audit account management**, and **Audit policy change** for both **Success** and **Failure** to capture a comprehensive log.
+11. Close the **Group Policy Management Editor**.
+12. To apply the policy immediately, open **Command Prompt** and run:
+
+![gupdatepowershellcommand](https://github.com/user-attachments/assets/b793bd1a-9a0c-43a3-a233-20d7c91106ff)
+
+14. Open **Event Viewer** to confirm that logs are being recorded.
+15. Navigate to **Windows Logs** > **Security** to view audit logs.
+16. Check the **Event IDs** to monitor specific events:
+   - **4624**: Successful logon.
+   - **4625**: Failed logon attempt.
+   - **4720**: User account creation.
+   - **4722**: User account enabled.
+   - **4725**: User account disabled.
 
 ## Installing Windows 10 on VirtualBox
+
 ### Step 1: Download Windows 10 ISO
 - Visit the [Microsoft Windows 10 Download Page](https://www.microsoft.com/software-download/windows10) and download the ISO.
 
