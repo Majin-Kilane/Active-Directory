@@ -251,28 +251,27 @@ Follow the installation prompts:
 --------------------
 ## Configuring Security in Windows Server 2022
 
-### Step 1: Update the Server
-1. Open **Server Manager**.
+### Step 9: Update the Server
+1. Login  Open **Server Manager**.
 2. Go to **Local Server** and click on **Windows Update**.
 3. Check for updates, download, and install any critical and security updates to ensure the server is protected against known vulnerabilities.
 
-
-### Step 2: Configure Windows Firewall
+### Step 10: Configure Windows Firewall
 1. Open **Server Manager** and select **Tools** > **Windows Defender Firewall with Advanced Security**.
 2. Configure **Inbound** and **Outbound** rules to allow only necessary traffic.
 3. Enable **logging** in the firewall settings to monitor suspicious connections.
 
-### Step 3: Enable Windows Defender Antivirus
+### Step 11: Enable Windows Defender Antivirus
 1. Go to **Start** > **Settings** > **Privacy & Security** > **Windows Security** > **Virus & Threat Protection**.
 2. Ensure **Real-Time Protection** is enabled.
 3. Schedule regular scans to detect and prevent malware.
 
-### Step 4: Disable Unnecessary Services
+### Step 12: Disable Unnecessary Services
 1. Open **Server Manager** and go to **Tools** > **Services**.
 2. Identify services that are not essential for your server’s purpose and set them to **Manual** or **Disabled**.
 3. Examples of services to review: **Remote Registry**, **Print Spooler** (if not needed), and **Windows Remote Management** (if not required).
 
-### Step 5: Configure Password Policies
+### Step 13: Configure Password Policies
 1. In the **Default Domain Policy**, go to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**.
 2. Define password policies, such as:
    - **Enforce Password History** (e.g., 24 passwords).
@@ -280,13 +279,13 @@ Follow the installation prompts:
    - **Minimum Password Length** (e.g., 8-12 characters).
    - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
 
-### Step 6: Configure Default Domain Policy
+### Step 14: Configure Default Domain Policy
 1. Go to **Tools** > **Group Policy Management**.
 2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
 Right-click on Default Domain Policy and choose Edit.
 Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
 
-### Step 7: Configure Kerberos Policies
+### Step 15: Configure Kerberos Policies
 1. In the **Group Policy Management Editor**, navigate to:
    - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Kerberos Policy**.
 2. Configure the following Kerberos settings:
@@ -296,14 +295,14 @@ Note: Since this policy is domain-wide, changes here will apply to all users and
    - **Maximum lifetime for user ticket renewal**: Specify how long a ticket can be renewed (e.g., 7 days).
    - **Maximum tolerance for computer clock synchronization**: Set to 5 minutes to prevent issues with Kerberos authentication due to time differences.
   
-### Step 8: Configure Default Security Policies
+### Step 16: Configure Default Security Policies
 1. In the **Group Policy Management Editor**, go to:
 **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Local Policies**.
 2. Go to **Audit Policy** and enable logging for **Logon Events**, **Account Management**, **Policy Change**, and **Object Access** for tracking and monitoring key actions.
 3. Under User **Rights Assignment**, configure policies like **Deny log on locally** and **Deny log on through Remote Desktop Services** to restrict access for unnecessary accounts.
 4. Under **Security Options**, configure key settings such as **Administrator account status** (disable if not in use), **Guest account status** (disable), and **User Account Control (UAC)** settings. 
 
-### Step 9: Configure Account Lockout Policy
+### Step 17: Configure Account Lockout Policy
 1. Open **Server Manager**.
 2. Go to **Tools** and select **Group Policy Management**.
 3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
@@ -324,7 +323,7 @@ Group Policy changes will apply automatically, but you can force an immediate up
 
 ![gupdatepowershellcommand](https://github.com/user-attachments/assets/9584b35b-d334-4eae-8e7e-d007785327be)
 
-### Step 10: Enable Auditing and Logging on Windows Server 2022
+### Step 18: Enable Auditing and Logging on Windows Server 2022
 1. In **Group Policy Management**, expand your domain.
 2. Right-click on **Default Domain Policy** (or create a new GPO if you prefer not to use the default policy) and select **Edit**.
 3. In the Group Policy Management Editor, go to:
@@ -356,9 +355,7 @@ Enable **Audit account logon events**, **Audit account management**, and **Audit
    - **4722**: User account enabled.
    - **4725**: User account disabled.
 
-
-
-### Step 9: Install Active Directory Domain Services (AD DS)
+### Step 19: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
 
 ![1AddRoles](https://github.com/user-attachments/assets/c245ca51-424a-4032-9e1c-17e6a3e3ced3)
