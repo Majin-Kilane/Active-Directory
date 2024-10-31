@@ -411,7 +411,7 @@ Follow the installation prompts:
 ![8NewScope](https://github.com/user-attachments/assets/2362bd6b-0ed5-44ae-a552-277365454f41)
 
 17. In the **New Scope Wizard**, click **Next**.
-18. Enter a **Name** and optional **Description** for the scope (e.g., "Office Network").
+18. Enter a **Name** and optional **Description** for the scope (e.g., "Home Network").
 
 ![9AddName](https://github.com/user-attachments/assets/69e3d57c-93f7-4665-9076-965869c93164)
 
@@ -441,17 +441,15 @@ Follow the installation prompts:
 
    - Click **Next** after each configuration option.
 
-### Step 8: Activate the DHCP Scope
-1. At the **Activate Scope** step, select **Yes, I want to activate this scope now** and click **Next**.
+24. At the **Activate Scope** step, select **Yes, I want to activate this scope now** and click **Next**.
 
 ![14ActivateScope](https://github.com/user-attachments/assets/8f6a7255-85e0-4fe0-9cf7-09e8048fee0b)
 
-2. Click **Finish** to complete the setup.
+30. Click **Finish** to complete the setup.
 
-### Step 9: Verify DHCP Configuration
-1. **Restart DHCP** services if necessary.
-2. Connect a client device to the network and check if it’s receiving an IP address from the DHCP server by running ipconfig on the client.
-
+### Verify DHCP Configuration
+31. **Restart DHCP** services if necessary.
+32. Connect a client device to the network and check if it’s receiving an IP address from the DHCP server by running ipconfig on the client.
 
 
 ## Installing Windows 10 on VirtualBox
