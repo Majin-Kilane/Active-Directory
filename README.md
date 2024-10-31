@@ -370,8 +370,7 @@ Follow the installation prompts:
 
 18. Click **Apply**, then **OK** to save the settings.
 
-## Setting Up a DHCP Server on Windows Server 2022
-### Step 1: Open Server Manager and Add Roles and Features
+### Step 11: Setting Up a DHCP Server
 1. Log in to **Windows Server 2022** with an account that has administrative privileges.
 2. Open **Server Manager**.
 3. Click **Add Roles and Features**.
