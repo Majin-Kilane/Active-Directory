@@ -1,3 +1,11 @@
+## Lab Infrastructure Overview
+
+![Infrastructure Diagram](infrastructure-diagram.png)
+
+*Figure 1: Active Directory Lab Infrastructure Diagram*
+
+
+
 # Active-Directory
 
 ## Objective
