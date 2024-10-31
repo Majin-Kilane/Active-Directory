@@ -306,7 +306,7 @@ Follow the installation prompts:
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
 
-### Step 13: Install the Routing and Remote Access Role
+### Step 10: Install the Routing and Remote Access Role
 1. Login.
 2. Open **Server Manager**.
 3. Click **Manage** > **Add Roles and Features**.
@@ -355,7 +355,7 @@ Follow the installation prompts:
 
 ![6finish](https://github.com/user-attachments/assets/8e77b88b-1881-4ba0-9f76-1bbb5c84fcea)
 
-### Step 12: Configure Internal Network Interface
+### Step 11: Configure Internal Network Interface
 1. In the **Routing and Remote Access** window, expand your server node, then expand **IPv4**.
 
 ![2ExpandIPv4](https://github.com/user-attachments/assets/70c9170d-f928-4b08-90a0-ccde1fe99db3)
