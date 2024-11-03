@@ -258,6 +258,9 @@ Follow the installation prompts:
 ![1ServerManager](https://github.com/user-attachments/assets/e3bc635c-9a50-4866-82d9-bf0bf72d38e5)
 
 3. Check for updates, download, and install any critical and security updates to ensure the server is protected against known vulnerabilities.
+
+![2InstallUpdates](https://github.com/user-attachments/assets/ad80c583-e8b8-4eab-bb3e-46be8d77215c)
+
 4. Restart.
 
 ### Step 10: Configure Windows Firewall
