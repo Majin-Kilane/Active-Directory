@@ -254,7 +254,11 @@ Follow the installation prompts:
 ### Step 9: Update the Server
 1. Login  Open **Server Manager**.
 2. Go to **Local Server** and click on **Windows Update**.
+
+![1ServerManager](https://github.com/user-attachments/assets/e3bc635c-9a50-4866-82d9-bf0bf72d38e5)
+
 3. Check for updates, download, and install any critical and security updates to ensure the server is protected against known vulnerabilities.
+4. Restart.
 
 ### Step 10: Configure Windows Firewall
 1. Open **Server Manager** and select **Tools** > **Windows Defender Firewall with Advanced Security**.
