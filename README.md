@@ -288,6 +288,9 @@ Follow the installation prompts:
 ### Step 12: Disable Unnecessary Services
 1. Open **Server Manager** and go to **Tools** > **Services**.
 2. Identify services that are not essential for your server’s purpose and set them to **Manual** or **Disabled**.
+
+![services](https://github.com/user-attachments/assets/a0dc3538-4285-4230-97f6-eb5c111f4f38)
+
 3. Examples of services to review: **Remote Registry**, **Print Spooler** (if not needed), and **Windows Remote Management** (if not required).
 
 ### Step 13: Configure Password Policies
