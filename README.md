@@ -327,10 +327,18 @@ Note: Since this policy is domain-wide, changes here will apply to all users and
 ### Step 16: Configure Default Security Policies
 1. In the **Group Policy Management Editor**, go to:
 **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Local Policies**.
-2. Go to **Audit Policy** and enable logging for **Logon Events**, **Account Management**, **Policy Change**, and **Object Access** for tracking and monitoring key actions.
-3. Under User **Rights Assignment**, configure policies like **Deny log on locally** and **Deny log on through Remote Desktop Services** to restrict access for unnecessary accounts.
-4. Under **Security Options**, configure key settings such as **Administrator account status** (disable if not in use), **Guest account status** (disable), and **User Account Control (UAC)** settings. 
 
+![AuditPolicy](https://github.com/user-attachments/assets/a3f01f3a-b02c-46a0-8388-1ab1bcf1bd58)
+
+3. Go to **Audit Policy** and enable logging for **Logon Events**, **Account Management**, **Policy Change**, and **Object Access** by double-clicking each policy and selecting **Success**. This will allow tracking and monitoring of key actions.
+
+![Enabled](https://github.com/user-attachments/assets/3d046971-878f-42ba-a696-53f751ea5e9a)
+
+4. Under **User Rights Assignment**, configure policies like **Deny log on locally** and **Deny log on through Remote Desktop Services** to restrict access for unnecessary accounts.
+
+![UserRightsEnabled](https://github.com/user-attachments/assets/363ad437-6768-4f6e-8343-80c6f7f21466)
+
+5. Under **Security Options**, configure key settings such as **Administrator account status** (disable if not in use), **Guest account status** (disable), and **User Account Control (UAC)** settings. 
 
 
 ### Step 18: Install Active Directory Domain Services (AD DS)
