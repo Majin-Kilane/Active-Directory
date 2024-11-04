@@ -301,7 +301,7 @@ Follow the installation prompts:
    - **Minimum Password Length** (e.g., 12-16 characters).
    - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
   
-![2PWPol](https://github.com/user-attachments/assets/6c530007-449f-48df-abe5-35fd86669e7f)
+![2PWPol](https://github.com/user-attachments/assets/dbefe350-3340-4679-b917-9ea7ae0a69ce)
 
 ### Step 14: Configure Default Domain Policy
 1. Go to **Tools** > **Group Policy Management**.
