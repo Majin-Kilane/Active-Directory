@@ -307,10 +307,9 @@ Follow the installation prompts:
 1. Go to **Tools** > **Group Policy Management**.
 2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
 Right-click on Default Domain Policy and choose Edit.
+   - Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
 
-![EditGPO](https://github.com/user-attachments/assets/7d892c24-2572-443b-9b66-34a990df4914)
-
-Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
+![EditGPO](https://github.com/user-attachments/assets/373bfdff-288b-477e-a488-1b6788549d25)
 
 ### Step 15: Configure Kerberos Policies
 1. In the **Group Policy Management Editor**, navigate to:
@@ -553,18 +552,32 @@ Note: Since this policy is domain-wide, changes here will apply to all users and
 3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
 4. Select your domain name (e.g., mydomain.local).
 5. Right-click on the **Default Domain Policy** and choose **Edit**.
-   -Note: It’s best to apply this policy at the domain level to ensure it affects all users across the     domain.
-6. In the Group Policy Management Editor window, go to:
+   -Note: It’s best to apply this policy at the domain level to ensure it affects all users across the domain.
+
+![1EditGPO](https://github.com/user-attachments/assets/abfa5cd9-993a-4e8d-869d-ffe9d91df8ae)
+   
+7. In the Group Policy Management Editor window, go to:
    - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**.
+
+![AccLDuration](https://github.com/user-attachments/assets/126918fe-cab2-4c04-a287-3f3c71a775a7)
+
 7.Double-click **Account lockout threshold**.
 8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
+
+
 9. Click **OK**.
 10. Double-click **Account lockout duration**.
 11. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
-   - Note: If you want an administrator to unlock the account manually, set this to 0. 
+   - Note: If you want an administrator to unlock the account manually, set this to 0.
+
+
+
 12. Click **OK**.
 13. After configuring the settings, close the **Group Policy Management Editor**.
 Group Policy changes will apply automatically, but you can force an immediate update by running the following command in Poweshell:
+
+
+---powershell command----
 
 ### Step 22: Enable Auditing and Logging on Windows Server 2022
 1. In **Group Policy Management**, expand your domain.
