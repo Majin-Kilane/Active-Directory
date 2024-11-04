@@ -321,8 +321,8 @@ Right-click on Default Domain Policy and choose Edit.
    - **Maximum lifetime for user ticket renewal**: Specify how long a ticket can be renewed (e.g., 7 days).
    - **Maximum tolerance for computer clock synchronization**: Set to 5 minutes to prevent issues with Kerberos authentication due to time differences.
 
-![Kerberos](https://github.com/user-attachments/assets/9ef2d0f2-6136-4859-b2cd-4f0ccec054da)
-  
+![Kerberos](https://github.com/user-attachments/assets/34cdbed4-7d7b-4228-86c7-8427bbfb8714)
+
 ### Step 16: Configure Default Security Policies
 1. In the **Group Policy Management Editor**, go to:
 **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Local Policies**.
