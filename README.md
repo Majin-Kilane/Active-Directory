@@ -332,14 +332,14 @@ Note: Since this policy is domain-wide, changes here will apply to all users and
 
 3. Go to **Audit Policy** and enable logging for **Logon Events**, **Account Management**, **Policy Change**, and **Object Access** by double-clicking each policy and selecting **Success**. This will allow tracking and monitoring of key actions.
 
-![Enabled](https://github.com/user-attachments/assets/3d046971-878f-42ba-a696-53f751ea5e9a)
+![Enabled](https://github.com/user-attachments/assets/7cbe06ef-f72a-44fa-bc43-b9bfe261a0fb)
 
 4. Under **User Rights Assignment**, configure policies like **Deny log on locally** and **Deny log on through Remote Desktop Services** to restrict access for unnecessary accounts.
 
 ![UserRightsEnabled](https://github.com/user-attachments/assets/363ad437-6768-4f6e-8343-80c6f7f21466)
 
 5. Under **Security Options**, configure key settings such as **Administrator account status** (disable if not in use), **Guest account status** (disable), and **User Account Control (UAC)** settings. 
-
+   - 
 
 ### Step 18: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
