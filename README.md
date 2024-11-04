@@ -321,6 +321,8 @@ Note: Since this policy is domain-wide, changes here will apply to all users and
    - **Maximum lifetime for user ticket**: Set a time limit for user tickets, typically 10 hours (600 minutes).
    - **Maximum lifetime for user ticket renewal**: Specify how long a ticket can be renewed (e.g., 7 days).
    - **Maximum tolerance for computer clock synchronization**: Set to 5 minutes to prevent issues with Kerberos authentication due to time differences.
+
+![Kerberos](https://github.com/user-attachments/assets/9ef2d0f2-6136-4859-b2cd-4f0ccec054da)
   
 ### Step 16: Configure Default Security Policies
 1. In the **Group Policy Management Editor**, go to:
