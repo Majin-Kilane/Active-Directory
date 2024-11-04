@@ -270,8 +270,20 @@ Follow the installation prompts:
 
 ### Step 11: Enable Windows Defender Antivirus
 1. Go to **Start** > **Settings** > **Privacy & Security** > **Windows Security** > **Virus & Threat Protection**.
+
+![WinSecurity](https://github.com/user-attachments/assets/123704a3-f991-4dd6-9332-29783170a676)
+
 2. Ensure **Real-Time Protection** and **App & browser control** are enabled.
-3. Schedule regular scans to detect and prevent malware.
+
+![VirusThreat](https://github.com/user-attachments/assets/2031034e-73e1-4492-b38a-b1aa849f56a8)
+
+3. Turn on **Reputation-based protection**.
+
+![EnableAppBrowserControl](https://github.com/user-attachments/assets/bf7fdeec-87c0-4458-a4f2-1c3d4561e2ec)
+ 
+4. Schedule regular scans to detect and prevent malware.
+
+![Enabled](https://github.com/user-attachments/assets/3c1f9d64-d2cc-4e66-8dd8-99bc79e4e62c)
 
 ### Step 12: Disable Unnecessary Services
 1. Open **Server Manager** and go to **Tools** > **Services**.
