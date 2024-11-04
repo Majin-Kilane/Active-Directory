@@ -304,6 +304,9 @@ Follow the installation prompts:
 1. Go to **Tools** > **Group Policy Management**.
 2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
 Right-click on Default Domain Policy and choose Edit.
+
+![EditGPO](https://github.com/user-attachments/assets/7d892c24-2572-443b-9b66-34a990df4914)
+
 Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
 
 ### Step 15: Configure Kerberos Policies
