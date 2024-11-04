@@ -295,8 +295,10 @@ Follow the installation prompts:
 2. Define password policies, such as:
    - **Enforce Password History** (e.g., 24 passwords).
    - **Maximum Password Age** (e.g., 60 days).
-   - **Minimum Password Length** (e.g., 8-12 characters).
+   - **Minimum Password Length** (e.g., 12-16 characters).
    - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
+  
+![2PWPol](https://github.com/user-attachments/assets/6c530007-449f-48df-abe5-35fd86669e7f)
 
 ### Step 14: Configure Default Domain Policy
 1. Go to **Tools** > **Group Policy Management**.
