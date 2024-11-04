@@ -270,7 +270,7 @@ Follow the installation prompts:
 
 ### Step 11: Enable Windows Defender Antivirus
 1. Go to **Start** > **Settings** > **Privacy & Security** > **Windows Security** > **Virus & Threat Protection**.
-2. Ensure **Real-Time Protection** is enabled.
+2. Ensure **Real-Time Protection** and **App & browser control** are enabled.
 3. Schedule regular scans to detect and prevent malware.
 
 ### Step 12: Disable Unnecessary Services
