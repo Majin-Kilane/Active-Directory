@@ -340,6 +340,10 @@ Right-click on Default Domain Policy and choose Edit.
 5. Under **Security Options**, configure key settings such as **Administrator account status** (disable if not in use), **Guest account status** (disable), and **User Account Control (UAC)** settings.
    - Note: Reason: Disabling the default Administrator account reduces the risk of unauthorized access since it’s a common target for attackers. Instead, create a custom administrative account with a unique username for daily management tasks and log all access to this account.
 
+
+
+
+
 ### Step 18: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
 
@@ -569,34 +573,55 @@ Right-click on Default Domain Policy and choose Edit.
 
 12. Click **OK**.
 13. After configuring the settings, close the **Group Policy Management Editor**.
-Group Policy changes will apply automatically.
+    - Group Policy changes will apply automatically.
 
 ### Step 22: Enable Auditing and Logging on Windows Server 2022
-1. In **Group Policy Management**, expand your domain.
-2. Right-click on **Default Domain Policy** (or create a new GPO if you prefer not to use the default policy) and select **Edit**.
-3. In the Group Policy Management Editor, go to:
+1. In the Group Policy Management Editor, go to:
 **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Advanced Audit Policy Configuration** > **Audit Policies**.
-4. Go to **Account Logon** and enable **Audit Credential Validation**.
+
+![1Auditpolicies](https://github.com/user-attachments/assets/59bb0a7b-a447-487f-abe1-1d9bba48204a)
+
+
+2. Go to **Account Logon** and enable **Audit Credential Validation**.
    - This logs successful and failed login attempts.
-5. In **Account Management**, enable **Audit User Account Management** and Audit **Security Group Management**.
+  
+![2EnableAccLO](https://github.com/user-attachments/assets/11d2f8f5-ba8c-45d1-a007-67cba1171f13)
+
+3. In **Account Management**, enable **Audit User Account Management** and Audit **Security Group Management**.
    - These settings track changes to user accounts and security groups.
-6. In **Logon/Logoff**, enable **Audit Logon** and **Audit Logoff**.
+  
+![EnUser Sec](https://github.com/user-attachments/assets/49f09b2e-776d-4229-bbd0-b5d777cf5a45)
+
+4. In **Logon/Logoff**, enable **Audit Logon** and **Audit Logoff**.
    - This logs successful and failed logon attempts for tracking user access times.
-7. Enable **Audit File System** and **Audit Registry** under Object Access.
+  
+![5EnLogonLogoff](https://github.com/user-attachments/assets/f7c76707-1410-4752-94c4-34c3fc2ced55)
+
+5. Enable **Audit File System** and **Audit Registry** under Object Access.
    - This setting logs access to files and registry entries, helpful for tracking data access and modifications.
-8. **Enable Audit Audit Policy Change** and **Audit Authentication Policy Change**.
+  
+![ObjectAccess](https://github.com/user-attachments/assets/a83ecae1-0701-42fe-b735-4191641f7c1e)
+
+6. **Enable Audit Audit Policy Change** and **Audit Authentication Policy Change**.
    - This logs any changes to audit policies and authentication settings.
-9. Enable **Audit Sensitive Privilege Use** to log events where high-level permissions are used (e.g., backup, restore).
-10. Go to **Security Settings** > **Local Policies** > **Audit Policy**.
-Enable **Audit account logon events**, **Audit account management**, and **Audit policy change** for both **Success** and **Failure** to capture a comprehensive log.
-11. Close the **Group Policy Management Editor**.
-12. To apply the policy immediately, open **Command Prompt** and run:
+  
+![PolicyChange](https://github.com/user-attachments/assets/3c85bc48-af4e-46d5-8e49-56fc8d8c9f9d)
+
+7. Enable **Audit Sensitive Privilege Use** to log events where high-level permissions are used     
+   (e.g., backup, restore).
+
+![PrivilegeUse](https://github.com/user-attachments/assets/cc1951d5-69d4-4990-b7aa-955c04e9de16)
+   
+9. Go to **Security Settings** > **Local Policies** > **Audit Policy**.
+   - Enable **Audit account logon events**, **Audit account management**, and **Audit policy change** for both **Success** and **Failure** to capture a comprehensive log.
+10. Close the **Group Policy Management Editor**.
+11. To apply the policy immediately, open **Command Prompt** and run:
 
 ![gupdatepowershellcommand](https://github.com/user-attachments/assets/b793bd1a-9a0c-43a3-a233-20d7c91106ff)
 
-14. Open **Event Viewer** to confirm that logs are being recorded.
-15. Navigate to **Windows Logs** > **Security** to view audit logs.
-16. Check the **Event IDs** to monitor specific events:
+11. Open **Event Viewer** to confirm that logs are being recorded.
+12. Navigate to **Windows Logs** > **Security** to view audit logs.
+13. Check the **Event IDs** to monitor specific events:
    - **4624**: Successful logon.
    - **4625**: Failed logon attempt.
    - **4720**: User account creation.
