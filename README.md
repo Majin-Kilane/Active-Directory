@@ -293,7 +293,15 @@ Follow the installation prompts:
 
 3. Examples of services to review: **Remote Registry**, **Print Spooler** (if not needed), and **Windows Remote Management** (if not required).
 
-### Step 13: Configure Password Policies
+### Step 13: Configure Default Domain Policy
+1. Go to **Tools** > **Group Policy Management**.
+2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
+Right-click on Default Domain Policy and choose Edit.
+   - Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
+
+![EditGPO](https://github.com/user-attachments/assets/373bfdff-288b-477e-a488-1b6788549d25)
+
+### Step 14: Configure Password Policies
 1. In the **Default Domain Policy**, go to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**.
 2. Define password policies, such as:
    - **Enforce Password History** (e.g., 24 passwords).
@@ -302,14 +310,6 @@ Follow the installation prompts:
    - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
   
 ![2PWPol](https://github.com/user-attachments/assets/dbefe350-3340-4679-b917-9ea7ae0a69ce)
-
-### Step 14: Configure Default Domain Policy
-1. Go to **Tools** > **Group Policy Management**.
-2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
-Right-click on Default Domain Policy and choose Edit.
-   - Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
-
-![EditGPO](https://github.com/user-attachments/assets/373bfdff-288b-477e-a488-1b6788549d25)
 
 ### Step 15: Configure Kerberos Policies
 1. In the **Group Policy Management Editor**, navigate to:
