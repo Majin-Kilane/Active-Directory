@@ -327,18 +327,18 @@ Right-click on Default Domain Policy and choose Edit.
 1. In the **Group Policy Management Editor**, go to:
 **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Local Policies**.
 
-![AuditPolicy](https://github.com/user-attachments/assets/a3f01f3a-b02c-46a0-8388-1ab1bcf1bd58)
+![AuditPolicy](https://github.com/user-attachments/assets/3a6d448a-a8eb-4383-a979-c64ba745a317)
 
 3. Go to **Audit Policy** and enable logging for **Logon Events**, **Account Management**, **Policy Change**, and **Object Access** by double-clicking each policy and selecting **Success**. This will allow tracking and monitoring of key actions.
 
-![Enabled](https://github.com/user-attachments/assets/7cbe06ef-f72a-44fa-bc43-b9bfe261a0fb)
+![Enabled](https://github.com/user-attachments/assets/55ecbc90-c436-4f0c-997b-6cf544bf316a)
 
 4. Under **User Rights Assignment**, configure policies like **Deny log on locally** and **Deny log on through Remote Desktop Services** to restrict access for unnecessary accounts.
 
 ![UserRightsEnabled](https://github.com/user-attachments/assets/363ad437-6768-4f6e-8343-80c6f7f21466)
 
-5. Under **Security Options**, configure key settings such as **Administrator account status** (disable if not in use), **Guest account status** (disable), and **User Account Control (UAC)** settings. 
-   - 
+5. Under **Security Options**, configure key settings such as **Administrator account status** (disable if not in use), **Guest account status** (disable), and **User Account Control (UAC)** settings.
+   - Note: Reason: Disabling the default Administrator account reduces the risk of unauthorized access since it’s a common target for attackers. Instead, create a custom administrative account with a unique username for daily management tasks and log all access to this account.
 
 ### Step 18: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
