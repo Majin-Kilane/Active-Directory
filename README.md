@@ -556,26 +556,23 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![1EditGPO](https://github.com/user-attachments/assets/abfa5cd9-993a-4e8d-869d-ffe9d91df8ae)
    
-7. In the Group Policy Management Editor window, go to:
+6. In the Group Policy Management Editor window, go to:
    - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**.
   
-8.Double-click **Account lockout threshold**.
-9. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
+7.Double-click **Account lockout threshold**.
+8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
 
 
-10. Click **OK**.
-11. Double-click **Account lockout duration**.
-12. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
+9. Click **OK**.
+10. Double-click **Account lockout duration**.
+11. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
    - Note: If you want an administrator to unlock the account manually, set this to 0.
 
 ![AccLDuration](https://github.com/user-attachments/assets/126918fe-cab2-4c04-a287-3f3c71a775a7)
 
 12. Click **OK**.
 13. After configuring the settings, close the **Group Policy Management Editor**.
-Group Policy changes will apply automatically, but you can force an immediate update by running the following command in Poweshell:
-
-
----powershell command----
+Group Policy changes will apply automatically.
 
 ### Step 22: Enable Auditing and Logging on Windows Server 2022
 1. In **Group Policy Management**, expand your domain.
