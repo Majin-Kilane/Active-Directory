@@ -311,7 +311,38 @@ Right-click on Default Domain Policy and choose Edit.
   
 ![2PWPol](https://github.com/user-attachments/assets/dbefe350-3340-4679-b917-9ea7ae0a69ce)
 
-### Step 15: Configure Kerberos Policies
+### Step 15: Configure Account Lockout Policy
+1. Open **Server Manager**.
+2. Go to **Tools** and select **Group Policy Management**.
+3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
+4. Select your domain name (e.g., mydomain.local).
+5. Right-click on the **Default Domain Policy** and choose **Edit**.
+   -Note: It’s best to apply this policy at the domain level to ensure it affects all users across the domain.
+
+![1EditGPO](https://github.com/user-attachments/assets/abfa5cd9-993a-4e8d-869d-ffe9d91df8ae)
+   
+6. In the Group Policy Management Editor window, go to:
+   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**.
+  
+7.Double-click **Account lockout threshold**.
+8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
+
+
+
+9. Click **OK**.
+10. Double-click **Account lockout duration**.
+11. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
+   - Note: If you want an administrator to unlock the account manually, set this to 0.
+
+![AccLDuration](https://github.com/user-attachments/assets/126918fe-cab2-4c04-a287-3f3c71a775a7)
+
+12. Click **OK**.
+13. After configuring the settings, close the **Group Policy Management Editor**.
+    - Group Policy changes will apply automatically.
+
+
+
+### Step 16: Configure Kerberos Policies
 1. In the **Group Policy Management Editor**, navigate to:
    - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Kerberos Policy**.
 2. Configure the following Kerberos settings:
@@ -323,7 +354,7 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![Kerberos](https://github.com/user-attachments/assets/34cdbed4-7d7b-4228-86c7-8427bbfb8714)
 
-### Step 16: Install Active Directory Domain Services (AD DS)
+### Step 17: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
 
 ![1AddRoles](https://github.com/user-attachments/assets/c245ca51-424a-4032-9e1c-17e6a3e3ced3)
@@ -383,7 +414,7 @@ Right-click on Default Domain Policy and choose Edit.
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
 
-### Step 17: Install the Routing and Remote Access Role
+### Step 18: Install the Routing and Remote Access Role
 1. Open **Server Manager**.
 2. Click **Manage** > **Add Roles and Features**.
 
@@ -446,7 +477,7 @@ Right-click on Default Domain Policy and choose Edit.
 
 18. Click **Apply**, then **OK** to save the settings.
 
-### Step 18: Setting Up a DHCP Server
+### Step 19: Setting Up a DHCP Server
 1. Log in to **Windows Server 2022** with an account that has administrative privileges.
 2. Open **Server Manager**.
 3. Click **Add Roles and Features**.
@@ -525,34 +556,6 @@ Right-click on Default Domain Policy and choose Edit.
 25. Click **Finish** to complete the setup.
 26. **Restart DHCP** services if necessary.
 27. Connect a client device to the network and check if it’s receiving an IP address from the DHCP server by running ipconfig on the client.
-
-### Step 19: Configure Account Lockout Policy
-1. Open **Server Manager**.
-2. Go to **Tools** and select **Group Policy Management**.
-3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
-4. Select your domain name (e.g., mydomain.local).
-5. Right-click on the **Default Domain Policy** and choose **Edit**.
-   -Note: It’s best to apply this policy at the domain level to ensure it affects all users across the domain.
-
-![1EditGPO](https://github.com/user-attachments/assets/abfa5cd9-993a-4e8d-869d-ffe9d91df8ae)
-   
-6. In the Group Policy Management Editor window, go to:
-   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**.
-  
-7.Double-click **Account lockout threshold**.
-8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
-
-
-9. Click **OK**.
-10. Double-click **Account lockout duration**.
-11. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
-   - Note: If you want an administrator to unlock the account manually, set this to 0.
-
-![AccLDuration](https://github.com/user-attachments/assets/126918fe-cab2-4c04-a287-3f3c71a775a7)
-
-12. Click **OK**.
-13. After configuring the settings, close the **Group Policy Management Editor**.
-    - Group Policy changes will apply automatically.
 
 ### Step 20: Enable Auditing and Logging on Windows Server 2022
 1. In the Group Policy Management Editor, go to:
