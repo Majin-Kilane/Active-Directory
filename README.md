@@ -249,7 +249,9 @@ Follow the installation prompts:
    - **Enable Remote Desktop** (optional).
 7. Reboot if necessary.
 --------------------
+
 ## Configuring Security in Windows Server 2022
+
 
 ### Step 9: Update the Server
 1. Login  Open **Server Manager**.
@@ -263,10 +265,12 @@ Follow the installation prompts:
 
 4. Restart.
 
+
 ### Step 10: Configure Windows Firewall
 1. Open **Server Manager** and select **Tools** > **Windows Defender Firewall with Advanced Security**.
 2. Configure **Inbound** and **Outbound** rules to allow only necessary traffic.
 3. Enable **logging** in the firewall settings to monitor suspicious connections.
+
 
 ### Step 11: Enable Windows Defender Antivirus
 1. Go to **Start** > **Settings** > **Privacy & Security** > **Windows Security** > **Virus & Threat Protection**.
@@ -285,6 +289,7 @@ Follow the installation prompts:
 
 ![Enabled](https://github.com/user-attachments/assets/3c1f9d64-d2cc-4e66-8dd8-99bc79e4e62c)
 
+
 ### Step 12: Disable Unnecessary Services
 1. Open **Server Manager** and go to **Tools** > **Services**.
 2. Identify services that are not essential for your server’s purpose and set them to **Manual** or **Disabled**.
@@ -293,6 +298,7 @@ Follow the installation prompts:
 
 3. Examples of services to review: **Remote Registry**, **Print Spooler** (if not needed), and **Windows Remote Management** (if not required).
 
+
 ### Step 13: Configure Default Domain Policy
 1. Go to **Tools** > **Group Policy Management**.
 2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
@@ -300,6 +306,7 @@ Right-click on Default Domain Policy and choose Edit.
    - Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
 
 ![EditGPO](https://github.com/user-attachments/assets/373bfdff-288b-477e-a488-1b6788549d25)
+
 
 ### Step 14: Configure Password Policies
 1. In the **Default Domain Policy**, go to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**.
@@ -310,6 +317,7 @@ Right-click on Default Domain Policy and choose Edit.
    - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
   
 ![2PWPol](https://github.com/user-attachments/assets/dbefe350-3340-4679-b917-9ea7ae0a69ce)
+
 
 ### Step 15: Configure Account Lockout Policy
 1. Open **Server Manager**.
@@ -322,12 +330,11 @@ Right-click on Default Domain Policy and choose Edit.
 ![1EditGPO](https://github.com/user-attachments/assets/abfa5cd9-993a-4e8d-869d-ffe9d91df8ae)
    
 6. In the Group Policy Management Editor window, go to:
-   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**.
-  
+   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**. 
 7.Double-click **Account lockout threshold**.
 8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
 
-
+![AccLOThreshold](https://github.com/user-attachments/assets/bbb2f474-5b4b-40bd-ac8e-55871100466e)
 
 9. Click **OK**.
 10. Double-click **Account lockout duration**.
@@ -340,6 +347,7 @@ Right-click on Default Domain Policy and choose Edit.
 13. After configuring the settings, close the **Group Policy Management Editor**.
     - Group Policy changes will apply automatically.
 
+![lockoutpol](https://github.com/user-attachments/assets/03c97837-752a-4140-86d2-880ebc9156e2)
 
 
 ### Step 16: Configure Kerberos Policies
