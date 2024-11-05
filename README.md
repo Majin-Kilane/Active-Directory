@@ -558,19 +558,17 @@ Right-click on Default Domain Policy and choose Edit.
    
 7. In the Group Policy Management Editor window, go to:
    - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**.
-
-![AccLDuration](https://github.com/user-attachments/assets/126918fe-cab2-4c04-a287-3f3c71a775a7)
-
-7.Double-click **Account lockout threshold**.
-8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
+  
+8.Double-click **Account lockout threshold**.
+9. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
 
 
-9. Click **OK**.
-10. Double-click **Account lockout duration**.
-11. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
+10. Click **OK**.
+11. Double-click **Account lockout duration**.
+12. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
    - Note: If you want an administrator to unlock the account manually, set this to 0.
 
-
+![AccLDuration](https://github.com/user-attachments/assets/126918fe-cab2-4c04-a287-3f3c71a775a7)
 
 12. Click **OK**.
 13. After configuring the settings, close the **Group Policy Management Editor**.
