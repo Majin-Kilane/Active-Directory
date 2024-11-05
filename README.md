@@ -597,8 +597,7 @@ Right-click on Default Domain Policy and choose Edit.
   
 ![PolicyChange](https://github.com/user-attachments/assets/3c85bc48-af4e-46d5-8e49-56fc8d8c9f9d)
 
-7. Enable **Audit Sensitive Privilege Use** to log events where high-level permissions are used     
-   (e.g., backup, restore).
+7. Enable **Audit Sensitive Privilege Use** to log events where high-level permissions are used (e.g., backup, restore).
 
 ![PrivilegeUse](https://github.com/user-attachments/assets/cc1951d5-69d4-4990-b7aa-955c04e9de16)
    
