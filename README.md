@@ -594,23 +594,26 @@ Right-click on Default Domain Policy and choose Edit.
 9. Go to **Security Settings** > **Local Policies** > **Audit Policy**.
    - Enable **Audit account logon events**, **Audit account management**, and **Audit policy change** for both **Success** and **Failure** to capture a comprehensive log.
   
-![UserRightsEnabled](https://github.com/user-attachments/assets/363ad437-6768-4f6e-8343-80c6f7f21466)
+![AuditCmplt](https://github.com/user-attachments/assets/91a75c72-6965-4134-8a31-9332c5190bfc)
 
 10. Close the **Group Policy Management Editor**.
-11. To apply the policy immediately.
-
-
-
+11. The policy will immediately.
 
 11. Open **Event Viewer** to confirm that logs are being recorded.
+
+![OpenEV](https://github.com/user-attachments/assets/a6073c59-4a6d-41d1-8b4b-50ab3ffb14cb)
+
 12. Navigate to **Windows Logs** > **Security** to view audit logs.
+
+![ViewLogs](https://github.com/user-attachments/assets/e7d4cfc3-5922-4bad-9e49-053296055e30)
+
 13. Check the **Event IDs** to monitor specific events:
    - **4624**: Successful logon.
    - **4625**: Failed logon attempt.
    - **4720**: User account creation.
    - **4722**: User account enabled.
    - **4725**: User account disabled.
-
+______________________________________________________________________________
 ## Installing Windows 10 on VirtualBox
 
 ### Step 1: Download Windows 10 ISO
