@@ -323,28 +323,7 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![Kerberos](https://github.com/user-attachments/assets/34cdbed4-7d7b-4228-86c7-8427bbfb8714)
 
-### Step 16: Configure Default Security Policies
-1. In the **Group Policy Management Editor**, go to:
-**Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Local Policies**.
-
-![AuditPolicy](https://github.com/user-attachments/assets/3a6d448a-a8eb-4383-a979-c64ba745a317)
-
-3. Go to **Audit Policy** and enable logging for **Logon Events**, **Account Management**, **Policy Change**, and **Object Access** by double-clicking each policy and selecting **Success**. This will allow tracking and monitoring of key actions.
-
-![Enabled](https://github.com/user-attachments/assets/55ecbc90-c436-4f0c-997b-6cf544bf316a)
-
-4. Under **User Rights Assignment**, configure policies like **Deny log on locally** and **Deny log on through Remote Desktop Services** to restrict access for unnecessary accounts.
-
-![UserRightsEnabled](https://github.com/user-attachments/assets/363ad437-6768-4f6e-8343-80c6f7f21466)
-
-5. Under **Security Options**, configure key settings such as **Administrator account status** (disable if not in use), **Guest account status** (disable), and **User Account Control (UAC)** settings.
-   - Note: Reason: Disabling the default Administrator account reduces the risk of unauthorized access since it’s a common target for attackers. Instead, create a custom administrative account with a unique username for daily management tasks and log all access to this account.
-
-
-
-
-
-### Step 18: Install Active Directory Domain Services (AD DS)
+### Step 16: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
 
 ![1AddRoles](https://github.com/user-attachments/assets/c245ca51-424a-4032-9e1c-17e6a3e3ced3)
@@ -404,7 +383,7 @@ Right-click on Default Domain Policy and choose Edit.
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
 
-### Step 19: Install the Routing and Remote Access Role
+### Step 17: Install the Routing and Remote Access Role
 1. Open **Server Manager**.
 2. Click **Manage** > **Add Roles and Features**.
 
@@ -467,7 +446,7 @@ Right-click on Default Domain Policy and choose Edit.
 
 18. Click **Apply**, then **OK** to save the settings.
 
-### Step 20: Setting Up a DHCP Server
+### Step 18: Setting Up a DHCP Server
 1. Log in to **Windows Server 2022** with an account that has administrative privileges.
 2. Open **Server Manager**.
 3. Click **Add Roles and Features**.
@@ -547,7 +526,7 @@ Right-click on Default Domain Policy and choose Edit.
 26. **Restart DHCP** services if necessary.
 27. Connect a client device to the network and check if it’s receiving an IP address from the DHCP server by running ipconfig on the client.
 
-### Step 21: Configure Account Lockout Policy
+### Step 19: Configure Account Lockout Policy
 1. Open **Server Manager**.
 2. Go to **Tools** and select **Group Policy Management**.
 3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
@@ -575,7 +554,7 @@ Right-click on Default Domain Policy and choose Edit.
 13. After configuring the settings, close the **Group Policy Management Editor**.
     - Group Policy changes will apply automatically.
 
-### Step 22: Enable Auditing and Logging on Windows Server 2022
+### Step 20: Enable Auditing and Logging on Windows Server 2022
 1. In the Group Policy Management Editor, go to:
 **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Advanced Audit Policy Configuration** > **Audit Policies**.
 
@@ -614,10 +593,14 @@ Right-click on Default Domain Policy and choose Edit.
    
 9. Go to **Security Settings** > **Local Policies** > **Audit Policy**.
    - Enable **Audit account logon events**, **Audit account management**, and **Audit policy change** for both **Success** and **Failure** to capture a comprehensive log.
-10. Close the **Group Policy Management Editor**.
-11. To apply the policy immediately, open **Command Prompt** and run:
+  
+![UserRightsEnabled](https://github.com/user-attachments/assets/363ad437-6768-4f6e-8343-80c6f7f21466)
 
-![gupdatepowershellcommand](https://github.com/user-attachments/assets/b793bd1a-9a0c-43a3-a233-20d7c91106ff)
+10. Close the **Group Policy Management Editor**.
+11. To apply the policy immediately.
+
+
+
 
 11. Open **Event Viewer** to confirm that logs are being recorded.
 12. Navigate to **Windows Logs** > **Security** to view audit logs.
