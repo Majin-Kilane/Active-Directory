@@ -631,7 +631,7 @@ Right-click on Default Domain Policy and choose Edit.
    - **Create a Folder**: On the new partition, create a dedicated folder for WSUS, such as D:\WSUS\Updates.
 2. **Open Server Manager**: Select **Add roles and features**.
 
-
+![AddRoles](https://github.com/user-attachments/assets/1ec1319d-e16b-407c-8d53-2cf0484a9903)
 
 3. **Role-Based Installation**: Choose **Role-based or feature-based installation** and select the server where you want to install WSUS.
 4. **Select WSUS**: In the roles list, select **Windows Server Update Services**, then click **Next**.
@@ -652,8 +652,6 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![PastePath](https://github.com/user-attachments/assets/84722d6d-21f8-4395-9590-90a9db3b94a2)
 
-
-
 7. **SQL Server** (Optional): If you have an external SQL Server for the WSUS database, connect to it here. Otherwise, WSUS will use Windows Internal Database by default.
 8. Click **Next** to install WSUS.
 9. After the WSUS role is installed, click **Launch Post-Installation Tasks** to complete setup.
@@ -666,22 +664,24 @@ Right-click on Default Domain Policy and choose Edit.
 
 11. **Open WSUS Console**: Go to **Tools** > **Windows Server Update Services** in Server Manager.
 
+![OpenWSUS](https://github.com/user-attachments/assets/96fa1259-d9df-402e-b22c-6c5f2771c8b8)
+
+12. **Specify Proxy Server** (if applicable).
+13. **Synchronize with Microsoft Update**: In the **WSUS Console**, click **Options** > **WSUS Server Configuration Wizard** to set up synchronization with Microsoft’s update servers.
+
+![WSUSSConfigWiz](https://github.com/user-attachments/assets/d72e3a48-4bc5-49b8-b3c0-275f0a08d11e)
+
+14. Click **Next** until you reach the **Connect to Upstream Server** tab and click **Start Connecting**.
+
+![StartConn](https://github.com/user-attachments/assets/3f117ed7-030e-448f-953b-9fe60d26e9a8)
+
+15. 
+
+14. **Select Products and Classifications**: Go to **Options** > **Products and Classifications** to select the specific products (e.g., Windows 10, Windows Server 2022) and update types (e.g., security updates, critical updates) you want to manage.
 
 
-12. **Specify Proxy Server** (if applicable): In the WSUS Console, go to **Options** > **Proxy      
-Server** if you need to set up a proxy.
 
-
-
-
-13. **Synchronize with Microsoft Update**: In the **WSUS Console**, click **Options** > **Synchronization Schedule** to set up synchronization with Microsoft’s update servers.
-14. **Select Products and Classifications**:
-   - Go to **Options** > **Products and Classifications** to select the specific products (e.g., Windows 10, Windows Server 2022) and update types (e.g., security updates, critical updates) you want to manage.
-
-
-
-15. **Set Synchronization Schedule**:
-   - Go to **Options** > **Synchronization Schedule** to set the frequency of updates.
+15. **Set Synchronization Schedule**: Go to **Options** > **Synchronization Schedule** to set the frequency of updates.
 
 
 
