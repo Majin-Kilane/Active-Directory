@@ -684,9 +684,17 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![ChooseProducts](https://github.com/user-attachments/assets/0c7e49c8-8e3d-49fe-ba4b-4faca619c0fc)
   
-17. 
-18.
-19.
+17. Select classification types, then click **Next**. 
+
+![ChooseClassifx](https://github.com/user-attachments/assets/09942c02-9f13-4266-9ab6-a21ad5b7d055)
+
+18. Select **Synchronize Manually** thne click **Next**.
+19. Select **Begin initial synchronization**, then click **Next**, and then **Finish**.
+
+![SelectBeginIntSync](https://github.com/user-attachments/assets/6ea04362-2078-42a4-aeec-6e329b022e51)
+
+
+19. 
 20.
 21.
 22.
