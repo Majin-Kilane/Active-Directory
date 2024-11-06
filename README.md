@@ -623,6 +623,47 @@ Right-click on Default Domain Policy and choose Edit.
    - **4720**: User account creation.
    - **4722**: User account enabled.
    - **4725**: User account disabled.
+
+
+### Step 21: Configure WSUS on Windows Server
+1. **Prepare Storage for WSUS (Optional but Recommended)**
+   - **Partitioning**: Create a new partition or attach a separate drive for storing WSUS updates (e.g., D:\WSUS). This helps isolate the storage load from the system partition.
+   - **Create a Folder**: On the new partition, create a dedicated folder for WSUS, such as D:\WSUS\Updates.
+
+2. **Open Server Manager**: Go to Server Manager and select Add roles and features.
+3. **Role-Based Installation**: Choose **Role-based or feature-based installation** and select the server where you want to install WSUS.
+4. **Select WSUS**: In the roles list, select **Windows Server Update Services**, then click **Next**.
+5. **Select Required Features**: Leave the default features selected, and click **Next**.
+6. **Content Location**: You’ll be prompted to specify a **content location** for storing updates.
+   - Enter the path to your dedicated folder (e.g., D:\WSUS\Updates).
+7. **SQL Server** (Optional): If you have an external SQL Server for the WSUS database, connect to it here. Otherwise, WSUS will use Windows Internal Database by default.
+8. Click **Next** to install WSUS.
+9.After the WSUS role is installed, go to **Server Manager** > **Notifications** and click **Launch Post-Installation Tasks** to complete setup.
+10. Wait for the post-installation tasks to complete, which initializes the WSUS database.
+11. **Open WSUS Console**: Go to **Tools** > **Windows Server Update Services** in Server Manager.
+12. **Specify Proxy Server** (if applicable): In the WSUS Console, go to **Options** > **Proxy      
+Server** if you need to set up a proxy.
+13. **Synchronize with Microsoft Update**: In the **WSUS Console**, click **Options** > **Synchronization Schedule** to set up synchronization with Microsoft’s update servers.
+14. **Select Products and Classifications**:
+   - Go to **Options** > **Products and Classifications** to select the specific products (e.g., Windows 10, Windows Server 2022) and update types (e.g., security updates, critical updates) you want to manage.
+15. **Set Synchronization Schedule**:
+   - Go to **Options** > **Synchronization Schedule** to set the frequency of updates.
+16. **Approve Updates**: After synchronization, approve the updates you want to deploy to the networked clients.
+17. **Configure Group Policy for Client Updates**
+   - **Open Group Policy Management**: Go to **Group Policy Management** on your domain controller.
+   - **Create or Edit a Group Policy**: Right-click your domain or specific OU and select **Create a GPO** (or edit an existing GPO).
+18. **Configure WSUS Settings**:
+   - Navigate to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Update**.
+   - Set **Specify Intranet Microsoft Update Service Location** to the WSUS server URL (e.g., http://yourWSUSserver:8530).
+   - Enable **Automatic Updates** and configure the update schedule.
+
+
+
+
+
+
+
+
 ______________________________________________________________________________
 ## Installing Windows 10 on VirtualBox
 
