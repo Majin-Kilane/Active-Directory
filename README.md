@@ -638,7 +638,7 @@ Right-click on Default Domain Policy and choose Edit.
    - Enter the path to your dedicated folder (e.g., D:\WSUS\Updates).
 7. **SQL Server** (Optional): If you have an external SQL Server for the WSUS database, connect to it here. Otherwise, WSUS will use Windows Internal Database by default.
 8. Click **Next** to install WSUS.
-9. After the WSUS role is installed, go to **Server Manager** > **Notifications** and click **Launch Post-Installation Tasks** to complete setup.
+9. After the WSUS role is installed, click **Launch Post-Installation Tasks** to complete setup.
 
 ![LaunchPostInst](https://github.com/user-attachments/assets/e686ea7e-903e-46bc-b5e5-e801debf70ef)
 
