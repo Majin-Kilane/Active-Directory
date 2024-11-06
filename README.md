@@ -17,7 +17,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 - Advanced skills in creating, deleting, and managing user accounts, both individually and in bulk.
 - Expertise in configuring Group Policy Objects (GPOs) to enforce security settings and manage user environments.
 - Organizing users, groups, and computers into OUs for better administrative control and policy application.
-- Configuring security groups and assigning permissions based on roles.
+- ---------- Configuring security groups and assigning permissions based on roles.
 - Configuring security policies that enforce password requirements and account lockoput policies.
 - Skills in configuring DNS, which is closely tied to AD, to resolve domains names and ensure properAD functionality.
 - Configuring AD and dealing with IP ranges, DHCP, and subnetting.
@@ -629,13 +629,21 @@ Right-click on Default Domain Policy and choose Edit.
 1. **Prepare Storage for WSUS (Optional but Recommended)**
    - **Partitioning**: Create a new partition or attach a separate drive for storing WSUS updates (e.g., D:\WSUS). This helps isolate the storage load from the system partition.
    - **Create a Folder**: On the new partition, create a dedicated folder for WSUS, such as D:\WSUS\Updates.
+2. **Open Server Manager**: Select **Add roles and features**.
 
-2. **Open Server Manager**: Go to Server Manager and select Add roles and features.
+
+
 3. **Role-Based Installation**: Choose **Role-based or feature-based installation** and select the server where you want to install WSUS.
 4. **Select WSUS**: In the roles list, select **Windows Server Update Services**, then click **Next**.
+
+![1WSUS](https://github.com/user-attachments/assets/8d667161-bbb1-406c-ba8e-d560ac1169b2)
+
 5. **Select Required Features**: Leave the default features selected, and click **Next**.
 6. **Content Location**: You’ll be prompted to specify a **content location** for storing updates.
    - Enter the path to your dedicated folder (e.g., D:\WSUS\Updates).
+  
+
+
 7. **SQL Server** (Optional): If you have an external SQL Server for the WSUS database, connect to it here. Otherwise, WSUS will use Windows Internal Database by default.
 8. Click **Next** to install WSUS.
 9. After the WSUS role is installed, click **Launch Post-Installation Tasks** to complete setup.
@@ -643,18 +651,38 @@ Right-click on Default Domain Policy and choose Edit.
 ![LaunchPostInst](https://github.com/user-attachments/assets/e686ea7e-903e-46bc-b5e5-e801debf70ef)
 
 10. Wait for the post-installation tasks to complete, which initializes the WSUS database.
+
+![InstSucceedd](https://github.com/user-attachments/assets/ab5fe8af-504a-4169-89ed-14ca23440660)
+
 11. **Open WSUS Console**: Go to **Tools** > **Windows Server Update Services** in Server Manager.
+
+
+
 12. **Specify Proxy Server** (if applicable): In the WSUS Console, go to **Options** > **Proxy      
 Server** if you need to set up a proxy.
+
+
+
+
 13. **Synchronize with Microsoft Update**: In the **WSUS Console**, click **Options** > **Synchronization Schedule** to set up synchronization with Microsoft’s update servers.
 14. **Select Products and Classifications**:
    - Go to **Options** > **Products and Classifications** to select the specific products (e.g., Windows 10, Windows Server 2022) and update types (e.g., security updates, critical updates) you want to manage.
+
+
+
 15. **Set Synchronization Schedule**:
    - Go to **Options** > **Synchronization Schedule** to set the frequency of updates.
+
+
+
+
 16. **Approve Updates**: After synchronization, approve the updates you want to deploy to the networked clients.
 17. **Configure Group Policy for Client Updates**
    - **Open Group Policy Management**: Go to **Group Policy Management** on your domain controller.
    - **Create or Edit a Group Policy**: Right-click your domain or specific OU and select **Create a GPO** (or edit an existing GPO).
+
+
+
 18. **Configure WSUS Settings**:
    - Navigate to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Update**.
    - Set **Specify Intranet Microsoft Update Service Location** to the WSUS server URL (e.g., http://yourWSUSserver:8530).
