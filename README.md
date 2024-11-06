@@ -684,7 +684,14 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![ChooseProducts](https://github.com/user-attachments/assets/0c7e49c8-8e3d-49fe-ba4b-4faca619c0fc)
   
-17.   **Set Synchronization Schedule**: Go to **Options** > **Synchronization Schedule** to set the frequency of updates.
+17. 
+18.
+19.
+20.
+21.
+22.
+23.
+24.    **Set Synchronization Schedule**: Go to **Options** > **Synchronization Schedule** to set the frequency of updates.
 
 
 
