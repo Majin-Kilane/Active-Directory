@@ -640,8 +640,18 @@ Right-click on Default Domain Policy and choose Edit.
 
 5. **Select Required Features**: Leave the default features selected, and click **Next**.
 6. **Content Location**: You’ll be prompted to specify a **content location** for storing updates.
-   - Enter the path to your dedicated folder (e.g., D:\WSUS\Updates).
-  
+   -  Create New Folder and rename it (e.g., "WSUS_Update_Storage").
+     
+  ![CreateFolder](https://github.com/user-attachments/assets/55a70353-7cee-48c7-9673-cdd6192b7525)
+
+   -  Copy Path.
+     
+![CopyPath](https://github.com/user-attachments/assets/98383dad-109b-4786-a6c5-b4a8751ddc66)
+
+   -  Enter the path to your dedicated folder (e.g., D:\WSUS\Updates).
+
+![PastePath](https://github.com/user-attachments/assets/84722d6d-21f8-4395-9590-90a9db3b94a2)
+
 
 
 7. **SQL Server** (Optional): If you have an external SQL Server for the WSUS database, connect to it here. Otherwise, WSUS will use Windows Internal Database by default.
