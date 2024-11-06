@@ -672,16 +672,19 @@ Right-click on Default Domain Policy and choose Edit.
 ![WSUSSConfigWiz](https://github.com/user-attachments/assets/d72e3a48-4bc5-49b8-b3c0-275f0a08d11e)
 
 14. Click **Next** until you reach the **Connect to Upstream Server** tab and click **Start Connecting**.
+    - Wait for Synchronization to finish then click **Next**. 
 
 ![StartConn](https://github.com/user-attachments/assets/3f117ed7-030e-448f-953b-9fe60d26e9a8)
 
-15. 
+15. Click **Download updates only in these languages** then select **English**.
 
-14. **Select Products and Classifications**: Go to **Options** > **Products and Classifications** to select the specific products (e.g., Windows 10, Windows Server 2022) and update types (e.g., security updates, critical updates) you want to manage.
+![SelctLang](https://github.com/user-attachments/assets/4560ac55-9e62-4a04-b342-78913f17a317)
 
+16. Select any products you want to update, then click **Next**.
 
-
-15. **Set Synchronization Schedule**: Go to **Options** > **Synchronization Schedule** to set the frequency of updates.
+![ChooseProducts](https://github.com/user-attachments/assets/0c7e49c8-8e3d-49fe-ba4b-4faca619c0fc)
+  
+17.   **Set Synchronization Schedule**: Go to **Options** > **Synchronization Schedule** to set the frequency of updates.
 
 
 
