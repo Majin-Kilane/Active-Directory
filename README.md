@@ -709,7 +709,7 @@ Right-click on Default Domain Policy and choose Edit.
    
    - Enable **Configure Automatic Updates** and configure the update schedule.
 
-![_EnableAutoUpdate](https://github.com/user-attachments/assets/0ce0fe2f-70af-48f3-982a-9b13f09a7589)
+![__SetTTime Freq](https://github.com/user-attachments/assets/b88377c6-8c25-4a44-85fb-472d97f7b62c)
 
 - Enable **Automatic Updates detection frequency**.  
 
