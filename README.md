@@ -707,11 +707,11 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![_PasteClickApply](https://github.com/user-attachments/assets/cb738f26-def8-4309-b6c1-75e12185f7d0)
    
-   - Enable **Configure Automatic Updates** and configure the update schedule.
+   - Enable **Configure Automatic Updates** and configure the update schedule and click **Apply** and then **OK**.
 
 ![__SetTTime Freq](https://github.com/user-attachments/assets/b88377c6-8c25-4a44-85fb-472d97f7b62c)
 
-- Enable **Automatic Updates detection frequency** and click **Apply** and then **OK**.  
+- Enable **Automatic Updates detection frequency**.  
 
 ![__EnableAutoDetecFreq](https://github.com/user-attachments/assets/d3354067-a134-4059-8621-e1aaaec06f57)
 
