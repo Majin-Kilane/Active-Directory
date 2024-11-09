@@ -693,24 +693,14 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![SelectBeginIntSync](https://github.com/user-attachments/assets/6ea04362-2078-42a4-aeec-6e329b022e51)
 
-
-20. 
-21.
-22.
-23.
-24.
-
-
-
-
-16. **Approve Updates**: After synchronization, approve the updates you want to deploy to the networked clients.
-17. **Configure Group Policy for Client Updates**
+20. **Approve Updates**: After synchronization, approve the updates you want to deploy to the networked clients.
+21. **Configure Group Policy for Client Updates**
    - **Open Group Policy Management**: Go to **Group Policy Management** on your domain controller.
    - **Create or Edit a Group Policy**: Right-click your domain or specific OU and select **Create a GPO** (or edit an existing GPO).
 
 ![_GPO](https://github.com/user-attachments/assets/b1b0a230-af8b-4abc-aea5-79104d8e7411)
   
-18. **Configure WSUS Settings**:
+22. **Configure WSUS Settings**:
    - Right-click the newly created GPO and then click **Edit**.
    - Navigate to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Update**.
    - Set **Specify Intranet Microsoft Update Service Location** to the WSUS server URL (e.g., http://WIN-EUI59HSFCD4.mydomain.com:8530).
@@ -724,8 +714,6 @@ Right-click on Default Domain Policy and choose Edit.
 - Enable **Automatic Updates detection frequency**.  
 
 ![__EnableAutoDetecFreq](https://github.com/user-attachments/assets/d3354067-a134-4059-8621-e1aaaec06f57)
-
-
 
 ______________________________________________________________________________
 ## Installing Windows 10 on VirtualBox
