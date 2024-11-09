@@ -688,14 +688,13 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![ChooseClassifx](https://github.com/user-attachments/assets/09942c02-9f13-4266-9ab6-a21ad5b7d055)
 
-18. Select **Synchronize Manually** thne click **Next**.
+18. Select **Synchronize Manually** then click **Next**.
 19. Select **Begin initial synchronization**, then click **Next**, and then **Finish**.
 
 ![SelectBeginIntSync](https://github.com/user-attachments/assets/6ea04362-2078-42a4-aeec-6e329b022e51)
 
 
-19. 
-20.
+20. 
 21.
 22.
 23.
