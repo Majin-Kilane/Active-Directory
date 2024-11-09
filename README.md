@@ -711,7 +711,7 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![__SetTTime Freq](https://github.com/user-attachments/assets/b88377c6-8c25-4a44-85fb-472d97f7b62c)
 
-- Enable **Automatic Updates detection frequency**.  
+- Enable **Automatic Updates detection frequency** and click **Apply** and then **OK**.  
 
 ![__EnableAutoDetecFreq](https://github.com/user-attachments/assets/d3354067-a134-4059-8621-e1aaaec06f57)
 
