@@ -694,7 +694,7 @@ Right-click on Default Domain Policy and choose Edit.
 ![SelectBeginIntSync](https://github.com/user-attachments/assets/6ea04362-2078-42a4-aeec-6e329b022e51)
 
 20. **Approve Updates**: After synchronization, approve the updates you want to deploy to the networked clients.
-21. **Configure Group Policy for Client Updates**
+21. **Configure Group Policy for Client Updates**.
    - **Open Group Policy Management**: Go to **Group Policy Management** on your domain controller.
    - **Create or Edit a Group Policy**: Right-click your domain or specific OU and select **Create a GPO** (or edit an existing GPO).
 
@@ -769,8 +769,6 @@ This allows the Windows 10 client to access the internet using the Domain Contro
 ![2ChooseLang](https://github.com/user-attachments/assets/1742c03e-2b8f-4baa-b9c4-dfce6c36098f)
 
 3. Click **Install Now**.
-
-----Insert Image----
 
 4. Enter a **product key** or select **I don’t have a product key** to skip.
 
