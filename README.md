@@ -709,13 +709,14 @@ Right-click on Default Domain Policy and choose Edit.
    - **Create or Edit a Group Policy**: Right-click your domain or specific OU and select **Create a GPO** (or edit an existing GPO).
 
 ![_GPO](https://github.com/user-attachments/assets/b1b0a230-af8b-4abc-aea5-79104d8e7411)
-   - Expand **Computer Configuration** > **Policies** > **Administrative Templates** > **Policy** > **Windows Update**. 
-
-
-
+  
 18. **Configure WSUS Settings**:
+   - Right-click the newly created GPO and then click **Edit**.
    - Navigate to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Update**.
    - Set **Specify Intranet Microsoft Update Service Location** to the WSUS server URL (e.g., http://yourWSUSserver:8530).
+
+![_PasteClickApply](https://github.com/user-attachments/assets/cb738f26-def8-4309-b6c1-75e12185f7d0)
+
    - Enable **Automatic Updates** and configure the update schedule.
 
 
