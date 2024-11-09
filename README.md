@@ -698,7 +698,7 @@ Right-click on Default Domain Policy and choose Edit.
 21.
 22.
 23.
-24.    **Set Synchronization Schedule**: Go to **Options** > **Synchronization Schedule** to set the frequency of updates.
+24.
 
 
 
@@ -713,16 +713,17 @@ Right-click on Default Domain Policy and choose Edit.
 18. **Configure WSUS Settings**:
    - Right-click the newly created GPO and then click **Edit**.
    - Navigate to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Update**.
-   - Set **Specify Intranet Microsoft Update Service Location** to the WSUS server URL (e.g., http://yourWSUSserver:8530).
+   - Set **Specify Intranet Microsoft Update Service Location** to the WSUS server URL (e.g., http://WIN-EUI59HSFCD4.mydomain.com:8530).
 
 ![_PasteClickApply](https://github.com/user-attachments/assets/cb738f26-def8-4309-b6c1-75e12185f7d0)
+   
+   - Enable **Configure Automatic Updates** and configure the update schedule.
 
-   - Enable **Automatic Updates** and configure the update schedule.
+![_EnableAutoUpdate](https://github.com/user-attachments/assets/0ce0fe2f-70af-48f3-982a-9b13f09a7589)
 
+- Enable **Automatic Updates detection frequency**.  
 
-
-
-
+![__EnableAutoDetecFreq](https://github.com/user-attachments/assets/d3354067-a134-4059-8621-e1aaaec06f57)
 
 
 
