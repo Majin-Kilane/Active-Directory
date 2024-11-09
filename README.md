@@ -709,6 +709,9 @@ Right-click on Default Domain Policy and choose Edit.
    - **Open Group Policy Management**: Go to **Group Policy Management** on your domain controller.
    - **Create or Edit a Group Policy**: Right-click your domain or specific OU and select **Create a GPO** (or edit an existing GPO).
 
+![_GPO](https://github.com/user-attachments/assets/b1b0a230-af8b-4abc-aea5-79104d8e7411)
+   - Expand **Computer Configuration** > **Policies** > **Administrative Templates** > **Policy** > **Windows Update**. 
+
 
 
 18. **Configure WSUS Settings**:
