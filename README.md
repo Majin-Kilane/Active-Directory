@@ -283,32 +283,34 @@ Follow the installation prompts:
 
 ### Step 9: Create the Custom Administrator Account
 1. Log in with the default **Administrator** account.
-2. Open **Server Manager** > **Tools** > **Computer Management**.
-3. Go to **Local Users and Groups** > **Users**.
-4. Right-click **Users**, then select **New User**.
+2. Click **Start** > **Windows Administrative Tools** > **Computer Management**.
+
+![1 Start](https://github.com/user-attachments/assets/492563cc-d68f-4c17-b13c-f72311603827)
+
+3. Right-click **Users**, then select **New User**.
 
 ![1CreateUser](https://github.com/user-attachments/assets/0c176c87-ee0a-487f-96ac-81699592b539)
 
-5. Enter the **Username**, **Full name**, and **Password**.
+4. Enter the **Username**, **Full name**, and **Password**.
 
 ![2AddUserDet](https://github.com/user-attachments/assets/10f90eb0-b9b5-48dc-a9f8-f8408e026061)
 
-6. Uncheck **User must change password at next logon** and select **Password never expires** if desired.
+5. Uncheck **User must change password at next logon** and, if desired, select **Password never expires**, then click **Next**..
+6. Click **Create** to save the new user.
 
 ![3Password](https://github.com/user-attachments/assets/5bf9c8bf-6e43-48cb-ae0b-3dcecc82b240)
 
-7. Click **Create** to save the new user.
-8. Right-click the newly created account and select **Properties**.
+7. Right-click the newly created account and select **Properties**.
 
 ![4Properties](https://github.com/user-attachments/assets/2d074301-957c-4db1-b9f6-7651cc0e99d7)
 
-9. Go to the **Member Of** tab, click **Add**, type **Administrators**, and click **OK** to grant admin privileges.
+8. Go to the **Member Of** tab, click **Add**, type **Administrators**, and click **OK** to grant admin privileges.
 
 ![5Admin](https://github.com/user-attachments/assets/1f46d8ec-6566-46bc-97a9-a68ccf7adc6c)
 
-10. Sign out and Sign in with **Custom Administrator** account.
+9. Sign out and Sign in with **Custom Administrator** account.
 
-![Uploading 7LoginScreen.png…]()
+![7LoginScreen](https://github.com/user-attachments/assets/241f1e8c-9a17-494d-950e-e459a4939edc)
 
    
 ### Step 10: Set a Static IP Address on Windows Server 2022
