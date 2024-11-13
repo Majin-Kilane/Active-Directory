@@ -771,10 +771,15 @@ Click **OK** to create the OU.
 
 ![3Move](https://github.com/user-attachments/assets/3d149c05-9879-404b-b0e1-d7a4fa4ebf15)
 
+9. Select **Administrators** then click **Ok**.
 
+![4SelAdmin](https://github.com/user-attachments/assets/a3eefd9b-d2c8-4bd0-befe-2fdfa88cc396)
 
+10. Verify that the **Custom Administrator** user was moved by expanding **Administrator**.
 
+![5Moved](https://github.com/user-attachments/assets/99f17b9e-6ba9-40b2-88dd-880340c1ca68)
 
+### Add C
 
 
 ______________________________________________________________________________
