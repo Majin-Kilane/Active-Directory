@@ -749,6 +749,27 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![__EnableAutoDetecFreq](https://github.com/user-attachments/assets/d3354067-a134-4059-8621-e1aaaec06f57)
 
+### Step 23: Creating Organizational Units 
+1. Click **Start** > **Windows Administrative Tools** > **Active Directory Users and Computers**.
+2. In the **Active Directory Users and Computers** window, expand your domain (e.g., mydomain.com) in the left-hand pane.
+3. Right-click the domain or the parent OU where you want to create the new OU.
+
+![0CreateOU](https://github.com/user-attachments/assets/140a48ab-7e24-4b2e-807e-3a5a70975f48)
+
+4. Select **New** > Click **Start** > **Windows Administrative Tools** > **Active Directory Users and Computers**..
+5. In the **New Object - Organizational Unit** dialog, enter a name for the OU (e.g., "Administrators" or "IT Department").
+6. **Optional**: Uncheck **Protect container from accidental deletion** if you need to delete the OU in the future without restrictions.
+
+![0NameOU](https://github.com/user-attachments/assets/af78eaa7-b876-45a5-9581-92394df3a0d2)
+
+Click **OK** to create the OU.
+7. You should now see the newly created OU within the domain structure in A**ctive Directory Users and Computers**.
+
+
+
+
+
+
 ______________________________________________________________________________
 ## Installing Windows 10 on VirtualBox
 
