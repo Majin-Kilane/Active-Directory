@@ -765,6 +765,13 @@ Right-click on Default Domain Policy and choose Edit.
 Click **OK** to create the OU.
 7. You should now see the newly created OU within the domain structure in A**ctive Directory Users and Computers**.
 
+### Move the **Custom Administrator** to the newly created **Administrators** OU.
+
+8. Expand **Users**, then right-click the custom administrator user created earlier, and select **Move**.
+
+![3Move](https://github.com/user-attachments/assets/3d149c05-9879-404b-b0e1-d7a4fa4ebf15)
+
+
 
 
 
