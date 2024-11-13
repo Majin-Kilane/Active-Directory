@@ -308,7 +308,7 @@ Follow the installation prompts:
 
 10. Sign out and Sign in with **Custom Administrator** account.
 
-![6LoginWCAA](https://github.com/user-attachments/assets/16229d33-3090-46ab-96a3-a086b209aa60)
+![7LoginScreen](https://github.com/user-attachments/assets/aad91c0b-694a-424b-a422-d081dda89b6b)
 
    
 ### Step 10: Set a Static IP Address on Windows Server 2022
