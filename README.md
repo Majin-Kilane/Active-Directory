@@ -283,7 +283,7 @@ Follow the installation prompts:
 
 ### Step 9: Create the Custom Administrator Account
 1. Log in with the default **Administrator** account.
-2. Click **Start** > **Windows Administrative Tools** > **Computer Management**.
+2. Click **Start** > **Windows Administrative Tools** > **Active Directory Users and Computers**.
 
 ![1 Start](https://github.com/user-attachments/assets/492563cc-d68f-4c17-b13c-f72311603827)
 
