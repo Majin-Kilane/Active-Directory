@@ -224,20 +224,33 @@ Follow the installation prompts:
 
 
 ### Step 8: Create the Custom Administrator Account
-   - If you haven't created the custom administrator account yet:
 1. Log in with the default **Administrator** account.
 2. Open **Server Manager** > **Tools** > **Computer Management**.
 3. Go to **Local Users and Groups** > **Users**.
 4. Right-click **Users**, then select **New User**.
+
+![1CreateUser](https://github.com/user-attachments/assets/0c176c87-ee0a-487f-96ac-81699592b539)
+
 5. Enter the **Username**, **Full name**, and **Password**.
+
+![2AddUserDet](https://github.com/user-attachments/assets/10f90eb0-b9b5-48dc-a9f8-f8408e026061)
+
 6. Uncheck **User must change password at next logon** and select **Password never expires** if desired.
+
+![3Password](https://github.com/user-attachments/assets/5bf9c8bf-6e43-48cb-ae0b-3dcecc82b240)
+
 7. Click **Create** to save the new user.
 8. Right-click the newly created account and select **Properties**.
+
+![4Properties](https://github.com/user-attachments/assets/2d074301-957c-4db1-b9f6-7651cc0e99d7)
+
 9. Go to the **Member Of** tab, click **Add**, type **Administrators**, and click **OK** to grant admin privileges.
 
+![5Admin](https://github.com/user-attachments/assets/1f46d8ec-6566-46bc-97a9-a68ccf7adc6c)
 
+10. Sign out and Sign in with Custom Administrator account.
 
-
+![6LoginWCAA](https://github.com/user-attachments/assets/16229d33-3090-46ab-96a3-a086b209aa60)
 
    
 ### Step 9: Set a Static IP Address on Windows Server 2022
