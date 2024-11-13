@@ -17,7 +17,7 @@ To design, implement, and manage a secure and scalable Active Directory infrastr
 - Advanced skills in creating, deleting, and managing user accounts, both individually and in bulk.
 - Expertise in configuring Group Policy Objects (GPOs) to enforce security settings and manage user environments.
 - Organizing users, groups, and computers into OUs for better administrative control and policy application.
-- ---------- Configuring security groups and assigning permissions based on roles.
+- Configuring security groups and assigning permissions based on roles.
 - Configuring security policies that enforce password requirements and account lockoput policies.
 - Skills in configuring DNS, which is closely tied to AD, to resolve domains names and ensure properAD functionality.
 - Configuring AD and dealing with IP ranges, DHCP, and subnetting.
@@ -340,6 +340,7 @@ Follow the installation prompts:
    - **Change the computer name** (optional).
    - **Enable Remote Desktop** (optional).
 7. Reboot if necessary.
+
 --------------------
 
 ## Configuring Security in Windows Server 2022
