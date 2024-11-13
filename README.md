@@ -453,7 +453,7 @@ Right-click on Default Domain Policy and choose Edit.
    - **Maximum tolerance for computer clock synchronization**: Set to 5 minutes to prevent issues with Kerberos authentication due to time differences.
 
 ![Kerberos](https://github.com/user-attachments/assets/34cdbed4-7d7b-4228-86c7-8427bbfb8714)
-
+-------------
 
 ### Step 19: Install the Routing and Remote Access Role
 1. Open **Server Manager**.
