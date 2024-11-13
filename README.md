@@ -221,180 +221,7 @@ Follow the installation prompts:
 
 ![4Reboot](https://github.com/user-attachments/assets/43acc9f1-cb98-4ae1-bb6c-80be5ec22973)
 
-
-
-### Step 8: Create the Custom Administrator Account
-1. Log in with the default **Administrator** account.
-2. Open **Server Manager** > **Tools** > **Computer Management**.
-3. Go to **Local Users and Groups** > **Users**.
-4. Right-click **Users**, then select **New User**.
-
-![1CreateUser](https://github.com/user-attachments/assets/0c176c87-ee0a-487f-96ac-81699592b539)
-
-5. Enter the **Username**, **Full name**, and **Password**.
-
-![2AddUserDet](https://github.com/user-attachments/assets/10f90eb0-b9b5-48dc-a9f8-f8408e026061)
-
-6. Uncheck **User must change password at next logon** and select **Password never expires** if desired.
-
-![3Password](https://github.com/user-attachments/assets/5bf9c8bf-6e43-48cb-ae0b-3dcecc82b240)
-
-7. Click **Create** to save the new user.
-8. Right-click the newly created account and select **Properties**.
-
-![4Properties](https://github.com/user-attachments/assets/2d074301-957c-4db1-b9f6-7651cc0e99d7)
-
-9. Go to the **Member Of** tab, click **Add**, type **Administrators**, and click **OK** to grant admin privileges.
-
-![5Admin](https://github.com/user-attachments/assets/1f46d8ec-6566-46bc-97a9-a68ccf7adc6c)
-
-10. Sign out and Sign in with Custom Administrator account.
-
-![6LoginWCAA](https://github.com/user-attachments/assets/16229d33-3090-46ab-96a3-a086b209aa60)
-
-   
-### Step 9: Set a Static IP Address on Windows Server 2022
-1. Once logged in, open **Server Manager** and go to Local Server.
-2. In the **Properties** section, click on **Ethernet** (or your network adapter name).
-   
-![1SetNetAdaptor](https://github.com/user-attachments/assets/7913b9f6-f262-4b85-81a1-63cb010ee5e7)
-  
-3. In the **Network Connections** window, right-click on your network adapter and select **Properties**.
-
-![3OpenProperties](https://github.com/user-attachments/assets/1918b3f1-3606-4b41-b0cd-1759ee2eafab)
-
-4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
-
-![4SelectIPv4](https://github.com/user-attachments/assets/1afc160d-c7fc-411b-b4e0-55c121cfc8f8)
-
-5. Choose **Use the following IP address** and enter the following details:
-   - **IP address**: Choose an IP, e.g., 192.168.1.10.
-   - **Subnet mask**: Use 255.255.255.0.
-   - Leave **Default gateway** and **DNS server** fields blank (for isolated networks).
-   - Set the loopback IP 127.0.0.1 to use this server as the DNS server.
-
-![5ChooseIP](https://github.com/user-attachments/assets/4e26ab15-2523-402b-b5ef-89a4ca4ebf58)
-
-6. Click **OK** to save settings.
-
-   - **Change the computer name** (optional).
-   - **Enable Remote Desktop** (optional).
-7. Reboot if necessary.
---------------------
-
-## Configuring Security in Windows Server 2022
-
-
-### Step 10: Update the Server
-1. Login  Open **Server Manager**.
-2. Go to **Local Server** and click on **Windows Update**.
-
-![1ServerManager](https://github.com/user-attachments/assets/e3bc635c-9a50-4866-82d9-bf0bf72d38e5)
-
-3. Check for updates, download, and install any critical and security updates to ensure the server is protected against known vulnerabilities.
-
-![2InstallUpdates](https://github.com/user-attachments/assets/ad80c583-e8b8-4eab-bb3e-46be8d77215c)
-
-4. Restart.
-
-
-### Step 11: Configure Windows Firewall
-1. Open **Server Manager** and select **Tools** > **Windows Defender Firewall with Advanced Security**.
-2. Configure **Inbound** and **Outbound** rules to allow only necessary traffic.
-3. Enable **logging** in the firewall settings to monitor suspicious connections.
-
-
-### Step 12: Enable Windows Defender Antivirus
-1. Go to **Start** > **Settings** > **Privacy & Security** > **Windows Security** > **Virus & Threat Protection**.
-
-![WinSecurity](https://github.com/user-attachments/assets/123704a3-f991-4dd6-9332-29783170a676)
-
-2. Ensure **Real-Time Protection** and **App & browser control** are enabled.
-
-![VirusThreat](https://github.com/user-attachments/assets/2031034e-73e1-4492-b38a-b1aa849f56a8)
-
-3. Turn on **Reputation-based protection**.
-
-![EnableAppBrowserControl](https://github.com/user-attachments/assets/bf7fdeec-87c0-4458-a4f2-1c3d4561e2ec)
- 
-4. Schedule regular scans to detect and prevent malware.
-
-![Enabled](https://github.com/user-attachments/assets/3c1f9d64-d2cc-4e66-8dd8-99bc79e4e62c)
-
-
-### Step 13: Disable Unnecessary Services
-1. Open **Server Manager** and go to **Tools** > **Services**.
-2. Identify services that are not essential for your server’s purpose and set them to **Manual** or **Disabled**.
-
-![services](https://github.com/user-attachments/assets/a0dc3538-4285-4230-97f6-eb5c111f4f38)
-
-3. Examples of services to review: **Remote Registry**, **Print Spooler** (if not needed), and **Windows Remote Management** (if not required).
-
-
-### Step 14: Configure Default Domain Policy
-1. Go to **Tools** > **Group Policy Management**.
-2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
-Right-click on Default Domain Policy and choose Edit.
-   - Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
-
-![EditGPO](https://github.com/user-attachments/assets/373bfdff-288b-477e-a488-1b6788549d25)
-
-
-### Step 15: Configure Password Policies
-1. In the **Default Domain Policy**, go to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**.
-2. Define password policies, such as:
-   - **Enforce Password History** (e.g., 24 passwords).
-   - **Maximum Password Age** (e.g., 60 days).
-   - **Minimum Password Length** (e.g., 12-16 characters).
-   - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
-  
-![2PWPol](https://github.com/user-attachments/assets/dbefe350-3340-4679-b917-9ea7ae0a69ce)
-
-
-### Step 16: Configure Account Lockout Policy
-1. Open **Server Manager**.
-2. Go to **Tools** and select **Group Policy Management**.
-3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
-4. Select your domain name (e.g., mydomain.local).
-5. Right-click on the **Default Domain Policy** and choose **Edit**.
-   -Note: It’s best to apply this policy at the domain level to ensure it affects all users across the domain.
-
-![1EditGPO](https://github.com/user-attachments/assets/abfa5cd9-993a-4e8d-869d-ffe9d91df8ae)
-   
-6. In the Group Policy Management Editor window, go to:
-   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**. 
-7.Double-click **Account lockout threshold**.
-8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
-
-![AccLOThreshold](https://github.com/user-attachments/assets/bbb2f474-5b4b-40bd-ac8e-55871100466e)
-
-9. Click **OK**.
-10. Double-click **Account lockout duration**.
-11. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
-   - Note: If you want an administrator to unlock the account manually, set this to 0.
-
-![AccLDuration](https://github.com/user-attachments/assets/126918fe-cab2-4c04-a287-3f3c71a775a7)
-
-12. Click **OK**.
-13. After configuring the settings, close the **Group Policy Management Editor**.
-    - Group Policy changes will apply automatically.
-
-![lockoutpol](https://github.com/user-attachments/assets/03c97837-752a-4140-86d2-880ebc9156e2)
-
-
-### Step 17: Configure Kerberos Policies
-1. In the **Group Policy Management Editor**, navigate to:
-   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Kerberos Policy**.
-2. Configure the following Kerberos settings:
-   - **Enforce user logon restrictions**: Set to Enabled to enforce Kerberos logon restrictions, which adds an extra layer of security by checking each user’s rights before logging on.
-   - **Maximum lifetime for service ticket**: Define how long service tickets are valid (e.g., 600 minutes).
-   - **Maximum lifetime for user ticket**: Set a time limit for user tickets, typically 10 hours (600 minutes).
-   - **Maximum lifetime for user ticket renewal**: Specify how long a ticket can be renewed (e.g., 7 days).
-   - **Maximum tolerance for computer clock synchronization**: Set to 5 minutes to prevent issues with Kerberos authentication due to time differences.
-
-![Kerberos](https://github.com/user-attachments/assets/34cdbed4-7d7b-4228-86c7-8427bbfb8714)
-
-### Step 18: Install Active Directory Domain Services (AD DS)
+### Step 8: Install Active Directory Domain Services (AD DS)
 1. In **Server Manager**, click **Add Roles and Features**.
 
 ![1AddRoles](https://github.com/user-attachments/assets/c245ca51-424a-4032-9e1c-17e6a3e3ced3)
@@ -453,6 +280,178 @@ Right-click on Default Domain Policy and choose Edit.
 14. Follow the prompts to complete the domain controller configuration and restart the server.
  
 ![18DomainAdminLogin_Copy](https://github.com/user-attachments/assets/9db58aba-59c7-4d2f-bb85-c61e4c3560ab)
+
+### Step 9: Create the Custom Administrator Account
+1. Log in with the default **Administrator** account.
+2. Open **Server Manager** > **Tools** > **Computer Management**.
+3. Go to **Local Users and Groups** > **Users**.
+4. Right-click **Users**, then select **New User**.
+
+![1CreateUser](https://github.com/user-attachments/assets/0c176c87-ee0a-487f-96ac-81699592b539)
+
+5. Enter the **Username**, **Full name**, and **Password**.
+
+![2AddUserDet](https://github.com/user-attachments/assets/10f90eb0-b9b5-48dc-a9f8-f8408e026061)
+
+6. Uncheck **User must change password at next logon** and select **Password never expires** if desired.
+
+![3Password](https://github.com/user-attachments/assets/5bf9c8bf-6e43-48cb-ae0b-3dcecc82b240)
+
+7. Click **Create** to save the new user.
+8. Right-click the newly created account and select **Properties**.
+
+![4Properties](https://github.com/user-attachments/assets/2d074301-957c-4db1-b9f6-7651cc0e99d7)
+
+9. Go to the **Member Of** tab, click **Add**, type **Administrators**, and click **OK** to grant admin privileges.
+
+![5Admin](https://github.com/user-attachments/assets/1f46d8ec-6566-46bc-97a9-a68ccf7adc6c)
+
+10. Sign out and Sign in with **Custom Administrator** account.
+
+![6LoginWCAA](https://github.com/user-attachments/assets/16229d33-3090-46ab-96a3-a086b209aa60)
+
+   
+### Step 10: Set a Static IP Address on Windows Server 2022
+1. Once logged in, open **Server Manager** and go to Local Server.
+2. In the **Properties** section, click on **Ethernet** (or your network adapter name).
+   
+![1SetNetAdaptor](https://github.com/user-attachments/assets/7913b9f6-f262-4b85-81a1-63cb010ee5e7)
+  
+3. In the **Network Connections** window, right-click on your network adapter and select **Properties**.
+
+![3OpenProperties](https://github.com/user-attachments/assets/1918b3f1-3606-4b41-b0cd-1759ee2eafab)
+
+4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
+
+![4SelectIPv4](https://github.com/user-attachments/assets/1afc160d-c7fc-411b-b4e0-55c121cfc8f8)
+
+5. Choose **Use the following IP address** and enter the following details:
+   - **IP address**: Choose an IP, e.g., 192.168.1.10.
+   - **Subnet mask**: Use 255.255.255.0.
+   - Leave **Default gateway** and **DNS server** fields blank (for isolated networks).
+   - Set the loopback IP 127.0.0.1 to use this server as the DNS server.
+
+![5ChooseIP](https://github.com/user-attachments/assets/4e26ab15-2523-402b-b5ef-89a4ca4ebf58)
+
+6. Click **OK** to save settings.
+
+   - **Change the computer name** (optional).
+   - **Enable Remote Desktop** (optional).
+7. Reboot if necessary.
+--------------------
+
+## Configuring Security in Windows Server 2022
+
+
+### Step 11: Update the Server
+1. Login  Open **Server Manager**.
+2. Go to **Local Server** and click on **Windows Update**.
+
+![1ServerManager](https://github.com/user-attachments/assets/e3bc635c-9a50-4866-82d9-bf0bf72d38e5)
+
+3. Check for updates, download, and install any critical and security updates to ensure the server is protected against known vulnerabilities.
+
+![2InstallUpdates](https://github.com/user-attachments/assets/ad80c583-e8b8-4eab-bb3e-46be8d77215c)
+
+4. Restart.
+
+
+### Step 12: Configure Windows Firewall
+1. Open **Server Manager** and select **Tools** > **Windows Defender Firewall with Advanced Security**.
+2. Configure **Inbound** and **Outbound** rules to allow only necessary traffic.
+3. Enable **logging** in the firewall settings to monitor suspicious connections.
+
+
+### Step 13: Enable Windows Defender Antivirus
+1. Go to **Start** > **Settings** > **Privacy & Security** > **Windows Security** > **Virus & Threat Protection**.
+
+![WinSecurity](https://github.com/user-attachments/assets/123704a3-f991-4dd6-9332-29783170a676)
+
+2. Ensure **Real-Time Protection** and **App & browser control** are enabled.
+
+![VirusThreat](https://github.com/user-attachments/assets/2031034e-73e1-4492-b38a-b1aa849f56a8)
+
+3. Turn on **Reputation-based protection**.
+
+![EnableAppBrowserControl](https://github.com/user-attachments/assets/bf7fdeec-87c0-4458-a4f2-1c3d4561e2ec)
+ 
+4. Schedule regular scans to detect and prevent malware.
+
+![Enabled](https://github.com/user-attachments/assets/3c1f9d64-d2cc-4e66-8dd8-99bc79e4e62c)
+
+
+### Step 14: Disable Unnecessary Services
+1. Open **Server Manager** and go to **Tools** > **Services**.
+2. Identify services that are not essential for your server’s purpose and set them to **Manual** or **Disabled**.
+
+![services](https://github.com/user-attachments/assets/a0dc3538-4285-4230-97f6-eb5c111f4f38)
+
+3. Examples of services to review: **Remote Registry**, **Print Spooler** (if not needed), and **Windows Remote Management** (if not required).
+
+
+### Step 15: Configure Default Domain Policy
+1. Go to **Tools** > **Group Policy Management**.
+2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
+Right-click on Default Domain Policy and choose Edit.
+   - Note: Since this policy is domain-wide, changes here will apply to all users and computers in the domain.
+
+![EditGPO](https://github.com/user-attachments/assets/373bfdff-288b-477e-a488-1b6788549d25)
+
+
+### Step 16: Configure Password Policies
+1. In the **Default Domain Policy**, go to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**.
+2. Define password policies, such as:
+   - **Enforce Password History** (e.g., 24 passwords).
+   - **Maximum Password Age** (e.g., 60 days).
+   - **Minimum Password Length** (e.g., 12-16 characters).
+   - **Password Complexity Requirements** (ensure it includes uppercase, lowercase, numbers, and symbols).
+  
+![2PWPol](https://github.com/user-attachments/assets/dbefe350-3340-4679-b917-9ea7ae0a69ce)
+
+
+### Step 17: Configure Account Lockout Policy
+1. Open **Server Manager**.
+2. Go to **Tools** and select **Group Policy Management**.
+3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
+4. Select your domain name (e.g., mydomain.local).
+5. Right-click on the **Default Domain Policy** and choose **Edit**.
+   -Note: It’s best to apply this policy at the domain level to ensure it affects all users across the domain.
+
+![1EditGPO](https://github.com/user-attachments/assets/abfa5cd9-993a-4e8d-869d-ffe9d91df8ae)
+   
+6. In the Group Policy Management Editor window, go to:
+   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Account Lockout Policy**. 
+7.Double-click **Account lockout threshold**.
+8. Set the number of failed logon attempts allowed before the account is locked out (e.g., 5).
+
+![AccLOThreshold](https://github.com/user-attachments/assets/bbb2f474-5b4b-40bd-ac8e-55871100466e)
+
+9. Click **OK**.
+10. Double-click **Account lockout duration**.
+11. Set the amount of time (in minutes) the account remains locked before it automatically unlocks. (15 minutes preferred).
+   - Note: If you want an administrator to unlock the account manually, set this to 0.
+
+![AccLDuration](https://github.com/user-attachments/assets/126918fe-cab2-4c04-a287-3f3c71a775a7)
+
+12. Click **OK**.
+13. After configuring the settings, close the **Group Policy Management Editor**.
+    - Group Policy changes will apply automatically.
+
+![lockoutpol](https://github.com/user-attachments/assets/03c97837-752a-4140-86d2-880ebc9156e2)
+
+
+### Step 18: Configure Kerberos Policies
+1. In the **Group Policy Management Editor**, navigate to:
+   - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Kerberos Policy**.
+2. Configure the following Kerberos settings:
+   - **Enforce user logon restrictions**: Set to Enabled to enforce Kerberos logon restrictions, which adds an extra layer of security by checking each user’s rights before logging on.
+   - **Maximum lifetime for service ticket**: Define how long service tickets are valid (e.g., 600 minutes).
+   - **Maximum lifetime for user ticket**: Set a time limit for user tickets, typically 10 hours (600 minutes).
+   - **Maximum lifetime for user ticket renewal**: Specify how long a ticket can be renewed (e.g., 7 days).
+   - **Maximum tolerance for computer clock synchronization**: Set to 5 minutes to prevent issues with Kerberos authentication due to time differences.
+
+![Kerberos](https://github.com/user-attachments/assets/34cdbed4-7d7b-4228-86c7-8427bbfb8714)
+
 
 ### Step 19: Install the Routing and Remote Access Role
 1. Open **Server Manager**.
