@@ -308,7 +308,7 @@ Follow the installation prompts:
 
 ![5Admin](https://github.com/user-attachments/assets/1f46d8ec-6566-46bc-97a9-a68ccf7adc6c)
 
-9. Sign out and Sign in with **Custom Administrator** account.
+9. Sign out and Sign in with the **Custom Administrator** account.
 
 ![7LoginScreen](https://github.com/user-attachments/assets/241f1e8c-9a17-494d-950e-e459a4939edc)
 
