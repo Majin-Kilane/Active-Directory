@@ -372,7 +372,8 @@ Follow the installation prompts:
 2. Configure **Inbound** and **Outbound** rules to allow only necessary traffic.
 3. Enable **logging** in the firewall settings to monitor suspicious connections.
 
-### Create Firewall Rules using Group Policy.
+### Step 13: Create Firewall Rules using Group Policy.
+   - Note: Configure **Inbound** and **Outbound** rules to allow only necessary traffic. Enable **logging** in the firewall settings to monitor suspicious connections.
 1. Go to **Server Manager** > **Tools** > **Group Policy Management**.
 2. In **Group Policy Management**, right-click your domain or the Organizational Unit (OU) where you want to apply the firewall rules, then select **Create a GPO in this domain, and Link it here**.
 
