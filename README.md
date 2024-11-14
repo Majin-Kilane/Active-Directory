@@ -478,10 +478,32 @@ Follow the installation prompts:
 
 ![6VarifyRuleCreation](https://github.com/user-attachments/assets/b1d13ceb-2f53-4ab4-baca-4fa6a6b279dc)
 
-4. Close the Group Policy Management Editor.
-
 ### Configure Firewall Automatic Startup
+1. Navigate to **Security Settings** > **Systems Services** >  **Windows Defender Firewall**.
+2. Right-click **Windows Defender Firewall**, check **Define this policy setting**, and then select **Automatic** for the startup mode.
+
+![1SelectSysServices](https://github.com/user-attachments/assets/91bb4938-9377-490c-8b46-39f171040442)
+
+2. Verify that the firewall automatic startup is enabled.
+
+![2Enabled](https://github.com/user-attachments/assets/36d08be6-8b8e-43b0-9c68-b7543192222b)
+
+3. Close the **Group Policy Management Editor**.
+
+### Link Group Policy Object to targeted OU
 1. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Step 14: Enable Windows Defender Antivirus
 1. Go to **Start** > **Settings** > **Privacy & Security** > **Windows Security** > **Virus & Threat Protection**.
