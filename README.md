@@ -403,12 +403,39 @@ Follow the installation prompts:
 
 6. Select either **Inbound Rules** or **Outbound Rules** depending on the type of rule you want to create.
 7. Right-click **Inbound Rules** (or **Outbound Rules**), then select **New Rule**….
+
+![7InboundRule](https://github.com/user-attachments/assets/b861de34-9fc4-4357-8ab1-8a44e784abbc)
+
 8. In the **New Inbound/Outbound Rule Wizard**:
-   - **Rule Type**: Select the type of rule (e.g., **Program**, **Port**, **Predefined**, or **Custom**) and click **Next**.
-   - **Program/Port**: Specify the program path or port number, if applicable, and click **Next**.
-   - **Action**: Choose whether to **Allow the connection**, **Allow if secure**, or **Block the connection**.
-   - **Profile**: Select the profile(s) where the rule will apply (Domain, Private, Public), then click **Next**.
-   - **Name**: Provide a name and description for the rule, then click **Finish**.
+   - Select **Custom** and click **Next**.
+  
+![8CustomButton](https://github.com/user-attachments/assets/dd1f67b1-1146-4af2-b1c7-c538c613f58c)
+
+   - Select **ICMPv4**, click **Customize** to ensure **All ICMP types** is selected, then click **OK** and **Next**.
+
+![9SelectICMPv4](https://github.com/user-attachments/assets/f475d2f5-2e71-424b-9e5e-b7c543075af2)
+
+   - Select **These IP Addresses**, then click **Add**.
+
+![12TheseIPs](https://github.com/user-attachments/assets/a26cb3cb-ee68-45b7-ba4d-c14422bac994)
+
+   - Specify subnet range, then click **OK**.
+
+![13SubnetRange](https://github.com/user-attachments/assets/9566a333-543c-41ab-a62e-c6153a8c575b)
+
+   - Ensure **Allow the connection** is selected, then click **Next**.
+
+![14AllowConn](https://github.com/user-attachments/assets/b0e03a6b-1694-419f-9346-b42afbffc989)
+
+   - Ensure that all profiles are selected.
+
+![15ClickNext](https://github.com/user-attachments/assets/bd4d4ea5-5b91-408c-9bb5-f4883bdfcd2c)
+
+   - Provide a name and description for the rule, then click **Finish**.
+
+![16NameRule](https://github.com/user-attachments/assets/fc753c71-10de-40cd-afb6-9f4261dd9a16)
+
+
 9. Close the Group Policy Management Editor.
 10. Ensure that the GPO is linked to the desired OU or domain in Group Policy Management.
 11. Update Group Policy on Client Computers.
