@@ -375,9 +375,32 @@ Follow the installation prompts:
 ### Create Firewall Rules using Group Policy
 1. Go to **Server Manager** > **Tools** > **Group Policy Management**.
 2. In **Group Policy Management**, right-click your domain or the Organizational Unit (OU) where you want to apply the firewall rules, then select **Create a GPO in this domain, and Link it here**.
+
+![1CreateFWGPO](https://github.com/user-attachments/assets/5cc6d090-5731-45b2-a1a8-db39aa30dd2d)
+
 3. Name the new GPO (e.g., “Firewall Rules GPO”), then click **OK**.
+
+![2RenameFWGPO](https://github.com/user-attachments/assets/94fb28a4-b98c-46b9-8614-80f320f4824f)
+
 4. Right-click the new GPO and select **Edit** to open the Group Policy Management Editor.
+
+![3EditFWGPO](https://github.com/user-attachments/assets/a64b2972-8620-4528-b64f-29fa7f071c6b)
+
 5. In the Group Policy Management Editor, go to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Windows Defender Firewall with Advanced Security** > **Windows Defender Firewall with Advanced Security** - **LDAP://…**
+   - Note: Ensure the firewall is set to **On (recommended)** on the first three tabs: **Domain Profile**, **Private Profile**, and **Public Profile**. Enabling all is considered best practice.
+
+![4SetToON](https://github.com/user-attachments/assets/4c426fe0-c704-4623-a8eb-34458cbd9082)
+  
+6. Click Customize.
+
+![5Customize](https://github.com/user-attachments/assets/0d919536-3ac0-491f-b492-bdf79cdc3b90)
+
+7. In the drop-down menu, select **Yes**, then click **OK**.
+
+![6Yes](https://github.com/user-attachments/assets/95343032-cb92-4618-8814-c2b7ef55e7e0)
+
+7. Repeat these steps for the remaining two tabs: **Private Profile** and **Public Profile**.
+
 6. Select either **Inbound Rules** or **Outbound Rules** depending on the type of rule you want to create.
 7. Right-click **Inbound Rules** (or **Outbound Rules**), then select **New Rule**….
 8. In the **New Inbound/Outbound Rule Wizard**:
