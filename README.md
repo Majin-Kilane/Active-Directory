@@ -480,6 +480,8 @@ Follow the installation prompts:
 
 4. Close the Group Policy Management Editor.
 
+### Configure Firewall Automatic Startup
+1. 
 
 ### Step 14: Enable Windows Defender Antivirus
 1. Go to **Start** > **Settings** > **Privacy & Security** > **Windows Security** > **Virus & Threat Protection**.
