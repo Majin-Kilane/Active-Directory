@@ -403,12 +403,12 @@ Follow the installation prompts:
 
 
 ### Create an Inbound ICMPv4 rule.
-1. Select either **Inbound Rules** or **Outbound Rules** depending on the type of rule you want to create.
-2. Right-click **Inbound Rules** (or **Outbound Rules**), then select **New Rule**….
+1. Select **Inbound Rules**.
+2. Right-click **Inbound Rules**, then select **New Rule**….
 
 ![7InboundRule](https://github.com/user-attachments/assets/b861de34-9fc4-4357-8ab1-8a44e784abbc)
 
-3. In the **New Inbound/Outbound Rule Wizard**:
+3. In the **New Inbound Rule Wizard**:
    - Select **Custom** and click **Next**.
   
 ![8CustomButton](https://github.com/user-attachments/assets/dd1f67b1-1146-4af2-b1c7-c538c613f58c)
@@ -442,13 +442,42 @@ Follow the installation prompts:
 ![17Varify](https://github.com/user-attachments/assets/214ed3a0-ca0f-4f5d-9285-c2d5fd986d80)
 
 ###  Create an Inbound TCP Rule.
-1. 
+1. Select **Inbound Rules**.
+2. Right-click **Inbound Rules**, then select **New Rule**.
+
+![1InboundPortRule](https://github.com/user-attachments/assets/817032e9-c024-473c-9344-84524e05b826)
+
+3. In the **New Inbound Rule Wizard**:
+   - Select **Custom** and click **Next**. 
+
+![2SelectTCP](https://github.com/user-attachments/assets/9486a37e-8c09-46dc-96ec-37770936bf8b)
+
+3.  
+
+![3SpecifyPort](https://github.com/user-attachments/assets/ed50e0ec-5558-4817-b4d8-b1bb167636ef)
+
+4.
+
+![4AddDCIP](https://github.com/user-attachments/assets/9face433-ce96-4509-ab28-5bef064a9db4)
+
+5.
+
+![5NameRule](https://github.com/user-attachments/assets/ba4ab0e9-a7f7-4863-bfcb-bdfb76277760)
+
+6. 
+
+![6VarifyRuleCreation](https://github.com/user-attachments/assets/b1d13ceb-2f53-4ab4-baca-4fa6a6b279dc)
+
 
 9. Close the Group Policy Management Editor.
 10. Ensure that the GPO is linked to the desired OU or domain in Group Policy Management.
 11. Update Group Policy on Client Computers.
    - On client machines, **run gpupdate /force** in Command Prompt to immediately apply the new firewall rules.
    - Alternatively, the GPO will apply automatically at the next Group Policy refresh interval.
+
+
+
+
 
 
 
