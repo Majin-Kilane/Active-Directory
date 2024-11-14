@@ -372,7 +372,7 @@ Follow the installation prompts:
 2. Configure **Inbound** and **Outbound** rules to allow only necessary traffic.
 3. Enable **logging** in the firewall settings to monitor suspicious connections.
 
-### Create Firewall Rules using Group Policy
+### Create Firewall Rules using Group Policy.
 1. Go to **Server Manager** > **Tools** > **Group Policy Management**.
 2. In **Group Policy Management**, right-click your domain or the Organizational Unit (OU) where you want to apply the firewall rules, then select **Create a GPO in this domain, and Link it here**.
 
@@ -401,12 +401,14 @@ Follow the installation prompts:
 
 7. Repeat these steps for the remaining two tabs: **Private Profile** and **Public Profile**.
 
-6. Select either **Inbound Rules** or **Outbound Rules** depending on the type of rule you want to create.
-7. Right-click **Inbound Rules** (or **Outbound Rules**), then select **New Rule**….
+
+### Create an Inbound ICMPv4 rule.
+1. Select either **Inbound Rules** or **Outbound Rules** depending on the type of rule you want to create.
+2. Right-click **Inbound Rules** (or **Outbound Rules**), then select **New Rule**….
 
 ![7InboundRule](https://github.com/user-attachments/assets/b861de34-9fc4-4357-8ab1-8a44e784abbc)
 
-8. In the **New Inbound/Outbound Rule Wizard**:
+3. In the **New Inbound/Outbound Rule Wizard**:
    - Select **Custom** and click **Next**.
   
 ![8CustomButton](https://github.com/user-attachments/assets/dd1f67b1-1146-4af2-b1c7-c538c613f58c)
@@ -435,6 +437,12 @@ Follow the installation prompts:
 
 ![16NameRule](https://github.com/user-attachments/assets/fc753c71-10de-40cd-afb6-9f4261dd9a16)
 
+   - Varify that the rule has been created.
+
+![17Varify](https://github.com/user-attachments/assets/214ed3a0-ca0f-4f5d-9285-c2d5fd986d80)
+
+###  Create an Inbound TCP Rule.
+1. 
 
 9. Close the Group Policy Management Editor.
 10. Ensure that the GPO is linked to the desired OU or domain in Group Policy Management.
