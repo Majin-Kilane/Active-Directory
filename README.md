@@ -312,8 +312,16 @@ Follow the installation prompts:
 
 ![7LoginScreen](https://github.com/user-attachments/assets/241f1e8c-9a17-494d-950e-e459a4939edc)
 
+### Step 10: Disable the built-in ADministrator account in Windows Server 2022
+   - Note: Creating and using a custom administrator account instead of the default **Administrator** account minimizes exposure to brute-force attacks on commonly known usernames and allows for better tracking and management of administrative actions.
+1. 
+
+
+
+
+
    
-### Step 10: Set a Static IP Address on Windows Server 2022
+### Step 11: Set a Static IP Address on Windows Server 2022
 1. Once logged in, open **Server Manager** and go to Local Server.
 2. In the **Properties** section, click on **Ethernet** (or your network adapter name).
    
@@ -763,7 +771,7 @@ Right-click on Default Domain Policy and choose Edit.
 ![0NameOU](https://github.com/user-attachments/assets/af78eaa7-b876-45a5-9581-92394df3a0d2)
 
 Click **OK** to create the OU.
-7. You should now see the newly created OU within the domain structure in A**ctive Directory Users and Computers**.
+7. You should now see the newly created OU within the domain structure in **Active Directory Users and Computers**.
 
 ### Move the **Custom Administrator** to the newly created **Administrators** OU.
 
@@ -779,7 +787,7 @@ Click **OK** to create the OU.
 
 ![5Moved](https://github.com/user-attachments/assets/99f17b9e-6ba9-40b2-88dd-880340c1ca68)
 
-### Add C
+### Add 
 
 
 ______________________________________________________________________________
