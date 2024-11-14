@@ -366,12 +366,6 @@ Follow the installation prompts:
 
 4. Restart.
 
-
-### Step 13: Configure Windows Firewall
-1. Open **Server Manager** and select **Tools** > **Windows Defender Firewall with Advanced Security**.
-2. Configure **Inbound** and **Outbound** rules to allow only necessary traffic.
-3. Enable **logging** in the firewall settings to monitor suspicious connections.
-
 ### Step 13: Create Firewall Rules using Group Policy.
    - Note: Configure **Inbound** and **Outbound** rules to allow only necessary traffic. Enable **logging** in the firewall settings to monitor suspicious connections.
 1. Go to **Server Manager** > **Tools** > **Group Policy Management**.
