@@ -413,9 +413,13 @@ Follow the installation prompts:
   
 ![8CustomButton](https://github.com/user-attachments/assets/dd1f67b1-1146-4af2-b1c7-c538c613f58c)
 
-   - Select **ICMPv4**, click **Customize** to ensure **All ICMP types** is selected, then click **OK** and **Next**.
+   - Select **ICMPv4**.
 
 ![9SelectICMPv4](https://github.com/user-attachments/assets/f475d2f5-2e71-424b-9e5e-b7c543075af2)
+
+   - Click **Customize** to ensure **All ICMP types** is selected, then click **OK** and **Next**.
+
+![10Customize](https://github.com/user-attachments/assets/d0d5c637-093d-4265-9019-457dad2db286)
 
    - Select **These IP Addresses**, then click **Add**.
 
@@ -450,36 +454,30 @@ Follow the installation prompts:
 3. In the **New Inbound Rule Wizard**:
    - Select **Custom** and click **Next**. 
 
+![8CustomButton](https://github.com/user-attachments/assets/dd1f67b1-1146-4af2-b1c7-c538c613f58c)
+
+   - Select **TCP**.
+
 ![2SelectTCP](https://github.com/user-attachments/assets/9486a37e-8c09-46dc-96ec-37770936bf8b)
 
-3.  
+   - Specify Port number.
 
 ![3SpecifyPort](https://github.com/user-attachments/assets/ed50e0ec-5558-4817-b4d8-b1bb167636ef)
 
-4.
+   - Select **These IP Addresses**, then click **Add**.
+   - Specify Domain Controller IP address, then click **OK**.
 
 ![4AddDCIP](https://github.com/user-attachments/assets/9face433-ce96-4509-ab28-5bef064a9db4)
 
-5.
-
+   - Provide a name and description for the rule, then click **Finish**.
+     
 ![5NameRule](https://github.com/user-attachments/assets/ba4ab0e9-a7f7-4863-bfcb-bdfb76277760)
 
-6. 
+   - Varify that the rule has been created.
 
 ![6VarifyRuleCreation](https://github.com/user-attachments/assets/b1d13ceb-2f53-4ab4-baca-4fa6a6b279dc)
 
-
-9. Close the Group Policy Management Editor.
-10. Ensure that the GPO is linked to the desired OU or domain in Group Policy Management.
-11. Update Group Policy on Client Computers.
-   - On client machines, **run gpupdate /force** in Command Prompt to immediately apply the new firewall rules.
-   - Alternatively, the GPO will apply automatically at the next Group Policy refresh interval.
-
-
-
-
-
-
+4. Close the Group Policy Management Editor.
 
 
 ### Step 14: Enable Windows Defender Antivirus
