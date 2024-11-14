@@ -373,21 +373,24 @@ Follow the installation prompts:
 3. Enable **logging** in the firewall settings to monitor suspicious connections.
 
 ### Create Firewall Rules using Group Policy
-1. Go to Server Manager > Tools > Group Policy Management.
-2. In Group Policy Management, right-click your domain or the Organizational Unit (OU) where you want to apply the firewall rules, then select Create a GPO in this domain, and Link it here.
-3. Name the new GPO (e.g., “Firewall Rules GPO”), then click OK.
-4. Right-click the new GPO and select Edit to open the Group Policy Management Editor.
-5. In the Group Policy Management Editor, go to Computer Configuration > Policies > Windows Settings > Security Settings > Windows Defender Firewall with Advanced Security > Windows Defender Firewall with Advanced Security - LDAP://…
-6. Select either Inbound Rules or Outbound Rules depending on the type of rule you want to create.
-7. Right-click Inbound Rules (or Outbound Rules), then select New Rule….
-8. In the New Inbound/Outbound Rule Wizard:
-   - Rule Type: Select the type of rule (e.g., Program, Port, Predefined, or Custom) and click Next.
-   - Program/Port: Specify the program path or port number, if applicable, and click Next.
-   - Action: Choose whether to Allow the connection, Allow if secure, or Block the connection.
-   - Profile: Select the profile(s) where the rule will apply (Domain, Private, Public), then click Next.
-
-
-
+1. Go to **Server Manager** > **Tools** > **Group Policy Management**.
+2. In **Group Policy Management**, right-click your domain or the Organizational Unit (OU) where you want to apply the firewall rules, then select **Create a GPO in this domain, and Link it here**.
+3. Name the new GPO (e.g., “Firewall Rules GPO”), then click **OK**.
+4. Right-click the new GPO and select **Edit** to open the Group Policy Management Editor.
+5. In the Group Policy Management Editor, go to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Windows Defender Firewall with Advanced Security** > **Windows Defender Firewall with Advanced Security** - **LDAP://…**
+6. Select either **Inbound Rules** or **Outbound Rules** depending on the type of rule you want to create.
+7. Right-click **Inbound Rules** (or **Outbound Rules**), then select **New Rule**….
+8. In the **New Inbound/Outbound Rule Wizard**:
+   - **Rule Type**: Select the type of rule (e.g., **Program**, **Port**, **Predefined**, or **Custom**) and click **Next**.
+   - **Program/Port**: Specify the program path or port number, if applicable, and click **Next**.
+   - **Action**: Choose whether to **Allow the connection**, **Allow if secure**, or **Block the connection**.
+   - **Profile**: Select the profile(s) where the rule will apply (Domain, Private, Public), then click **Next**.
+   - **Name**: Provide a name and description for the rule, then click **Finish**.
+9. Close the Group Policy Management Editor.
+10. Ensure that the GPO is linked to the desired OU or domain in Group Policy Management.
+11. Update Group Policy on Client Computers.
+   - On client machines, **run gpupdate /force** in Command Prompt to immediately apply the new firewall rules.
+   - Alternatively, the GPO will apply automatically at the next Group Policy refresh interval.
 
 
 
