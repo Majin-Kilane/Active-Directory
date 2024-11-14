@@ -314,12 +314,12 @@ Follow the installation prompts:
 
 ### Step 10: Disable the built-in ADministrator account in Windows Server 2022
    - Note: Creating and using a custom administrator account instead of the default **Administrator** account minimizes exposure to brute-force attacks on commonly known usernames and allows for better tracking and management of administrative actions.
-1. 
+1. Click **Start** > **Windows Administrative Tools** > **Active Directory Users and Computers** > **Users**.
+2. Right-click the **Administrator** account, then select Disable Account.
 
+![8DisableBuiltinAA](https://github.com/user-attachments/assets/2434cb01-8d82-42df-afdb-1ffa30fcc9cb)
 
-
-
-
+3. Click **OK** to close.
    
 ### Step 11: Set a Static IP Address on Windows Server 2022
 1. Once logged in, open **Server Manager** and go to Local Server.
@@ -354,7 +354,7 @@ Follow the installation prompts:
 ## Configuring Security in Windows Server 2022
 
 
-### Step 11: Update the Server
+### Step 12: Update the Server
 1. Login  Open **Server Manager**.
 2. Go to **Local Server** and click on **Windows Update**.
 
@@ -367,13 +367,13 @@ Follow the installation prompts:
 4. Restart.
 
 
-### Step 12: Configure Windows Firewall
+### Step 13: Configure Windows Firewall
 1. Open **Server Manager** and select **Tools** > **Windows Defender Firewall with Advanced Security**.
 2. Configure **Inbound** and **Outbound** rules to allow only necessary traffic.
 3. Enable **logging** in the firewall settings to monitor suspicious connections.
 
 
-### Step 13: Enable Windows Defender Antivirus
+### Step 14: Enable Windows Defender Antivirus
 1. Go to **Start** > **Settings** > **Privacy & Security** > **Windows Security** > **Virus & Threat Protection**.
 
 ![WinSecurity](https://github.com/user-attachments/assets/123704a3-f991-4dd6-9332-29783170a676)
@@ -391,7 +391,7 @@ Follow the installation prompts:
 ![Enabled](https://github.com/user-attachments/assets/3c1f9d64-d2cc-4e66-8dd8-99bc79e4e62c)
 
 
-### Step 14: Disable Unnecessary Services
+### Step 15: Disable Unnecessary Services
 1. Open **Server Manager** and go to **Tools** > **Services**.
 2. Identify services that are not essential for your server’s purpose and set them to **Manual** or **Disabled**.
 
@@ -400,7 +400,7 @@ Follow the installation prompts:
 3. Examples of services to review: **Remote Registry**, **Print Spooler** (if not needed), and **Windows Remote Management** (if not required).
 
 
-### Step 15: Configure Default Domain Policy
+### Step 16: Configure Default Domain Policy
 1. Go to **Tools** > **Group Policy Management**.
 2. In **Group Policy Management**, expand **Forest** > Domains and select your domain (e.g., mydomain.com).
 Right-click on Default Domain Policy and choose Edit.
@@ -409,7 +409,7 @@ Right-click on Default Domain Policy and choose Edit.
 ![EditGPO](https://github.com/user-attachments/assets/373bfdff-288b-477e-a488-1b6788549d25)
 
 
-### Step 16: Configure Password Policies
+### Step 17: Configure Password Policies
 1. In the **Default Domain Policy**, go to **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**.
 2. Define password policies, such as:
    - **Enforce Password History** (e.g., 24 passwords).
@@ -420,7 +420,7 @@ Right-click on Default Domain Policy and choose Edit.
 ![2PWPol](https://github.com/user-attachments/assets/dbefe350-3340-4679-b917-9ea7ae0a69ce)
 
 
-### Step 17: Configure Account Lockout Policy
+### Step 18: Configure Account Lockout Policy
 1. Open **Server Manager**.
 2. Go to **Tools** and select **Group Policy Management**.
 3. In the **Group Policy Managemen**t window, expand **Forest** > **Domains**.
@@ -451,7 +451,7 @@ Right-click on Default Domain Policy and choose Edit.
 ![lockoutpol](https://github.com/user-attachments/assets/03c97837-752a-4140-86d2-880ebc9156e2)
 
 
-### Step 18: Configure Kerberos Policies
+### Step 19: Configure Kerberos Policies
 1. In the **Group Policy Management Editor**, navigate to:
    - **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Account Policies** > **Kerberos Policy**.
 2. Configure the following Kerberos settings:
@@ -464,7 +464,7 @@ Right-click on Default Domain Policy and choose Edit.
 ![Kerberos](https://github.com/user-attachments/assets/34cdbed4-7d7b-4228-86c7-8427bbfb8714)
 -------------
 
-### Step 19: Install the Routing and Remote Access Role
+### Step 20: Install the Routing and Remote Access Role
 1. Open **Server Manager**.
 2. Click **Manage** > **Add Roles and Features**.
 
@@ -527,7 +527,7 @@ Right-click on Default Domain Policy and choose Edit.
 
 18. Click **Apply**, then **OK** to save the settings.
 
-### Step 20: Setting Up a DHCP Server
+### Step 21: Setting Up a DHCP Server
 1. Log in to **Windows Server 2022** with an account that has administrative privileges.
 2. Open **Server Manager**.
 3. Click **Add Roles and Features**.
@@ -607,7 +607,7 @@ Right-click on Default Domain Policy and choose Edit.
 26. **Restart DHCP** services if necessary.
 27. Connect a client device to the network and check if it’s receiving an IP address from the DHCP server by running ipconfig on the client.
 
-### Step 21: Enable Auditing and Logging on Windows Server 2022
+### Step 22: Enable Auditing and Logging on Windows Server 2022
 1. In the Group Policy Management Editor, go to:
 **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Advanced Audit Policy Configuration** > **Audit Policies**.
 
@@ -667,7 +667,7 @@ Right-click on Default Domain Policy and choose Edit.
    - **4725**: User account disabled.
 
 
-### Step 22: Configure WSUS on Windows Server
+### Step 23: Configure WSUS on Windows Server
 1. **Prepare Storage for WSUS (Optional but Recommended)**
    - **Partitioning**: Create a new partition or attach a separate drive for storing WSUS updates (e.g., D:\WSUS). This helps isolate the storage load from the system partition.
    - **Create a Folder**: On the new partition, create a dedicated folder for WSUS, such as D:\WSUS\Updates.
@@ -757,7 +757,7 @@ Right-click on Default Domain Policy and choose Edit.
 
 ![__EnableAutoDetecFreq](https://github.com/user-attachments/assets/d3354067-a134-4059-8621-e1aaaec06f57)
 
-### Step 23: Creating Organizational Units 
+### Step 24: Creating Organizational Units 
 1. Click **Start** > **Windows Administrative Tools** > **Active Directory Users and Computers**.
 2. In the **Active Directory Users and Computers** window, expand your domain (e.g., mydomain.com) in the left-hand pane.
 3. Right-click the domain or the parent OU where you want to create the new OU.
@@ -787,7 +787,7 @@ Click **OK** to create the OU.
 
 ![5Moved](https://github.com/user-attachments/assets/99f17b9e-6ba9-40b2-88dd-880340c1ca68)
 
-### Add 
+### Create additional OUs for other departments 
 
 
 ______________________________________________________________________________
