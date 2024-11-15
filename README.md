@@ -104,6 +104,8 @@ I configured:
 - Installed the Routing and Remote Access service (RRAS).
 - Configured the router for VPN access and internal routing, ensuring connectivity between different network segments.
 
+
+
 ### 5. DNS and Active Directory Integration:
  - Configured DNS on the domain controller to support name resolution for domain-joined devices.
  - Integrated DNS with Active Directory to facilitate domain controller location and service resolution.
