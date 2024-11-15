@@ -25,16 +25,16 @@ ________________________________________________________________________________
 
 The lab consists of:
 
-- Router (192.168.1.1): Simulates internet access.
-- Domain Controller (192.168.1.10): Hosts AD DS, DNS, WSUS, DHCP, and GPO configurations.
-- Windows 10 Client (192.168.1.100): Domain-joined machine for testing policy application.
+- **Router** (192.168.1.1): Simulates internet access.
+- **Domain Controller** (192.168.1.10): Hosts AD DS, DNS, WSUS, DHCP, and GPO configurations.
+- **Windows 10 Client** (192.168.1.100): Domain-joined machine for testing policy application.
 _____________________________________________________________________________________
 
 ## Lab Setup
 
 ### Tools Used
-- Virtualization Platform: VirtualBox.
-- Operating Systems:
+- **Virtualization Platform**: VirtualBox.
+- **Operating Systems**:
    - Windows Server 2022 (Domain Controller).
    - Windows 10 (Client Machine).
 
@@ -43,13 +43,17 @@ ________________________________________________________________________________
 
    - Configured the domain controller with a static IP (192.168.1.10).
    - Installed Active Directory Domain Services (AD DS).
-   - Created a domain yourdomain.local.
+   - Created a domain _mydomain.com_.
+  
+![AD](https://github.com/user-attachments/assets/b386f72a-ebeb-428f-b87a-bdb861f55e0a)
   
 2. **Organizational Units (OUs), Users, and Groups**:
  - Designed a structured directory:
    - **OUs**: Created separate OUs for departments (e.g., IT, HR, and Sales).
    - **Users**: Added test users to each OU with specific roles.
    - **Groups**: Configured security groups (e.g., Administrators, Standard Users) for resource access control.
+
+![OU](https://github.com/user-attachments/assets/bc372abf-ed3b-447e-b501-6f8d7bb83a74)
 
 3. **Advanced Security Policies**:
  - **Account Lockout Policy**: Configured lockout thresholds and durations to protect against brute force attacks.
@@ -113,7 +117,7 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
 ## Testing and Results
 
 1. **Domain Functionality**:
-   - Successfully joined the Windows 10 client to yourdomain.local.
+   - Successfully joined the Windows 10 client to mydomain.com.
    - Verified authentication using domain accounts.
 2. **Policy Enforcement**:
    - Confirmed that security policies were applied to domain users (e.g., password changes required, account lockout after failed attempts).
