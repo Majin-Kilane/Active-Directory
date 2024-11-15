@@ -45,7 +45,7 @@ ________________________________________________________________________________
    - Installed Active Directory Domain Services (AD DS).
    - Created a domain _mydomain.com_.
   
-![AD](https://github.com/user-attachments/assets/b386f72a-ebeb-428f-b87a-bdb861f55e0a)
+![OU](https://github.com/user-attachments/assets/bc372abf-ed3b-447e-b501-6f8d7bb83a74)
   
 2. **Organizational Units (OUs), Users, and Groups**:
  - Designed a structured directory:
@@ -53,7 +53,7 @@ ________________________________________________________________________________
    - **Users**: Added test users to each OU with specific roles.
    - **Groups**: Configured security groups (e.g., Administrators, Standard Users) for resource access control.
 
-![OU](https://github.com/user-attachments/assets/bc372abf-ed3b-447e-b501-6f8d7bb83a74)
+![AD](https://github.com/user-attachments/assets/b386f72a-ebeb-428f-b87a-bdb861f55e0a)
 
 3. **Advanced Security Policies**:
  - **Account Lockout Policy**: Configured lockout thresholds and durations to protect against brute force attacks.
