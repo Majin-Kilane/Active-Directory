@@ -77,6 +77,8 @@ The **Account Lockout Policy** helps prevent brute-force attacks by locking acco
 **Explanation:**
 I set the following parameters:
    - **Account lockout threshold**: 10 invalid login attempts.
+     - A higher threshold minimizes the risk of accidental lockouts while still protecting against automated brute-force attacks.
+     - Setting this too low (e.g., 3-5 attempts) may lead to user frustration and potential lockout attacks on legitimate accounts.
    - **Account lockout duration**: 15 minutes.
    - **Reset account lockout counter after**: 15 minutes.
 
