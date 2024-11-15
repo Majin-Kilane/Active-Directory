@@ -45,18 +45,46 @@ ________________________________________________________________________________
    - Installed Active Directory Domain Services (AD DS).
    - Created a domain _mydomain.com_.
   
-![OU](https://github.com/user-attachments/assets/bc372abf-ed3b-447e-b501-6f8d7bb83a74)
-  
+![Domain](https://github.com/user-attachments/assets/6f4fb9d3-891d-482a-b7a9-2afb15a38180)
+
 2. **Organizational Units (OUs), Users, and Groups**:
  - Designed a structured directory:
    - **OUs**: Created separate OUs for departments (e.g., IT, HR, and Sales).
    - **Users**: Added test users to each OU with specific roles.
-   - **Groups**: Configured security groups (e.g., Administrators, Standard Users) for resource access control.
+   - **Groups**: Configured security groups (e.g., Administrators, Cybersecurity Specialist) for resource access control.
 
-![AD](https://github.com/user-attachments/assets/b386f72a-ebeb-428f-b87a-bdb861f55e0a)
+![OU](https://github.com/user-attachments/assets/68b5ddc6-51e6-4696-9aba-280b4f1f970a)
 
 3. **Advanced Security Policies**:
- - **Account Lockout Policy**: Configured lockout thresholds and durations to protect against brute force attacks.
+In this section, I configured several key security policies to enhance the overall security posture of the network. These included **password policies**, **account lockout**, and **Kerberos**, and . Each of these policies plays a critical role in securing user accounts and preventing unauthorized access to the system. Below, I’ll walk through each of these settings individually.
+
+- **Password Policy**
+The **Password Policy** is crucial for ensuring strong, secure passwords that are difficult to guess. I configured the policy to enforce password complexity requirements, expiration, and history to ensure users regularly update their passwords and follow best practices for password creation.
+
+**Explanation:**
+I configured the following parameters:
+   - **Minimum password length**: 12 characters.
+   - **Password must meet complexity requirements**: Enabled.
+   - **Maximum password age**: 60 days.
+   - **Enforce password history**: 24 passwords remembered.
+
+![PW](https://github.com/user-attachments/assets/d118a7d2-2478-407b-b30c-9fde40e08a3b)
+
+
+- **Account Lockout Policy**
+The **Account Lockout Policy** helps prevent brute-force attacks by locking accounts after a certain number of failed login attempts.
+
+**Explanation:**
+I set the following parameters:
+   - **Account lockout threshold**: 10 invalid login attempts.
+   - **Account lockout duration**: 15 minutes.
+   - **Reset account lockout counter after**: 15 minutes.
+
+
+
+
+
+   
  - **Kerberos Policy**: Set ticket lifetimes and enforcement for secure authentication.
  - **Password Policy**: Enforced complexity requirements, expiration, and history settings for password security.
 
