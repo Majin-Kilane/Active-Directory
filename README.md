@@ -100,37 +100,35 @@ I configured:
 
 ![Kerberos](https://github.com/user-attachments/assets/a2bda931-c0ab-473f-9729-9c3796cc0605)
 
-
-
-4. **Routing and Access Role**:
+### 4. Routing and Access Role:
 - Installed the Routing and Remote Access service (RRAS).
 - Configured the router for VPN access and internal routing, ensuring connectivity between different network segments.
 
-5. **DNS and Active Directory Integration**:
+### 5. DNS and Active Directory Integration:
  - Configured DNS on the domain controller to support name resolution for domain-joined devices.
  - Integrated DNS with Active Directory to facilitate domain controller location and service resolution.
 
-6. **Windows Server Update Services (WSUS)**:
+### 6. Windows Server Update Services (WSUS):
  - Configured WSUS to manage Windows updates for all domain-joined devices.
  - Created GPOs to ensure automatic update installation on client machines.
 
-7. **Dynamic Host Configuration Protocol (DHCP)**:
+### 7. Dynamic Host Configuration Protocol (DHCP):
  - Set up DHCP on the domain controller for automatic IP address allocation.
  - Configured DHCP scopes and options to support network clients.
 
-8. **Security Group Policy Objects (GPOs)**:
+### 8. Security Group Policy Objects (GPOs):
  - Configured additional GPOs for password requirements, account lockouts, and user restrictions.
  - Applied GPOs to OUs to enforce specific security policies based on department.
 
-9. **Windows Defender Firewall Configuration**:
+### 9. **Windows Defender Firewall Configuration**:
  - Created a GPO to manage firewall settings for all domain-joined devices.
  - Enabled inbound and outbound rules for specific services (e.g., ICMPv4 for troubleshooting).
 
-10. **Auditing and Logging**:
+### 10. Auditing and Logging:
  - Enabled auditing on critical domain controller events, including logon/logoff and object access.
  - Configured Windows Event Logging to capture and review security events for compliance and troubleshooting.
 
-11. **Client Machine**:
+### 11. Client Machine:
  - Joined Windows 10 to the domain and tested the application of security and firewall policies.
 
 
