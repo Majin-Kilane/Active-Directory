@@ -39,7 +39,7 @@ ________________________________________________________________________________
    - Windows 10 (Client Machine).
 
 ## Key Configurations
-1. ### Active Directory Setup:
+### 1. Active Directory Setup:
 
    - Configured the domain controller with a static IP (192.168.1.10).
    - Installed Active Directory Domain Services (AD DS).
@@ -47,7 +47,7 @@ ________________________________________________________________________________
   
 ![Domain](https://github.com/user-attachments/assets/6f4fb9d3-891d-482a-b7a9-2afb15a38180)
 
-2. **Organizational Units (OUs), Users, and Groups**:
+### 2. Organizational Units (OUs), Users, and Groups:
  - Designed a structured directory:
    - **OUs**: Created separate OUs for departments (e.g., IT, HR, and Sales).
    - **Users**: Added test users to each OU with specific roles.
@@ -55,10 +55,11 @@ ________________________________________________________________________________
 
 ![OU](https://github.com/user-attachments/assets/68b5ddc6-51e6-4696-9aba-280b4f1f970a)
 
-3. **Advanced Security Policies**:
+### 3. Advanced Security Policies:
 In this section, I configured several key security policies to enhance the overall security posture of the network. These included **password policies**, **account lockout**, and **Kerberos**, and . Each of these policies plays a critical role in securing user accounts and preventing unauthorized access to the system. Below, I’ll walk through each of these settings individually.
 
-- **Password Policy**
+**3.1 Password Policy**
+  
 The **Password Policy** is crucial for ensuring strong, secure passwords that are difficult to guess. I configured the policy to enforce password complexity requirements, expiration, and history to ensure users regularly update their passwords and follow best practices for password creation.
 
 **Explanation:**
@@ -71,7 +72,7 @@ I configured the following parameters:
 ![PW](https://github.com/user-attachments/assets/d118a7d2-2478-407b-b30c-9fde40e08a3b)
 
 
-- **Account Lockout Policy**
+**3.2 Account Lockout Policy**
 The **Account Lockout Policy** helps prevent brute-force attacks by locking accounts after a certain number of failed login attempts.
 
 **Explanation:**
@@ -80,15 +81,26 @@ I set the following parameters:
      - A higher threshold minimizes the risk of accidental lockouts while still protecting against automated brute-force attacks.
      - Setting this too low (e.g., 3-5 attempts) may lead to user frustration and potential lockout attacks on legitimate accounts.
    - **Account lockout duration**: 15 minutes.
+     - This is long enough to slow down attackers while ensuring legitimate users regain access relatively quickly.
+     - If the lockout duration is too long (e.g., hours), it could significantly impact business operations.
    - **Reset account lockout counter after**: 15 minutes.
+     - Resets the failed login attempt counter after a reasonable time frame, preventing cumulative lockouts from minor user errors.
+
+![ACL](https://github.com/user-attachments/assets/0cf7fca4-99d5-4581-be09-6b44029d4672)
+
+**3.3 Kerberos Policy**
+The Kerberos Policy governs how authentication tickets are issued within the domain. By default, Windows uses the Kerberos protocol for secure authentication. I configured the Kerberos policy to enhance security by setting an appropriate ticket lifetime and renewal time. This helps reduce the window of opportunity for ticket replay attacks.
+
+**Explanation:**
+I configured:
+   - **Maximum lifetime for service ticket**: 10 hours.
+   - **Maximum lifetime for user ticket**: 10 hours.
+   - **Maximum renewal lifetime**: 7 days.
+   - **Enforce user logoff when ticket expires**: Enabled.
+
+![Kerberos](https://github.com/user-attachments/assets/a2bda931-c0ab-473f-9729-9c3796cc0605)
 
 
-
-
-
-   
- - **Kerberos Policy**: Set ticket lifetimes and enforcement for secure authentication.
- - **Password Policy**: Enforced complexity requirements, expiration, and history settings for password security.
 
 4. **Routing and Access Role**:
 - Installed the Routing and Remote Access service (RRAS).
