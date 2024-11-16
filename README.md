@@ -126,9 +126,13 @@ I configured:
  - Created a GPO to manage firewall settings for all domain-joined devices.
  - Enabled inbound and outbound rules for specific services (e.g., ICMPv4 for troubleshooting).
 
+![FWRule](https://github.com/user-attachments/assets/17248da1-7037-4fa6-a6e2-e8e44820c662)
+
 ### 10. Auditing and Logging:
  - Enabled auditing on critical domain controller events, including logon/logoff and object access.
  - Configured Windows Event Logging to capture and review security events for compliance and troubleshooting.
+
+![Audting](https://github.com/user-attachments/assets/fd707962-d6ab-40b2-b1c0-a2b3a44ccd6b)
 
 ### 11. Client Machine:
  - Joined Windows 10 to the domain and tested the application of security and firewall policies.
