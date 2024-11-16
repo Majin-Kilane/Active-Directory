@@ -118,8 +118,10 @@ I configured:
  - Set up DHCP on the domain controller for automatic IP address allocation.
  - Configured DHCP scopes and options to support network clients.
 
+![DHCPScope](https://github.com/user-attachments/assets/c789141f-8ea6-4d3d-9b3b-3a81453bb40b)
+
 ### 8. Security Group Policy Objects (GPOs):
- - Configured additional GPOs for password requirements, account lockouts, and user restrictions.
+ - Configured additional GPOs for firewall rules and user restrictions.
  - Applied GPOs to OUs to enforce specific security policies based on department.
 
 ![RestrictAccess](https://github.com/user-attachments/assets/621dfddf-5797-44ab-8844-e020001968a5)
