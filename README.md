@@ -108,7 +108,12 @@ I configured:
 
 ### 5. DNS and Active Directory Integration:
  - Configured DNS on the domain controller to support name resolution for domain-joined devices.
+
+![DNS](https://github.com/user-attachments/assets/9f712ea5-ae33-4cfa-9513-767296d07d1a)
+
  - Integrated DNS with Active Directory to facilitate domain controller location and service resolution.
+
+![DNSIntergration](https://github.com/user-attachments/assets/887aefd0-dbd7-436d-bd84-f80a6b449440)
 
 ### 6. Windows Server Update Services (WSUS):
  - Configured WSUS to manage Windows updates for all domain-joined devices.
