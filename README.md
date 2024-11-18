@@ -142,12 +142,9 @@ I configured:
 
 ### 10. Auditing and Logging:
  - Enabled auditing on critical domain controller events, including logon/logoff and object access.
-
-![LogginNAuditingSetUp](https://github.com/user-attachments/assets/4e0cdde7-fa38-49cb-9499-371600111050)
-
  - Configured Windows Event Logging to capture and review security events for compliance and troubleshooting.
 
-![Audting](https://github.com/user-attachments/assets/fd707962-d6ab-40b2-b1c0-a2b3a44ccd6b)
+![LogginNAuditingSetUp](https://github.com/user-attachments/assets/4e0cdde7-fa38-49cb-9499-371600111050)
 
 ### 11. Client Machine:
  - Joined Windows 10 to the domain and tested the application of security and firewall policies.
@@ -187,7 +184,7 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
    - Verified DHCP functionality for IP address allocation to clients.
    - Verified firewall rules using test commands (e.g., ping for ICMP).
 
-![ICMPv4PING](https://github.com/user-attachments/assets/55e38b4b-4db7-42cf-9114-f01d4ed342df)
+![ICMPv4PING](https://github.com/user-attachments/assets/78e8dd1d-d67c-4876-b44f-49a69ca29b9e)
 
 3. **Routing and Access**:
    - Verified VPN connectivity and internal routing using test devices.
@@ -195,6 +192,9 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
    - Ensured DNS resolved domain names for internal devices and services.
 5. **Auditing and Logging**:
    - Verified the auditing configuration by reviewing event logs for critical activities (e.g., successful logons, object access).
+  
+![Audting](https://github.com/user-attachments/assets/fd707962-d6ab-40b2-b1c0-a2b3a44ccd6b)
+
 6. **Organizational Management**:
    - Ensured users in specific OUs inherited the correct GPOs.
    - Tested group-based access to resources.
