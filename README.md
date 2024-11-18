@@ -142,6 +142,9 @@ I configured:
 
 ### 10. Auditing and Logging:
  - Enabled auditing on critical domain controller events, including logon/logoff and object access.
+
+![LogginNAuditingSetUp](https://github.com/user-attachments/assets/4e0cdde7-fa38-49cb-9499-371600111050)
+
  - Configured Windows Event Logging to capture and review security events for compliance and troubleshooting.
 
 ![Audting](https://github.com/user-attachments/assets/fd707962-d6ab-40b2-b1c0-a2b3a44ccd6b)
@@ -183,6 +186,9 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
    - Tested automatic Windows updates via WSUS.
    - Verified DHCP functionality for IP address allocation to clients.
    - Verified firewall rules using test commands (e.g., ping for ICMP).
+
+![ICMPv4PING](https://github.com/user-attachments/assets/55e38b4b-4db7-42cf-9114-f01d4ed342df)
+
 3. **Routing and Access**:
    - Verified VPN connectivity and internal routing using test devices.
 4. **DNS Functionality**:
