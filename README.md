@@ -177,6 +177,9 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
 1. **Domain Functionality**:
    - Successfully joined the Windows 10 client to mydomain.com.
    - Verified authentication using domain accounts.
+  
+![UserAuthentication](https://github.com/user-attachments/assets/739e9fe0-ec64-4da3-8863-d63cf3ea97e0)
+
 2. **Policy Enforcement**:
    - Confirmed that security policies were applied to domain users (e.g., password changes required, account lockout after failed attempts).
    - Verified Kerberos ticket management and password complexity enforcement.
@@ -190,6 +193,9 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
    - Verified VPN connectivity and internal routing using test devices.
 4. **DNS Functionality**:
    - Ensured DNS resolved domain names for internal devices and services.
+  
+![NSLookup](https://github.com/user-attachments/assets/10ac9a9a-c3c0-4833-801b-ddcf6e1af5cb)
+
 5. **Auditing and Logging**:
    - Verified the auditing configuration by reviewing event logs for critical activities (e.g., successful logons, object access).
   
