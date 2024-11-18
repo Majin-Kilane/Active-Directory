@@ -133,9 +133,12 @@ I configured:
 
 ### 9. **Windows Defender Firewall Configuration**:
  - Created a GPO to manage firewall settings for all domain-joined devices.
- - Enabled inbound and outbound rules for specific services (e.g., ICMPv4 for troubleshooting).
 
 ![FWRule](https://github.com/user-attachments/assets/17248da1-7037-4fa6-a6e2-e8e44820c662)
+
+ - Enabled inbound and outbound rules for specific services (e.g., ICMPv4 for troubleshooting).
+
+![FWRuleClient](https://github.com/user-attachments/assets/3ebe1783-5acd-4495-b152-157957f394ef)
 
 ### 10. Auditing and Logging:
  - Enabled auditing on critical domain controller events, including logon/logoff and object access.
