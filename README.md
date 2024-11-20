@@ -122,7 +122,7 @@ I configured:
 
  - Created GPOs to ensure automatic update installation on client machines.
 
-![WSUS_GPO](https://github.com/user-attachments/assets/d4cf7b67-9a49-409d-89aa-c350946d6eb3)
+![WSUS_GPO](https://github.com/user-attachments/assets/f9c073a0-257f-472d-a286-e8380a6312dc)
 
 ### 7. Dynamic Host Configuration Protocol (DHCP):
  - Set up DHCP on the domain controller for automatic IP address allocation.
