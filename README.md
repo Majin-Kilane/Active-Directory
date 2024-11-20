@@ -188,7 +188,7 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
    - Verified DHCP functionality for IP address allocation to clients.
    - Verified firewall rules using test commands (e.g., ping for ICMP).
 
-![ICMPv4PING](https://github.com/user-attachments/assets/78e8dd1d-d67c-4876-b44f-49a69ca29b9e)
+![Ping](https://github.com/user-attachments/assets/4a1c52fd-ca94-42a3-a31c-6aa3226bd696)
 
 3. **Routing and Access**:
    - Verified VPN connectivity and internal routing using test devices.
