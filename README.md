@@ -205,7 +205,9 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
 6. **Organizational Management**:
    - Ensured users in specific OUs inherited the correct GPOs.
    - Tested group-based access to resources.
-     
+
+![GPOResults](https://github.com/user-attachments/assets/1d95c505-7984-469c-a5c1-146ab8407eba)
+
 _(Add images of testing results, such as a successful gpresult /r output, event logs, VPN access logs, and DHCP lease information.)_
 
 
