@@ -149,6 +149,7 @@ I configured:
 ### 11. Client Machine:
  - Joined Windows 10 to the domain and tested the application of security and firewall policies.
 
+![DCJoined](https://github.com/user-attachments/assets/46061b5d-aac4-418c-8a1d-3a2d962f704d)
 
 ## Key Features
 
