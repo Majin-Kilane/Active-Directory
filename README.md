@@ -183,7 +183,13 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
 
 2. **Policy Enforcement**:
    - Confirmed that security policies were applied to domain users (e.g., password changes required, account lockout after failed attempts).
+  
+   ![ACL_Locked](https://github.com/user-attachments/assets/8d2e9935-b923-4e43-a13c-19614efd54f7)
+
    - Verified Kerberos ticket management and password complexity enforcement.
+  
+![Kerberos_PWComplexities](https://github.com/user-attachments/assets/041f45a4-6843-40be-82bb-75f4795a6527)
+
    - Tested automatic Windows updates via WSUS.
    - Verified DHCP functionality for IP address allocation to clients.
    - Verified firewall rules using test commands (e.g., ping for ICMP).
