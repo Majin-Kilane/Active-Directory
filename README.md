@@ -197,6 +197,9 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
 
    - Tested automatic Windows updates via WSUS.
    - Verified DHCP functionality for IP address allocation to clients.
+
+![DHCPAllocated](https://github.com/user-attachments/assets/7bb40658-9d02-468a-afb6-34efcfc328f4)
+
    - Verified firewall rules using test commands (e.g., ping for ICMP).
 
 ![Ping](https://github.com/user-attachments/assets/4a1c52fd-ca94-42a3-a31c-6aa3226bd696)
