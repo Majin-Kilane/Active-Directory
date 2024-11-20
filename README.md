@@ -134,7 +134,7 @@ I configured:
  - Configured additional GPOs for firewall rules and user restrictions.
  - Applied GPOs to OUs to enforce specific security policies based on department.
 
-![RestrictAccess](https://github.com/user-attachments/assets/621dfddf-5797-44ab-8844-e020001968a5)
+![RestrictAccess](https://github.com/user-attachments/assets/ca6213b4-f7d5-47f5-af63-0477b10ec974)
 
 ### 9. **Windows Defender Firewall Configuration**:
  - Created a GPO to manage firewall settings for all domain-joined devices.
