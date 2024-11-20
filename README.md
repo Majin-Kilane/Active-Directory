@@ -117,7 +117,12 @@ I configured:
 
 ### 6. Windows Server Update Services (WSUS):
  - Configured WSUS to manage Windows updates for all domain-joined devices.
+
+![WSUS_Updates](https://github.com/user-attachments/assets/d8d4f404-8b93-4b99-9a25-761a30308840)
+
  - Created GPOs to ensure automatic update installation on client machines.
+
+![WSUS_GPO](https://github.com/user-attachments/assets/d4cf7b67-9a49-409d-89aa-c350946d6eb3)
 
 ### 7. Dynamic Host Configuration Protocol (DHCP):
  - Set up DHCP on the domain controller for automatic IP address allocation.
