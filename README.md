@@ -196,6 +196,9 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
 ![Kerberos_PWComplexities](https://github.com/user-attachments/assets/041f45a4-6843-40be-82bb-75f4795a6527)
 
    - Tested automatic Windows updates via WSUS.
+
+![WSUS_Client](https://github.com/user-attachments/assets/f8cf184c-c967-4107-bf03-b7c6d66e24d8)
+
    - Verified DHCP functionality for IP address allocation to clients.
 
 ![DHCPAllocated](https://github.com/user-attachments/assets/7bb40658-9d02-468a-afb6-34efcfc328f4)
