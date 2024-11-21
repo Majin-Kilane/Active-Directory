@@ -103,8 +103,7 @@ I configured:
 ### 4. Routing and Access Role:
 - Installed the Routing and Remote Access service (RRAS).
 
-
-
+![EnableRRAS](https://github.com/user-attachments/assets/57dfca9f-b1cf-446b-9829-366bdc845aee)
 
 ### 5. DNS and Active Directory Integration:
  - Configured DNS on the domain controller to support name resolution for domain-joined devices.
