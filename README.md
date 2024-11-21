@@ -205,7 +205,7 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
 
 3. **Routing and Access**:
    - Verified VPN connectivity and internal routing using test devices.
-   - 
+
 
 
 
