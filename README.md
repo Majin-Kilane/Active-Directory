@@ -45,7 +45,7 @@ ________________________________________________________________________________
    - Installed Active Directory Domain Services (AD DS).
    - Created a domain _mydomain.com_.
   
-![Domain](https://github.com/user-attachments/assets/6f4fb9d3-891d-482a-b7a9-2afb15a38180)
+![Domain](https://github.com/user-attachments/assets/2f44b4c8-7da9-4e05-9704-a253f7a9d08f)
 
 ### 2. Organizational Units (OUs), Users, and Groups:
  - Designed a structured directory:
@@ -53,7 +53,7 @@ ________________________________________________________________________________
    - **Users**: Added test users to each OU with specific roles.
    - **Groups**: Configured security groups (e.g., Administrators, Cybersecurity Specialist) for resource access control.
 
-![OU](https://github.com/user-attachments/assets/68b5ddc6-51e6-4696-9aba-280b4f1f970a)
+![OU](https://github.com/user-attachments/assets/7c90777b-6592-43fb-96d5-a9ced2abb4ac)
 
 ### 3. Advanced Security Policies:
 In this section, I configured several key security policies to enhance the overall security posture of the network. These included **password policies**, **account lockout**, and **Kerberos**, and . Each of these policies plays a critical role in securing user accounts and preventing unauthorized access to the system. Below, I’ll walk through each of these settings individually.
@@ -227,7 +227,6 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
 
 ![GPOResults](https://github.com/user-attachments/assets/1d95c505-7984-469c-a5c1-146ab8407eba)
 
-_(Add images of testing results, such as a successful gpresult /r output, event logs, VPN access logs, and DHCP lease information.)_
 
 
 ## Lessons Learned
