@@ -114,7 +114,7 @@ I configured:
 ### 6. Windows Server Update Services (WSUS):
  - Configured WSUS to manage Windows updates for all domain-joined devices.
 
-![WSUS_Updates](https://github.com/user-attachments/assets/d8d4f404-8b93-4b99-9a25-761a30308840)
+![WSUSConfig](https://github.com/user-attachments/assets/aa3202cd-b31c-4c9f-b859-9d38d443500e)
 
  - Created GPOs to ensure automatic update installation on client machines.
 
