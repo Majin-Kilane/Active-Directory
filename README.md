@@ -199,17 +199,17 @@ I configured:
 
    - Verified firewall rules using test commands (e.g., ping for ICMP).
 
-![Ping](https://github.com/user-attachments/assets/4a1c52fd-ca94-42a3-a31c-6aa3226bd696)
+![Ping](https://github.com/user-attachments/assets/a27853ae-a9a6-4486-a565-001bd2198090)
 
 3. **Routing and Access**:
    - Verified internal routing.
 
-![VerifyRouting](https://github.com/user-attachments/assets/0b0ecf84-c6a7-40a2-8da2-af7ed053371a)
+![VerifyRouting](https://github.com/user-attachments/assets/1ea2b3b8-3404-4aeb-9503-ef54beedc6db)
    
 4. **DNS Functionality**:
    - Ensured DNS resolved domain names for internal devices and services.
   
-![NSLookup](https://github.com/user-attachments/assets/10ac9a9a-c3c0-4833-801b-ddcf6e1af5cb)
+![NSLookup](https://github.com/user-attachments/assets/84da4c0d-4edd-487a-8d85-0790b4bfa79e)
 
 5. **Auditing and Logging**:
    - Verified the auditing configuration by reviewing event logs for critical activities (e.g., successful logons, object access).
