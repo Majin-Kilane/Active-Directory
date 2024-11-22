@@ -124,7 +124,7 @@ I configured:
  - Set up DHCP on the domain controller for automatic IP address allocation.
  - Configured DHCP scopes and options to support network clients.
 
-![DHCPScope](https://github.com/user-attachments/assets/c789141f-8ea6-4d3d-9b3b-3a81453bb40b)
+![DHCPScope](https://github.com/user-attachments/assets/a8a63844-2019-4718-bd4a-455a74549ecf)
 
 ### 8. Security Group Policy Objects (GPOs):
  - Configured additional GPOs for firewall rules and user restrictions.
