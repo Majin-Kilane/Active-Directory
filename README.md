@@ -49,9 +49,9 @@ ________________________________________________________________________________
 
 ### 2. Organizational Units (OUs), Users, and Groups:
  - Designed a structured directory:
-   - **OUs**: Created separate OUs for departments (e.g., IT, HR, and Sales).
+   - **OUs**: Created separate OUs for departments (e.g., IT, HR, and Client Computers).
    - **Users**: Added test users to each OU with specific roles.
-   - **Groups**: Configured security groups (e.g., Administrators, Cybersecurity Specialist) for resource access control.
+   - **Groups**: Configured security groups (e.g., Systems Administrators, Cybersecurity Specialists, and Helpdesk) for resource access control.
 
 ![OU](https://github.com/user-attachments/assets/7c90777b-6592-43fb-96d5-a9ced2abb4ac)
 
