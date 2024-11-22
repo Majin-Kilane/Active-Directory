@@ -158,7 +158,7 @@ I configured:
    - Enforced password complexity, expiration, lockout settings, and Kerberos ticket management.
    - Configured account lockout to mitigate brute force attempts.
 - **Routing and Access Configuration**:
-   - Set up VPN and internal routing for remote access to the network.
+   - Set up routing for remote access to the network.
 - **DNS and Active Directory Integration**:
    - Ensured proper name resolution and service location for domain-joined machines.
 - **WSUS Configuration**:
