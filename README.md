@@ -170,8 +170,6 @@ I configured:
    - Applied inbound/outbound rules for enhanced security.
 - **Auditing and Logging**:
    - Captured critical events through auditing, ensuring enhanced security monitoring.
-     
-_(Include screenshots of your GPO settings, OU structure, user/group configurations, DHCP/WSUS setups, and event logs here.)_
 
 
 ## Testing and Results
@@ -204,12 +202,9 @@ _(Include screenshots of your GPO settings, OU structure, user/group configurati
 ![Ping](https://github.com/user-attachments/assets/4a1c52fd-ca94-42a3-a31c-6aa3226bd696)
 
 3. **Routing and Access**:
-   - Verified VPN connectivity and internal routing using test devices.
+   - Verified internal routing.
 
-
-
-
-
+![VerifyRouting](https://github.com/user-attachments/assets/0b0ecf84-c6a7-40a2-8da2-af7ed053371a)
    
 4. **DNS Functionality**:
    - Ensured DNS resolved domain names for internal devices and services.
