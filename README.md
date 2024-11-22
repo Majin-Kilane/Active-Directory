@@ -183,7 +183,7 @@ I configured:
 2. **Policy Enforcement**:
    - Confirmed that security policies were applied to domain users (e.g., password changes required, account lockout after failed attempts).
   
-   ![ACL_Locked](https://github.com/user-attachments/assets/8d2e9935-b923-4e43-a13c-19614efd54f7)
+![ACL_Locked](https://github.com/user-attachments/assets/8d2e9935-b923-4e43-a13c-19614efd54f7)
 
    - Verified Kerberos ticket management and password complexity enforcement.
   
