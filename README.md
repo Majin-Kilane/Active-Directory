@@ -26,8 +26,8 @@ ________________________________________________________________________________
 The lab consists of:
 
 - **Router** (192.168.1.1): Simulates internet access.
-- **Domain Controller** (192.168.1.10): Hosts AD DS, DNS, WSUS, DHCP, and GPO configurations.
-- **Windows 10 Client** (192.168.1.100): Domain-joined machine for testing policy application.
+- **Domain Controller** (192.168.2.10): Hosts AD DS, DNS, WSUS, DHCP, and GPO configurations.
+- **Windows 10 Client** (192.168.2.100): Domain-joined machine for testing policy application.
 _____________________________________________________________________________________
 
 ## Lab Setup
@@ -124,7 +124,7 @@ I configured:
  - Set up DHCP on the domain controller for automatic IP address allocation.
  - Configured DHCP scopes and options to support network clients.
 
-![DHCPScope](https://github.com/user-attachments/assets/9386bd53-5a6e-46d4-8551-211cc5bd4a5b)
+![DHCPScopes](https://github.com/user-attachments/assets/6c4354af-a8f7-4dd0-a55e-1c0f2d56f9f7)
 
 ### 8. Security Group Policy Objects (GPOs):
  - Configured additional GPOs for firewall rules and user restrictions.
