@@ -21,11 +21,11 @@ ________________________________________________________________________________
 _____________________________________________________________________________________
 
 ## Architecture Diagram
-![Active Directory_Homelab](https://github.com/user-attachments/assets/79de1019-43d0-4b89-aa60-a871c38992cb)
+![Active Directory Diagram](https://github.com/user-attachments/assets/af9cf768-66ce-4451-be3a-450dcf9a30e5)
 
 The lab consists of:
 
-- **Router** (192.168.1.1): Simulates internet access.
+- **Router** (10.0.2.20): Simulates internet access.
 - **Domain Controller** (192.168.2.10): Hosts AD DS, DNS, WSUS, DHCP, and GPO configurations.
 - **Windows 10 Client** (192.168.2.100): Domain-joined machine for testing policy application.
 _____________________________________________________________________________________
