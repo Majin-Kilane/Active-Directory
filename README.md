@@ -69,8 +69,7 @@ I configured the following parameters:
    - **Maximum password age**: 60 days.
    - **Enforce password history**: 24 passwords remembered.
 
-![PW](https://github.com/user-attachments/assets/d118a7d2-2478-407b-b30c-9fde40e08a3b)
-
+![PW Policy](https://github.com/user-attachments/assets/7797201d-178b-413a-9fa8-d18d0c884ba7)
 
 **3.2 Account Lockout Policy**
 The **Account Lockout Policy** helps prevent brute-force attacks by locking accounts after a certain number of failed login attempts.
