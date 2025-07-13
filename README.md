@@ -56,10 +56,12 @@ ________________________________________________________________________________
 ![OU](https://github.com/user-attachments/assets/8befe579-17ce-4919-8a17-9b883f247b17)
 
 **2.1 Create Admin Group and Add a member**
+
 In this section, I created and assigned a security group to streamline administrative access within the **01. Jozi_Branch** organizational unit. This involved opening **Active Directory Users and Computers** on mydomain.com, creating a **Universal security group** named Jozi Administrators within the **01. Jozi_Branch** OU, and adding a user to that group via the **Member Of** tab. These steps ensure proper role-based access control and simplify permissions management across the environment.
 
+<img width="744" height="374" alt="02  Create Admin Group and Add member" src="https://github.com/user-attachments/assets/73ff7d97-0911-458b-aeb4-83ee68f5d365" />
 
-<img width="744" height="577" alt="02  Create Admin Group and Add member" src="https://github.com/user-attachments/assets/d05d6eab-1eb4-4fd2-81dd-ea48af699ec0" />
+<img width="750" height="515" alt="03  Giving Permissions to Admin Group 0 2" src="https://github.com/user-attachments/assets/59d9fcfc-8ac4-45c0-bcc3-4916b5b49bcb" />
 
 
 
@@ -86,6 +88,7 @@ I configured the following parameters:
 ![PW Policy](https://github.com/user-attachments/assets/7797201d-178b-413a-9fa8-d18d0c884ba7)
 
 **3.2 Account Lockout Policy**
+
 The **Account Lockout Policy** helps prevent brute-force attacks by locking accounts after a certain number of failed login attempts.
 
 **Explanation:**
