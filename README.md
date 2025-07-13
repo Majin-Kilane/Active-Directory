@@ -59,10 +59,12 @@ ________________________________________________________________________________
 
 In this section, I created and assigned a security group to streamline administrative access within the **01. Jozi_Branch** organizational unit. This involved opening **Active Directory Users and Computers** on mydomain.com, creating a **Universal security group** named Jozi Administrators within the **01. Jozi_Branch** OU, and adding a user to that group via the **Member Of** tab. These steps ensure proper role-based access control and simplify permissions management across the environment.
 
+
 <img width="744" height="374" alt="02  Create Admin Group and Add member" src="https://github.com/user-attachments/assets/73ff7d97-0911-458b-aeb4-83ee68f5d365" />
 
 
 **2.1.1 Delegate Security Permissions to an OU to a security group**
+
 
 <img width="750" height="515" alt="03  Giving Permissions to Admin Group 0 2" src="https://github.com/user-attachments/assets/59d9fcfc-8ac4-45c0-bcc3-4916b5b49bcb" />
 
