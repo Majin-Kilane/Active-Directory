@@ -55,6 +55,19 @@ ________________________________________________________________________________
 
 ![OU](https://github.com/user-attachments/assets/8befe579-17ce-4919-8a17-9b883f247b17)
 
+**2.1 Create Admin Group and Add a member**
+In this section, I created and assigned a security group to streamline administrative access within the **01. Jozi_Branch** organizational unit. This involved opening **Active Directory Users and Computers** on mydomain.com, creating a **Universal security group** named Jozi Administrators within the **01. Jozi_Branch** OU, and adding a user to that group via the **Member Of** tab. These steps ensure proper role-based access control and simplify permissions management across the environment.
+
+![Jozi Administrators Group](https://user-images.githubusercontent.com/your-image.png)
+
+
+
+
+**2.2 Configure Protected User**
+
+
+
+
 ### 3. Advanced Security Policies:
 In this section, I configured several key security policies to enhance the overall security posture of the network. These included **password policies**, **account lockout**, and **Kerberos**, and . Each of these policies plays a critical role in securing user accounts and preventing unauthorized access to the system. Below, I’ll walk through each of these settings individually.
 
