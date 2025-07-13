@@ -69,6 +69,7 @@ In this section, I created and assigned a security group to streamline administr
 <img width="750" height="515" alt="03  Giving Permissions to Admin Group 0 2" src="https://github.com/user-attachments/assets/59d9fcfc-8ac4-45c0-bcc3-4916b5b49bcb" />
 
 
+
 **2.2 Configure Protected User**
 
 In this section, I configured a protected user account to enhance identity security for high-risk or privileged roles. This process involved opening **Active Directory Users and Computers**, locating the specific account under the appropriate OU, and enabling the **Protected Users** security group membership. By applying this group, the account is shielded from legacy authentication protocols, vulnerable credential mechanisms, and certain impersonation techniques. These settings significantly reduce the attack surface and support a more resilient authentication framework within the environment.
