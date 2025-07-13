@@ -58,7 +58,8 @@ ________________________________________________________________________________
 **2.1 Create Admin Group and Add a member**
 In this section, I created and assigned a security group to streamline administrative access within the **01. Jozi_Branch** organizational unit. This involved opening **Active Directory Users and Computers** on mydomain.com, creating a **Universal security group** named Jozi Administrators within the **01. Jozi_Branch** OU, and adding a user to that group via the **Member Of** tab. These steps ensure proper role-based access control and simplify permissions management across the environment.
 
-![Jozi Administrators Group](https://user-images.githubusercontent.com/your-image.png)
+
+<img width="744" height="577" alt="02  Create Admin Group and Add member" src="https://github.com/user-attachments/assets/d05d6eab-1eb4-4fd2-81dd-ea48af699ec0" />
 
 
 
