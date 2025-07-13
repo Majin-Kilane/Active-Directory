@@ -61,15 +61,16 @@ In this section, I created and assigned a security group to streamline administr
 
 <img width="744" height="374" alt="02  Create Admin Group and Add member" src="https://github.com/user-attachments/assets/73ff7d97-0911-458b-aeb4-83ee68f5d365" />
 
+**2.1.1 Delegate Security Permissions to an OU to a security group**
+
 <img width="750" height="515" alt="03  Giving Permissions to Admin Group 0 2" src="https://github.com/user-attachments/assets/59d9fcfc-8ac4-45c0-bcc3-4916b5b49bcb" />
-
-
-
 
 **2.2 Configure Protected User**
 
+In this section, I configured a protected user account to enhance identity security for high-risk or privileged roles. This process involved opening **Active Directory Users and Computers**, locating the specific account under the appropriate OU, and enabling the **Protected Users** security group membership. By applying this group, the account is shielded from legacy authentication protocols, vulnerable credential mechanisms, and certain impersonation techniques. These settings significantly reduce the attack surface and support a more resilient authentication framework within the environment.
 
 
+<img width="744" height="497" alt="01  Protected User" src="https://github.com/user-attachments/assets/355effbd-47cf-43df-b4ff-c4a7837955c1" />
 
 ### 3. Advanced Security Policies:
 In this section, I configured several key security policies to enhance the overall security posture of the network. These included **password policies**, **account lockout**, and **Kerberos**, and . Each of these policies plays a critical role in securing user accounts and preventing unauthorized access to the system. Below, I’ll walk through each of these settings individually.
