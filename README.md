@@ -61,9 +61,11 @@ In this section, I created and assigned a security group to streamline administr
 
 <img width="744" height="374" alt="02  Create Admin Group and Add member" src="https://github.com/user-attachments/assets/73ff7d97-0911-458b-aeb4-83ee68f5d365" />
 
+
 **2.1.1 Delegate Security Permissions to an OU to a security group**
 
 <img width="750" height="515" alt="03  Giving Permissions to Admin Group 0 2" src="https://github.com/user-attachments/assets/59d9fcfc-8ac4-45c0-bcc3-4916b5b49bcb" />
+
 
 **2.2 Configure Protected User**
 
