@@ -17,7 +17,8 @@ ________________________________________________________________________________
 3. Create and manage a structured directory with OUs, users, and groups.
 4. Configure WSUS and DHCP for network services.
 5. Configure Windows Firewall settings via GPOs.
-6. Test domain functionality and policy enforcement on a Windows 10 client.
+6. Configure Active Directory Failover.
+7. Test domain functionality and policy enforcement on a Windows 10 client.
 _____________________________________________________________________________________
 
 ## Architecture Diagram
@@ -27,6 +28,7 @@ The lab consists of:
 
 - **Router** (10.0.2.20): Simulates internet access.
 - **Domain Controller** (192.168.1.10): Hosts AD DS, DNS, WSUS, DHCP, and GPO configurations.
+- **Active Directory Failover** (192.168.1.20)
 - **Windows 10 Client** (192.168.1.100): Domain-joined machine for testing policy application.
 _____________________________________________________________________________________
 
@@ -36,6 +38,7 @@ ________________________________________________________________________________
 - **Virtualization Platform**: VirtualBox.
 - **Operating Systems**:
    - Windows Server 2022 (Domain Controller).
+   - Windows Server 2022 (Active Directory Failover).
    - Windows 10 (Client Machine).
 
 ## Key Configurations
@@ -169,7 +172,18 @@ I configured:
 
 ![LogginNAuditingSetUp](https://github.com/user-attachments/assets/4e0cdde7-fa38-49cb-9499-371600111050)
 
-### 11. Client Machine:
+### 11. Active Directory Failover Setup:
+- Prepared Secondary server and joined it to the domain. 
+
+
+
+
+
+
+
+
+
+### 12. Client Machine:
  - Joined Windows 10 to the domain and tested the application of security and firewall policies.
 
 ![DCJoined](https://github.com/user-attachments/assets/46061b5d-aac4-418c-8a1d-3a2d962f704d)
