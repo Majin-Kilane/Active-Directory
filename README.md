@@ -173,7 +173,49 @@ I configured:
 ![LogginNAuditingSetUp](https://github.com/user-attachments/assets/4e0cdde7-fa38-49cb-9499-371600111050)
 
 ### 11. Active Directory Failover Setup:
-- Prepared Secondary server and joined it to the domain. 
+- This section details how I configured an Active Directory Failover Domain Controller (ADFO) in my lab environment, ensuring redundancy and replication with the primary DC.
+
+**11.1 Prepared the Failover Server**
+ - Installed Windows Server 2022 on the secondary machine.
+ - Configured a static IP (192.168.1.11).
+ - Set the Preferred DNS to the primary DC (192.168.1.10) and the Alternate DNS to itself (192.168.1.11).
+ - Renamed the server to ADFO for clarity.
+
+**11.2 Joined the Failover Server to the Domain**
+ - Connected the secondary server to the existing domain (mydomain.com) using domain admin credentials.
+ - Verified domain membership by checking System Properties.
+
+**11.3 Promoted the Failover Server to Domain Controller**
+ - Opened Server Manager > Add Roles and Features.
+ - Installed Active Directory Domain Services (AD DS).
+ - Chose the option Add a domain controller to an existing domain.
+ - Selected mydomain.com and provided domain admin credentials.
+ - Enabled DNS and Global Catalog (GC) roles.
+ - Configured the Database, Log Files, and SYSVOL locations to default paths.
+ - Restarted the server to complete promotion.
+
+**11.2 Configured DNS Replication**
+ - Verified DNS zones replicated from the primary DC to the failover DC.
+ - Ensured both DCs listed each other as Name Servers in the zone properties.
+
+**11.2 Joined the Failover Server to the Domain**
+
+
+
+
+**11.2 Joined the Failover Server to the Domain**
+**11.2 Joined the Failover Server to the Domain**
+**11.2 Joined the Failover Server to the Domain**
+**11.2 Joined the Failover Server to the Domain**
+
+
+
+
+
+
+
+
+
 
 
 
