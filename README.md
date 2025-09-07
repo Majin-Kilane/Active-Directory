@@ -29,7 +29,7 @@ The lab consists of:
 - **Router** (10.0.2.20): Simulates internet access.
 - **Domain Controller** (192.168.1.10): Hosts AD DS, DNS, WSUS, DHCP, and GPO configurations.
 - **Active Directory Failover** (192.168.1.20)
-- **Windows 10 Client** (192.168.1.100): Domain-joined machine for testing policy application.
+- **Windows 10 Client** (169.254.114.55): Domain-joined machine for testing policy application.
 _____________________________________________________________________________________
 
 ## Lab Setup
@@ -180,8 +180,9 @@ I configured:
  - Configured a static IP (192.168.1.11).
  - Set the Preferred DNS to the primary DC (192.168.1.10) and the Alternate DNS to itself (192.168.1.11).
  - Renamed the server to ADFO for clarity.
+  
+![](https://raw.githubusercontent.com/Majin-Kilane/Active-Directory/0dd31f153ee4cc8ec7e7854fb6b1c8ab4aa53de9/Prepared%20Failover%20Server.png)
 
-![]()
 
 
 
@@ -189,8 +190,9 @@ I configured:
  - Connected the secondary server to the existing domain (mydomain.com) using domain admin credentials.
  - Verified domain membership by checking System Properties.
 
-
 ![JoinFO](https://github.com/Majin-Kilane/Active-Directory/blob/main/Join%20FO%20Server.png?raw=true)
+
+
 
 **11.3 Promoted the Failover Server to Domain Controller**
  - Opened Server Manager > Add Roles and Features.
@@ -215,7 +217,8 @@ I configured:
  - Ran repadmin /replsummary to check replication health.
  - Used repadmin /showrepl to confirm successful replication of AD objects.
  - Opened Active Directory Sites and Services and confirmed both DCs appeared under the default site.
-
+   
+![Verified AD Replication](https://github.com/Majin-Kilane/Active-Directory/blob/main/Verified%20AD%20Replication.png)
 
 
 
