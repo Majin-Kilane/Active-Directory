@@ -29,7 +29,7 @@ The lab consists of:
 - **Router** (10.0.2.20): Simulates internet access.
 - **Domain Controller** (192.168.1.10): Hosts AD DS, DNS, WSUS, DHCP, and GPO configurations.
 - **Active Directory Failover** (192.168.1.20)
-- **Windows 10 Client** (169.254.114.55): Domain-joined machine for testing policy application.
+- **Windows 10 Client** (192.168.1.20): Domain-joined machine for testing policy application.
 _____________________________________________________________________________________
 
 ## Lab Setup
