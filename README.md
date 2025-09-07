@@ -198,13 +198,21 @@ I configured:
  - Verified DNS zones replicated from the primary DC to the failover DC.
  - Ensured both DCs listed each other as Name Servers in the zone properties.
 
+**11.2 Verified AD Replication**
+ - Ran repadmin /replsummary to check replication health.
+ - Used repadmin /showrepl to confirm successful replication of AD objects.
+ - Opened Active Directory Sites and Services and confirmed both DCs appeared under the default site.
+
+**11.2 Tested Failover Functionality**
+ - Shut down the primary DC (192.168.1.10).
+ - Logged in to the Windows 10 client with a domain account.
+ - Confirmed authentication succeeded through the failover DC.
+ - Validated DNS resolution continued to function using nslookup.
+   
 **11.2 Joined the Failover Server to the Domain**
 
 
 
-
-**11.2 Joined the Failover Server to the Domain**
-**11.2 Joined the Failover Server to the Domain**
 **11.2 Joined the Failover Server to the Domain**
 **11.2 Joined the Failover Server to the Domain**
 
