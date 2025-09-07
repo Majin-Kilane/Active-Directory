@@ -181,9 +181,16 @@ I configured:
  - Set the Preferred DNS to the primary DC (192.168.1.10) and the Alternate DNS to itself (192.168.1.11).
  - Renamed the server to ADFO for clarity.
 
+![]()
+
+
+
 **11.2 Joined the Failover Server to the Domain**
  - Connected the secondary server to the existing domain (mydomain.com) using domain admin credentials.
  - Verified domain membership by checking System Properties.
+
+
+![JoinFO](https://github.com/Majin-Kilane/Active-Directory/blob/main/Join%20FO%20Server.png?raw=true)
 
 **11.3 Promoted the Failover Server to Domain Controller**
  - Opened Server Manager > Add Roles and Features.
@@ -194,24 +201,40 @@ I configured:
  - Configured the Database, Log Files, and SYSVOL locations to default paths.
  - Restarted the server to complete promotion.
 
+
+
+
 **11.4 Configured DNS Replication**
  - Verified DNS zones replicated from the primary DC to the failover DC.
  - Ensured both DCs listed each other as Name Servers in the zone properties.
+
+
+
 
 **11.5 Verified AD Replication**
  - Ran repadmin /replsummary to check replication health.
  - Used repadmin /showrepl to confirm successful replication of AD objects.
  - Opened Active Directory Sites and Services and confirmed both DCs appeared under the default site.
 
+
+
+
 **11.6 Tested Failover Functionality**
  - Shut down the primary DC (192.168.1.10).
  - Logged in to the Windows 10 client with a domain account.
  - Confirmed authentication succeeded through the failover DC.
  - Validated DNS resolution continued to function using nslookup.
+
+
+
    
 **11.7 Joined the Failover Server to the Domain**
  - Brought the primary DC back online and verified replication synchronized in both directions.
  - Ensured both DCs could service authentication and DNS requests.
+
+
+
+
 
 ## Result
 By setting up this failover domain controller, I demonstrated the ability to provide redundancy in Active Directory, ensuring continuous authentication, DNS resolution, and replication across domain controllers.
