@@ -210,13 +210,11 @@ I configured:
  - Validated DNS resolution continued to function using nslookup.
    
 **11.2 Joined the Failover Server to the Domain**
+ - Brought the primary DC back online and verified replication synchronized in both directions.
+ - Ensured both DCs could service authentication and DNS requests.
 
-
-
-**11.2 Joined the Failover Server to the Domain**
-**11.2 Joined the Failover Server to the Domain**
-
-
+## Result
+By setting up this failover domain controller, I demonstrated the ability to provide redundancy in Active Directory, ensuring continuous authentication, DNS resolution, and replication across domain controllers.
 
 
 
