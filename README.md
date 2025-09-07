@@ -12,13 +12,13 @@ This project showcases my ability to design, implement, and manage a secure Acti
 _____________________________________________________________________________________
 
 ## Objectives
-1. Build and secure an AD environment.
-2. Implement advanced security policies (e.g., account lockout, Kerberos, password).
-3. Create and manage a structured directory with OUs, users, and groups.
-4. Configure WSUS and DHCP for network services.
-5. Configure Windows Firewall settings via GPOs.
-6. Configure Active Directory Failover.
-7. Test domain functionality and policy enforcement on a Windows 10 client.
+1. Built and secured an AD environment.
+2. Implemented advanced security policies (e.g., account lockout, Kerberos, password).
+3. Created and managed a structured directory with OUs, users, and groups.
+4. Configured WSUS and DHCP for network services.
+5. Configured Windows Firewall settings via GPOs.
+6. Configured Active Directory Failover.
+7. Tested domain functionality and policy enforcement on a Windows 10 client.
 _____________________________________________________________________________________
 
 ## Architecture Diagram
