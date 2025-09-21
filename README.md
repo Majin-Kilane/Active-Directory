@@ -222,38 +222,8 @@ I configured:
 
 
 
-**11.6 Tested Failover Functionality**
- - Shut down the primary DC (192.168.1.10).
- - Logged in to the Windows 10 client with a domain account.
- - Confirmed authentication succeeded through the failover DC.
- - Validated DNS resolution continued to function using nslookup.
-
-
-
-   
-**11.7 Joined the Failover Server to the Domain**
- - Brought the primary DC back online and verified replication synchronized in both directions.
- - Ensured both DCs could service authentication and DNS requests.
-
-
-
-
-
 ## Result
 By setting up this failover domain controller, I demonstrated the ability to provide redundancy in Active Directory, ensuring continuous authentication, DNS resolution, and replication across domain controllers.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -261,6 +231,23 @@ By setting up this failover domain controller, I demonstrated the ability to pro
  - Joined Windows 10 to the domain and tested the application of security and firewall policies.
 
 ![DCJoined](https://github.com/user-attachments/assets/46061b5d-aac4-418c-8a1d-3a2d962f704d)
+
+
+**12.1 Checked if both DCs responds in client machine**
+ - Brought the primary DC back online and verified replication synchronized in both directions.
+ - Ensured both DCs could service authentication and DNS requests.
+
+
+**12.2 Tested Failover Functionality**
+ - Shut down the primary DC (192.168.1.10).
+ - Logged in to the Windows 10 client with a domain account.
+ - Confirmed authentication succeeded through the failover DC.
+ - Validated DNS resolution continued to function using nslookup.
+
+   
+**12.3 Joined the Failover Server to the Domain**
+ - Brought the primary DC back online and verified replication synchronized in both directions.
+ - Ensured both DCs could service authentication and DNS requests.
 
 ## Key Features
 
@@ -280,6 +267,8 @@ By setting up this failover domain controller, I demonstrated the ability to pro
    - Applied inbound/outbound rules for enhanced security.
 - **Auditing and Logging**:
    - Captured critical events through auditing, ensuring enhanced security monitoring.
+- **Failover Configuration**:
+   - Successfully configured a secondary domain as a failover and tested functionality. 
 
 
 ## Testing and Results
@@ -331,6 +320,16 @@ By setting up this failover domain controller, I demonstrated the ability to pro
    - Tested group-based access to resources.
 
 ![GPOResults](https://github.com/user-attachments/assets/c0ffa573-2031-4052-9823-9aa490fff7e7)
+
+7. **Tested Authenication Against Secondary DC**:
+
+[image]
+
+8. **Check Replication After Failover**:
+
+
+[image]
+
 
 
 
