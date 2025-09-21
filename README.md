@@ -339,6 +339,7 @@ By setting up this failover domain controller, I demonstrated the ability to pro
 - Enhanced skills in configuring and managing Windows Defender Firewall through GPOs.
 - Gained expertise in managing critical services like WSUS, DHCP, and Routing/Access.
 - Learned the importance of auditing and logging for security and compliance.
+- Learned that reliable authentication and domain services depend entirely on properly configured and redundant DNS, not just multiple domain controllers.
 
 
 ## Conclusion
