@@ -1,7 +1,7 @@
 ## Active Directory Home Lab Project
 
 ## Overview
-This project showcases my ability to design, implement, and manage a secure Active Directory (AD) environment. Using VirtualBox, Windows Server 2022, and Windows 10, I configured a simulated network to demonstrate essential IT administration tasks, including:
+This project showcases my ability to design, implement, and manage a secure Active Directory (AD) environment. Using VirtualBox, Windows Server 2022, and Windows 11, I configured a simulated network to demonstrate essential IT administration tasks, including:
 
 - Security-focused Group Policy Object (GPO) configurations.
 - Active Directory structure with Organizational Units (OUs), users, and groups.
@@ -18,7 +18,7 @@ ________________________________________________________________________________
 4. Configured WSUS and DHCP for network services.
 5. Configured Windows Firewall settings via GPOs.
 6. Configured Active Directory Failover.
-7. Tested domain functionality and policy enforcement on a Windows 10 client.
+7. Tested domain functionality and policy enforcement on a Windows 11 client.
 _____________________________________________________________________________________
 
 ## Architecture Diagram
@@ -29,7 +29,7 @@ The lab consists of:
 - **Router** (10.0.2.20): Simulates internet access.
 - **Domain Controller** (192.168.1.10): Hosts AD DS, DNS, WSUS, DHCP, and GPO configurations.
 - **Active Directory Failover** (192.168.1.20)
-- **Windows 10 Client** (192.168.1.100): Domain-joined machine for testing policy application.
+- **Windows 11 Client** (192.168.1.100): Domain-joined machine for testing policy application.
 _____________________________________________________________________________________
 
 ## Lab Setup
@@ -39,7 +39,7 @@ ________________________________________________________________________________
 - **Operating Systems**:
    - Windows Server 2022 (Domain Controller).
    - Windows Server 2022 (Active Directory Failover).
-   - Windows 10 (Client Machine).
+   - Windows 11 (Client Machine).
 
 ## Key Configurations
 ### 1. Active Directory Setup:
