@@ -212,8 +212,6 @@ I configured:
  - 
  -
 
-
-
 ![DHCPRepl](https://github.com/Majin-Kilane/Active-Directory/blob/a84d29bb6503681d7b495d6d835461266a069dec/ConfigDHCP_FO.png)
 
 
