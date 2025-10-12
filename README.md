@@ -208,6 +208,14 @@ I configured:
  - Ensured both DCs listed each other as Name Servers in the zone properties.
 
 
+**11.5 Configured DHCP Replication**
+ - 
+ -
+
+
+
+![DHCPRepl](https://github.com/Majin-Kilane/Active-Directory/blob/a84d29bb6503681d7b495d6d835461266a069dec/ConfigDHCP_FO.png)
+
 
 
 **11.5 Verified AD Replication**
