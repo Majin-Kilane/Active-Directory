@@ -323,7 +323,7 @@ By setting up this failover domain controller, I demonstrated the ability to pro
 
 7. **Tested Authenication Against Secondary DC**:
 
-![AuthTesting](https://github.com/Majin-Kilane/Active-Directory/blob/d9ea920523210c90234e408bedbf383e5d1ebbe3/TestedAuth2ndDC.png)
+![AuthTesting](https://github.com/Majin-Kilane/Active-Directory/blob/602a12c6441848f5692c4d0dc82620f99caa826f/TestedAuth-2ndDC.png)
 
 8. **Check Replication After Failover**:
 
