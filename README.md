@@ -344,7 +344,9 @@ By setting up this failover domain controller, I demonstrated the ability to pro
 - Gained expertise in managing critical services like WSUS, DHCP, and Routing/Access.
 - Learned the importance of auditing and logging for security and compliance.
 - Learned that reliable authentication and domain services depend entirely on properly configured and redundant DNS, not just multiple domain controllers.
-
+- Gained practical experience configuring Windows Server failover, including scope replication, load balancing, and partner state verification.
+- Learned the importance of carefully checking configuration settings and error messages, as small misconfigurations can prevent proper failover.
+- Developed skills in diagnosing and resolving issues in complex networked environments, ensuring redundancy and system reliability.
 
 ## Conclusion
 This project highlights my ability to build a secure and organized Active Directory environment, demonstrating skills in directory services, Group Policy management, network security, and server services like WSUS and DHCP. It reflects my readiness to manage enterprise-level IT systems and troubleshoot complex configurations.
