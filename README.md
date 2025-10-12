@@ -22,7 +22,7 @@ ________________________________________________________________________________
 _____________________________________________________________________________________
 
 ## Architecture Diagram
-![Active Directory Diagram](https://github.com/Majin-Kilane/Active-Directory/blob/eb9fc07e941f737e7068e867442bf1bb043e7d97/AD-FO.jpg)
+![Active Directory Diagram](https://github.com/Majin-Kilane/Active-Directory/blob/fb3c99927b1af27470870c9435bd18b3eb3296ed/AD-FO%20Diagram.jpg)
 
 The lab consists of:
 
