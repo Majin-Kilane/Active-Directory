@@ -209,8 +209,9 @@ I configured:
 
 
 **11.5 Configured DHCP Replication**
- - Configured DHCP failover in the primary DC and set 
- -
+ - Opened DHCP Management Console on primary DC and selected Configure Failover for the IPv4 scope.
+ - Added Failover server (ADFO) as the partner server, chose **Load Balance mode**, set the MCLT to 1 hour, and created a Shared Secret to secure replication.
+ - Completed the wizard to establish a synchronized DHCP failover relationship.
 
 ![DHCPRepl](https://github.com/Majin-Kilane/Active-Directory/blob/a84d29bb6503681d7b495d6d835461266a069dec/ConfigDHCP_FO.png)
 
