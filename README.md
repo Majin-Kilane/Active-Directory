@@ -190,7 +190,6 @@ I configured:
 
 ![JoinFO](https://github.com/Majin-Kilane/Active-Directory/blob/main/Join%20FO%20Server.png?raw=true)
 
-
 **11.3 Promoted the Failover Server to Domain Controller**
  - Opened Server Manager > Add Roles and Features.
  - Installed Active Directory Domain Services (AD DS).
@@ -200,13 +199,9 @@ I configured:
  - Configured the Database, Log Files, and SYSVOL locations to default paths.
  - Restarted the server to complete promotion.
 
-
-
-
 **11.4 Configured DNS Replication**
  - Verified DNS zones replicated from the primary DC to the failover DC.
  - Ensured both DCs listed each other as Name Servers in the zone properties.
-
 
 **11.5 Configured DHCP Replication**
  - Opened DHCP Management Console on primary DC and selected Configure Failover for the IPv4 scope.
@@ -214,8 +209,6 @@ I configured:
  - Completed the wizard to establish a synchronized DHCP failover relationship.
 
 ![DHCPRepl](https://github.com/Majin-Kilane/Active-Directory/blob/a84d29bb6503681d7b495d6d835461266a069dec/ConfigDHCP_FO.png)
-
-
 
 **11.5 Verified AD Replication**
  - Ran repadmin /replsummary to check replication health.
@@ -235,7 +228,6 @@ By setting up this failover domain controller, I demonstrated the ability to pro
  - Joined Windows 10 to the domain and tested the application of security and firewall policies.
 
 ![DCJoined](https://github.com/user-attachments/assets/46061b5d-aac4-418c-8a1d-3a2d962f704d)
-
 
 **12.1 Checked if both DCs responds in client machine**
  - Brought the primary DC back online and verified replication synchronized in both directions.
