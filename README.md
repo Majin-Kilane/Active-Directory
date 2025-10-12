@@ -330,8 +330,8 @@ By setting up this failover domain controller, I demonstrated the ability to pro
    *On HL-DC*
 ![HL-DC](https://github.com/Majin-Kilane/Active-Directory/blob/010fa6c31cd20d40870b65c72342cbe5f68b8863/FailoverVeriDC.png)
    *On ADFO*
-![ADFO](
-    !
+![ADFO](https://github.com/Majin-Kilane/Active-Directory/blob/35d8c6dc5c259c60d92d0cab2ef1782ce2c9a994/FailoverVeriFO.png)
+
 
 ## Lessons Learned
 - Improved understanding of Group Policy inheritance and troubleshooting conflicts.
