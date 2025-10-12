@@ -328,7 +328,10 @@ By setting up this failover domain controller, I demonstrated the ability to pro
 
 9. **Verified DHCP Failover Relationship**:
    *On HL-DC*
-    
+![HL-DC](https://github.com/Majin-Kilane/Active-Directory/blob/010fa6c31cd20d40870b65c72342cbe5f68b8863/FailoverVeriDC.png)
+   *On ADFO*
+![ADFO](
+    !
 
 ## Lessons Learned
 - Improved understanding of Group Policy inheritance and troubleshooting conflicts.
