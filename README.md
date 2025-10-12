@@ -234,6 +234,7 @@ By setting up this failover domain controller, I demonstrated the ability to pro
  - Brought the primary DC back online and verified replication synchronized in both directions.
  - Ensured both DCs could service authentication and DNS requests.
 
+![TestedBothDCs](https://github.com/Majin-Kilane/Active-Directory/blob/main/CheckedDCsResponse_.png?raw=true)
 
 **12.2 Tested Failover Functionality**
  - Shut down the primary DC (192.168.1.10).
