@@ -184,14 +184,11 @@ I configured:
 ![](https://raw.githubusercontent.com/Majin-Kilane/Active-Directory/0dd31f153ee4cc8ec7e7854fb6b1c8ab4aa53de9/Prepared%20Failover%20Server.png)
 
 
-
-
 **11.2 Joined the Failover Server to the Domain**
  - Connected the secondary server to the existing domain (mydomain.com) using domain admin credentials.
  - Verified domain membership by checking System Properties.
 
 ![JoinFO](https://github.com/Majin-Kilane/Active-Directory/blob/main/Join%20FO%20Server.png?raw=true)
-
 
 
 **11.3 Promoted the Failover Server to Domain Controller**
@@ -325,7 +322,7 @@ By setting up this failover domain controller, I demonstrated the ability to pro
 
 ![AuthTesting](https://github.com/Majin-Kilane/Active-Directory/blob/602a12c6441848f5692c4d0dc82620f99caa826f/TestedAuth-2ndDC.png)
 
-8. **Check Replication After Failover**:
+8. **Checked Replication After Failover**:
 
 
 ![CheckedRep](https://github.com/Majin-Kilane/Active-Directory/blob/e68ce42c68cdb8679f47675b8cea35a4a20ea4a5/3.CheckReplAfterFO.png)
