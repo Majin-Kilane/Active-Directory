@@ -324,11 +324,11 @@ By setting up this failover domain controller, I demonstrated the ability to pro
 
 8. **Checked Replication After Failover**:
 
-
 ![CheckedRep](https://github.com/Majin-Kilane/Active-Directory/blob/e68ce42c68cdb8679f47675b8cea35a4a20ea4a5/3.CheckReplAfterFO.png)
 
-
-
+9. **Verified DHCP Failover Relationship**:
+   *On HL-DC*
+    
 
 ## Lessons Learned
 - Improved understanding of Group Policy inheritance and troubleshooting conflicts.
