@@ -218,6 +218,11 @@ I configured:
 ![Verified AD Replication](https://github.com/Majin-Kilane/Active-Directory/blob/main/Verified%20AD%20Replication.png)
 
 
+**11.6 Security Architecture & Design Decisions**
+- Domain controllers do not require direct internet access.
+- DNS forwarding was configured to allow controlled outbound name resolution for updates and SIEM integrations.
+- All external connectivity is outbound-only and stateful via NAT.
+- No inbound internet traffic is permitted to internal servers.
 
 ## Result
 By setting up this failover domain controller, I demonstrated the ability to provide redundancy in Active Directory, ensuring continuous authentication, DNS resolution, and replication across domain controllers.
