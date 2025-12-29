@@ -221,6 +221,8 @@ I configured:
 **11.6 Security Architecture & Design Decisions**
 - Domain controllers do not require direct internet access.
 - DNS forwarding was configured to allow controlled outbound name resolution for updates and SIEM integrations.
+- All Remote Service Management firewall rules (RPC, RPC-EPMAP, and Named Pipes) were enabled on the Domain profile to ensure reliable Active Directory replication and remote management between domain 
+  controllers.
 - All external connectivity is outbound-only and stateful via NAT.
 - No inbound internet traffic is permitted to internal servers.
 
