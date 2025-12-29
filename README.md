@@ -1,14 +1,15 @@
 ## Active Directory Home Lab Project
 
 ## Overview
-This project showcases my ability to design, implement, and manage a secure Active Directory (AD) environment. Using VirtualBox, Windows Server 2022, and Windows 11, I configured a simulated network to demonstrate essential IT administration tasks, including:
+This project showcases my ability to design, implement, and manage a secure and highly available Active Directory (AD) environment. Using VirtualBox, Windows Server 2022, and Windows 11, I configured a simulated network to demonstrate essential IT administration tasks, including:
 
 - Security-focused Group Policy Object (GPO) configurations.
 - Active Directory structure with Organizational Units (OUs), users, and groups.
-- Advanced security policies like account lockout, Kerberos, and password policies.
-- Windows Server Update Services (WSUS) and DHCP management.
-- Windows Defender Firewall management.
-- Domain-joined client functionality.
+- Advanced security policies such as account lockout, Kerberos, and password policies.
+- Active Directory failover and replication using a secondary domain controller for high availability.
+- Windows Server Update Services (WSUS) and DHCP management, including DHCP failover.
+- Windows Defender Firewall management via Group Policy.
+- Domain-joined client functionality and failover testing.
 _____________________________________________________________________________________
 
 ## Objectives
