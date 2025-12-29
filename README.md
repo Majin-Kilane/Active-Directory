@@ -220,6 +220,7 @@ I configured:
 
 
 **11.6 Security Architecture & Design Decisions**
+
 This section documents key security and network design decisions made to balance functionality, redundancy, and least-privilege access within the Active Directory environment.
 
 - Domain controllers do not require direct internet access.
