@@ -13,13 +13,13 @@ This project showcases my ability to design, implement, and manage a secure and 
 _____________________________________________________________________________________
 
 ## Objectives
-1. Design, build, and secure an enterprise-style Active Directory environment.
-2. Implement advanced identity and access security controls, including account lockout, Kerberos authentication, and strong password policies.
-3. Create and manage a structured directory using Organizational Units (OUs), users, and security groups following best practices.
-4. Deploy and manage core network services, including Windows Server Update Services (WSUS) and Dynamic Host Configuration Protocol (DHCP).
-5. Configure and enforce Windows Defender Firewall rules through Group Policy Objects (GPOs).
-6. Implement Active Directory failover and replication using a secondary domain controller to ensure high availability and resilience.
-7. Validate domain functionality, security policies, and failover behavior on a Windows 11 domain-joined client.
+1. Build and secure an enterprise-style Active Directory environment in a virtualized lab.
+2. Implement identity and access security controls, including password, account lockout, and Kerberos policies.
+3. Design a structured AD hierarchy using Organizational Units (OUs), users, and security groups.
+4. Deploy and manage core infrastructure services such as DHCP and WSUS.
+5. Enforce host-based firewall rules using Group Policy Objects (GPOs).
+6. Configure Active Directory failover with a secondary domain controller to ensure redundancy and replication.
+7. Validate authentication, policy enforcement, and failover behavior on a Windows 11 domain-joined client.
 _____________________________________________________________________________________
 
 ## Architecture Diagram
