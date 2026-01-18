@@ -1,7 +1,9 @@
 ## Active Directory Home Lab Project
 
 ## Overview
-This project showcases my ability to design, implement, and manage a secure and highly available Active Directory (AD) environment. Using VirtualBox, Windows Server 2022, and Windows 11, I configured a simulated network to demonstrate essential IT administration tasks, including:
+This project demonstrates the design, implementation, and security hardening of a **redundant Active Directory environment** using Windows Server 2022. **The lab emphasizes enterprise-grade identity management, high availability through failover**, and **security-first configuration practices**.
+
+The environment was built using VirtualBox and includes a primary Domain Controller, a failover Domain Controller, and domain-joined client machines. The lab also integrates with a centralized SIEM (Wazuh) for monitoring and detection, documented separately in the SOC repository. I configured a simulated network to demonstrate essential IT administration tasks, including:
 
 - Security-focused Group Policy Object (GPO) configurations.
 - Active Directory structure with Organizational Units (OUs), users, and groups.
@@ -13,13 +15,14 @@ This project showcases my ability to design, implement, and manage a secure and 
 _____________________________________________________________________________________
 
 ## Objectives
-1. Build and secure an enterprise-style Active Directory environment in a virtualized lab.
-2. Implement identity and access security controls, including password, account lockout, and Kerberos policies.
-3. Design a structured AD hierarchy using Organizational Units (OUs), users, and security groups.
-4. Deploy and manage core infrastructure services such as DHCP and WSUS.
-5. Enforce host-based firewall rules using Group Policy Objects (GPOs).
-6. Configure Active Directory failover with a secondary domain controller to ensure redundancy and replication.
-7. Validate authentication, policy enforcement, and failover behavior on a Windows 11 domain-joined client.
+1. Build and secure an Active Directory environment.
+2. Implement advanced security policies (passwords, lockout, Kerberos).
+3. Design a structured OU, user, and group hierarchy.
+4. Configure DNS, DHCP, WSUS, and Windows Firewall via GPOs.
+5. Implement and validate Active Directory failover.
+6. Ensure redundancy for authentication, DNS, and DHCP services.
+7. Integrate AD infrastructure with a SIEM for monitoring.
+8. Validate domain functionality using a Windows client.
 _____________________________________________________________________________________
 
 ## Architecture Diagram
