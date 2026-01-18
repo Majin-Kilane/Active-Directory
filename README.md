@@ -368,6 +368,8 @@ By setting up this failover domain controller, I demonstrated the ability to pro
 - Gained practical experience configuring Windows Server failover, including scope replication, load balancing, and partner state verification.
 - Learned the importance of carefully checking configuration settings and error messages, as small misconfigurations can prevent proper failover.
 - Developed skills in diagnosing and resolving issues in complex networked environments, ensuring redundancy and system reliability.
+- Separation of infrastructure and SOC responsibilities improves clarity.
+- AD security is foundational to effective detection and response.
 
 ## Conclusion
 This project highlights my ability to build a secure and organized Active Directory environment, demonstrating skills in directory services, Group Policy management, network security, and server services like WSUS and DHCP. It reflects my readiness to manage enterprise-level IT systems and troubleshoot complex configurations.
