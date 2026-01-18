@@ -172,10 +172,13 @@ I configured:
 ![FWRuleClient](https://github.com/user-attachments/assets/3ebe1783-5acd-4495-b152-157957f394ef)
 
 ### 10. Auditing and Logging:
+
  - Enabled auditing on critical domain controller events, including logon/logoff and object access.
  - Configured Windows Event Logging to capture and review security events for compliance and troubleshooting.
 
 ![LogginNAuditingSetUp](https://github.com/user-attachments/assets/4e0cdde7-fa38-49cb-9499-371600111050)
+
+Enhanced endpoint telemetry is provided through Sysmon, with events forwarded to a centralized Wazuh SIEM for detection and investigation.
 
 ### 11. Active Directory Failover Setup:
 - This section details how I configured an Active Directory Failover Domain Controller (ADFO) in my lab environment, ensuring redundancy and replication with the primary DC.
