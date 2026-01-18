@@ -233,31 +233,37 @@ This section documents key security and network design decisions made to balance
   controllers.
 - All external connectivity is outbound-only and stateful via NAT.
 - No inbound internet traffic is permitted to internal servers.
+- Centralized logging and monitoring handled by Wazuh SIEM.
 
 ## Result
 By setting up this failover domain controller, I demonstrated the ability to provide redundancy in Active Directory, ensuring continuous authentication, DNS resolution, and replication across domain controllers.
 
+**12. SIEM Integration (High-Level)**
+- Domain Controllers forward security-relevant events to Wazuh.
+- File Integrity Monitoring (FIM) applied to critical AD paths.
+- Detection logic and SOC workflows are documented in the SOC repository.
 
+**See:** SOC-Homelab-Wazuh
 
-### 12. Client Machine:
+### 13. Client Machine:
  - Joined Windows 10 to the domain and tested the application of security and firewall policies.
 
 ![DCJoined](https://github.com/user-attachments/assets/46061b5d-aac4-418c-8a1d-3a2d962f704d)
 
-**12.1 Checked if both DCs responds in client machine**
+**13.1 Checked if both DCs responds in client machine**
  - Brought the primary DC back online and verified replication synchronized in both directions.
  - Ensured both DCs could service authentication and DNS requests.
 
 ![TestedBothDCs](https://github.com/Majin-Kilane/Active-Directory/blob/main/CheckedDCsResponse_.png?raw=true)
 
-**12.2 Tested Failover Functionality**
+**13.2 Tested Failover Functionality**
  - Shut down the primary DC (192.168.1.10).
  - Logged in to the Windows 10 client with a domain account.
  - Confirmed authentication succeeded through the failover DC.
  - Validated DNS resolution continued to function using nslookup.
 
    
-**12.3 Joined the Failover Server to the Domain**
+**13.3 Joined the Failover Server to the Domain**
  - Brought the primary DC back online and verified replication synchronized in both directions.
  - Ensured both DCs could service authentication and DNS requests.
 
