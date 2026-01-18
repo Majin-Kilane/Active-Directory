@@ -34,6 +34,7 @@ The lab consists of:
 - **Domain Controller** (192.168.1.10): Hosts AD DS, DNS, WSUS, DHCP, and GPO configurations.
 - **Active Directory Failover** (192.168.1.11)
 - **Windows 11 Client** (192.168.1.100): Domain-joined machine for testing policy application.
+- **Wazuh SIEM** (documented in separate repo).
 _____________________________________________________________________________________
 
 ## Lab Setup
