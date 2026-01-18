@@ -372,5 +372,5 @@ By setting up this failover domain controller, I demonstrated the ability to pro
 - AD security is foundational to effective detection and response.
 
 ## Conclusion
-This project highlights my ability to build a secure and organized Active Directory environment, demonstrating skills in directory services, Group Policy management, network security, and server services like WSUS and DHCP. It reflects my readiness to manage enterprise-level IT systems and troubleshoot complex configurations.
+This project demonstrates enterprise-level Active Directory administration, focusing on availability, security, and integration with SOC tooling. It reflects real-world identity infrastructure design and operational resilience.
 
